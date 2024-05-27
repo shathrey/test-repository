@@ -15,6 +15,6 @@ jobs:
           @semantic-release/exec
           @semantic-release/changelog
       env:
-      GITHUB_TOKEN: ${{ secrets.TEST_REPOSITORY_SECRET }}
-      NPM_TOKEN: ${{ secrets.TEST_REPOSITORY_SECRET }}
+        GITHUB_TOKEN: ${{ secrets.TEST_REPOSITORY_SECRET }}
+        NPM_TOKEN: ${{ secrets.TEST_REPOSITORY_SECRET }}
 
