@@ -1,11 +1,11 @@
 name: test-semantic-release
 run-name: ${{ github.actor }} is learning semantic release
 on:
-  pull_request:
-    types: [ closed ]
+  push:
+    branches:
+      - main
 jobs:
   tag-build:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
