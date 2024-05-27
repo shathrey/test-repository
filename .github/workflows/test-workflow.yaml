@@ -17,4 +17,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.TEST_REPOSITORY_SECRET }}
         NPM_TOKEN: ${{ secrets.TEST_REPOSITORY_SECRET }}
+        GH_TOKEN: ${{ secrets.TEST_REPOSITORY_SECRET }}
 
