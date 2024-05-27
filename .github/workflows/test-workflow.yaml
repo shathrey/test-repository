@@ -12,7 +12,6 @@ jobs:
       with:
         extra_plugins: |
           @semantic-release/git
-          @semantic-release/exec
           @semantic-release/changelog
       env:
         GITHUB_TOKEN: ${{ secrets.TEST_REPOSITORY_SECRET }}
