@@ -1,6 +1,6 @@
 name: test-semantic-release
 run-name: ${{ github.actor }} is learning semantic release
-on: [push]
+on: [merge]
 jobs:
   do-something:
     runs-on: ubuntu-latest
