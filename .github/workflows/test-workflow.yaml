@@ -1,11 +1,10 @@
 name: test-semantic-release
 run-name: ${{ github.actor }} is learning semantic release
 on: [push]
-
-publish:
-  needs: [ build ]
-  runs-on: ubuntu-latest
-steps:
+jobs:
+  do-something:
+    runs-on: ubuntu-latest
+    steps:
     - name: Checkout
       uses: actions/checkout@v4
     - name: Semantic Release
