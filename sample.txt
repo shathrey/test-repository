@@ -1,0 +1,4229 @@
+
+@@ (file level) @@
+! - 30 documents removed:
+- ---
+- type: kubernetes.io/tls
+- apiVersion: v1
+- kind: Secret
+- data:
+-   tls.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURTekNDQWpPZ0F3SUJBZ0lKQVBZa0htNG9jVFh4TUEwR0NTcUdTSWIzRFFFQkN3VUFNQmN4RlRBVEJnTlYKQkFNTURHRmtiV2x6YzJsdmJsOWpZVEFnRncweU1qRXhNVFF5TWpNd05USmFHQTh5TWprMk1EZ3lPVEl5TXpBMQpNbG93S2pFb01DWUdBMVVFQXd3ZlkyRXRZMlZ5ZEMxMllXeHBaR0YwYjNJdVkyRmxMV2x1Wm5KaExuTjJZekNDCkFTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTHh0R25Qbnl4NzRuc0hwUFl5Z0hweFkKeEtCL3pSTDZJZVhaTE1vV3NwWE1vTzFFN0dPUzZvMWlFRDI4Q3ZqSStGVUlydEl1LzkvZ20vekJSbmZYbDdDOQpEb3ZDOGNOai90SVhCYStsRmlNUmp2V0ErSkxyb28raWtYTlBGK2JDdExucXMrTkoxanJYUjh4SkRBR2lKUDlwCjJ0QXZZcGtTUnlsL3ZVekQ2L3VzU2U1MmNTZytkMlowYzdWMHhlQnNsWG96a0lXZDZWekp6aFV3NWt0cWQrNjYKeE8wZGNXaDNoRGQ3dDM1Vis5UjFGbk1KbG9UaFAxSmtQQTJRSXVxSytBTkF1aHUvelYvVzNKY0lLcUx5ektYNApoNUg5dUhoaVU5VTR5OUM3c2dLMjJwOSt3RkwwdjJDR2xSRTAvVmpnQXJkU2l4MWI5UFpRK2hQNGRkY1hlVGNDCkF3RUFBYU9CaERDQmdUQUpCZ05WSFJNRUFqQUFNQXNHQTFVZER3UUVBd0lGNERBZEJnTlZIU1VFRmpBVUJnZ3IKQmdFRkJRY0RBZ1lJS3dZQkJRVUhBd0V3U0FZRFZSMFJCRUV3UDRJZlkyRXRZMlZ5ZEMxMllXeHBaR0YwYjNJdQpZMkZsTFdsdVpuSmhMbk4yWTRJY1kyVnlkQzEyWVd4cFpHRjBiM0l1WTJGbExXbHVabkpoTG5OMll6QU5CZ2txCmhraUc5dzBCQVFzRkFBT0NBUUVBcWVRRFo4YnhkQnM4RlJXSzc5UFQ4SWpJZ0hUcll0MFFsaGhZWDF5YlNrbEMKZ2M4RmtvQXlqd1BTK1Z2UU1QcFJFWXpjTGhCSVZxbjhIeG0vOWtQZWhRbXBWVXhRMTJzZ2MvVUEwVTZIQVZUawpWZjVzWXlGa2YvQ2N3R1Yrd3dFNEVGOTViNGZUNlE0djBHWU9GRmh5YUFiMnA4OWh5L1doMXlBNVdNNVV2L2hKCkYxQ3JVOFc0eFlXTWEyR1VKb3IrZ3VMdTZ2L0lMZlJhbjVxTGFUZnlXZmpPMXZFUjRMcUFCUk5hc1ovY0lrZjEKY2pQSFFHbVY5bjVITnlaRFE0K1JQOUo3TlV2dWw0QUZLNi9LcHhqV2JleEdrOWpCRHBtd1FwaExVcnFJOTRYTQpFa1YzbmNRMTR6aUlMSFhaOFdxZUc5ZTNWd0NFeVlpVzlMcjZMZENIYVE9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+-   tls.key: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcFFJQkFBS0NBUUVBdkcwYWMrZkxIdmlld2VrOWpLQWVuRmpFb0gvTkV2b2g1ZGtzeWhheWxjeWc3VVRzClk1THFqV0lRUGJ3SytNajRWUWl1MGk3LzMrQ2IvTUZHZDllWHNMME9pOEx4dzJQKzBoY0ZyNlVXSXhHTzlZRDQKa3V1aWo2S1JjMDhYNXNLMHVlcXo0MG5XT3RkSHpFa01BYUlrLzJuYTBDOWltUkpIS1grOVRNUHIrNnhKN25aeApLRDUzWm5SenRYVEY0R3lWZWpPUWhaM3BYTW5PRlREbVMycDM3cnJFN1IxeGFIZUVOM3UzZmxYNzFIVVdjd21XCmhPRS9VbVE4RFpBaTZvcjRBMEM2RzcvTlg5YmNsd2dxb3ZMTXBmaUhrZjI0ZUdKVDFUakwwTHV5QXJiYW4zN0EKVXZTL1lJYVZFVFQ5V09BQ3QxS0xIVnYwOWxENkUvaDExeGQ1TndJREFRQUJBb0lCQVFDNHZNZFlxQU92dzlYegpERGg2TFdxVm96cDBtWmg0YUtEZmQwUEFodXhramhHaFR4ZnNzRmdpY2VpMmZpekxxazQvSUpvMkhEcG1SeExvCmhwNE9WV08xdGtZU3BQamZ0cVJaV3BVS2xuTFR3eDFFZWtRNzE2YXo2SkZ1V2pkMjJhTFRQTmRObWxEZHM4QUMKL0FNM2ZyK0RZMGRUSVlJcnpZM1RsQmdHc1hnbWNDQUpUVXhaZk5VQXU4cldtWFhnK3NPUi9kc2FDSGdPRlJVdgpiakxwVGlFTXVnakVHaEp5bnJqUTlRa21rVVA3cGhSbnB2WkFKc0xacEdlUUZmSmg0dFQ4QlgrRHg5bncxMURpCmRneDZMQk82Q0NyQ1ZBVnNmYVY4ZWZHbjZBd2V3TWxmc2lnWXduS0tXUlEvWG5ySTRHdHFIZ3B0YWxRMkNjK1AKQ0RkUHZ1QmhBb0dCQU53V1lDaTk3QXVCN050dXM3dVVZZm5YcFhwcWxFOWNTM1h3ZDcwRm1UQkpsU1hkNVJzUwpzQlZEenBtMHp4bmtGTVpYZUprUGZ1VDRIdlN3WU10bzVURXVBV2FqZ1JDQ2ROMXVETlBoZU1rN25FQkd2SWhiCmtZWW45NUQ5enlaMFVzNVFlekJJcFMyeWh6Y2wxdFBGV0NtUXRxK3hhYThldGFHUUdqUitETmpaQW9HQkFOc3MKSi9NOC9ET2hOYXgxYm41eFBEbU9wUE9EN1V3c01BU2lBU2wvY000cDc0U2d1Q0hCeVNRUS9BampRMWt3cGgyYwo5Nk9hU2lndW4zR3dwOVoxa2hWWGpXTFg5S3c5YjhKYXMyT0JHUkFCVEVBOWJ6TEZueFN5eTR0WVRzMldRb3hzCkdiRVF4MnFOUWNuejdsRlRPcUl1elc4bVNLalM2OXdlRUt0NGhoaVBBb0dBTXY2WVB6aHFSZXhQeGpRclB1NU4KbVVjbkYyczBmQUxsbFNrbmhVdVR5QVYwb25aOGpENVRRRW9heDdDR1AvaUIrOGJ1c1lCT3BaejhCelFLNlhhZgpqRHFkcG51Qi95SkxFN2RaRDRyeG9xYkdPSHByV3FqazJoSE9vZkM5RzZyZU9PR2ErWUFMamNBTTVuRkZDb0p5ClFBZEEzUXFkY3k4SlpLcnY5M094WkZrQ2dZRUF3enBFNThUMS9lTm1sUlVSZEczWE1JbmdZczJzTFlMYXp2V2oKeFZ3d2xtUUNaNGhtSENPcTBJYVVpakl0eHArd0NJYk9pNXVlM01ZUzNzbDE1M0ZZeTh2dU5CS2JibVZYVEs5UQpSWjAwUHU1NUJtdnl4aTRFY3dLRWpyMzlpK0dCcStXS3lROWlJb1pyQ01KUkVYM3FwNWE3Qlh2N2t1NDJqQjczCnlGV1dWUDhDZ1lFQWxUMndNQTMySWMrRHliMnJFYkxOMVZZZVJrNFdzZG54dDg3TEFvajRLYkNINS9rWjFEWmoKQklOMlNqRDlhNjF1OENZQ3BkdlRzTWVVV3BjbVQ5NDFnNGJCSTFuOHh4OHlJZVNvbDQrV1BYbnNXYWdFWjNucAp5R2paaHlJYU95TmhXbXFRVC9oVVlsT3l4M1ZVNHRBWHFKcjExTUxwTDVhdVlidWh4TWx6QlFNPQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
+- metadata:
+-   name: webhook-cert-ca-cert
+-   namespace: cae-infra
+-   labels:
+-     group: felix
+-     variant: prd
+- apiVersion: v1
+- data:
+-   tls.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURJekNDQWd1Z0F3SUJBZ0lKQUlzL0NmWkZGZEh1TUEwR0NTcUdTSWIzRFFFQkN3VUFNQmN4RlRBVEJnTlYKQkFNTURHRmtiV2x6YzJsdmJsOWpZVEFnRncweU1qRXhNVFF5TWpNd05UTmFHQTh5TWprMk1EZ3lPVEl5TXpBMQpNMW93SmpFa01DSUdBMVVFQXd3YmJuZHpMWFpoYkdsa1lYUnZjaTVqWVdVdGFXNW1jbUV1YzNaak1JSUJJakFOCkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXFZdXhkNnEzaG94YkxFUXMrRjBONUU2RXgxaEsKS3p0OE5KRE4za0NwejJ0VFlFVnd3d1FvWW1Ub2ZibmdKOS9QRWpweVFwdjZCTzdOcXhLelQvVThvNlRYK2pWaQpabi80S1lYRE8vcVBVVDNRS3d5U0pqRk81cDhrbVpHYUZETTlCdjZLVEJjaUYzZWJscG9NQmNRYkRzcGticWZxCnBvblNPbWRNYlhZdHU2SWFldmYzdzNXNmlDaTRSMkE0OTh3aUJVSEhQSFl4MjZUZXJxYkNjTDhRR3d2UnlQVG0KUFRQQkYyZGg2MGlpTDFoWXpoRVdwSkxlaS9aYzFXVDUvaHI2SGQ2RURnUDFubzNCaGo0WXVVRmdzUnc5S0RBVgp3cUZ0SFR0R2ErWVhXTXNhZHY2LzByYWdGamxKYkIvdkdCcjBkQnR2RnNaT0NtbGNveFJxNEFhTHFRSURBUUFCCm8yRXdYekFKQmdOVkhSTUVBakFBTUFzR0ExVWREd1FFQXdJRjREQWRCZ05WSFNVRUZqQVVCZ2dyQmdFRkJRY0QKQWdZSUt3WUJCUVVIQXdFd0pnWURWUjBSQkI4d0hZSWJibmR6TFhaaGJHbGtZWFJ2Y2k1allXVXRhVzVtY21FdQpjM1pqTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElCQVFDKytiRnB6TkRyTysrbEtZcklyY2p4TjBHQ2p4NzN1dW5zClVRcHUzak4xK002dnkvRlFaRzFJZGNMTHNFcTU5dCtPcy9ZcGhPb1ZLcHgrWk1Pa203WmVQSHVDbWhSOThYb2cKZ3NXSU9OZkkzQmJ1REtoaDhTT3RZZVZ3VHRNMWJ6aUxyN3phWk5sMjQ3QTlTL1o4d3BhQmo0b1Y4R05Wc1hyRwpJbTdacEQ5VlFBcVFyUUV0SnRrM1B6NHlVbUVWbHJFbHZRYk95cm1JdDFSc3NkY281N3lsY3JvL3ZhSHVsWmg5Clc2cmdqdUk0emViQk5zaFQwQTFZU1VpcHJwclBOZXlsS3Bvay9iOFdXV0dPMGhJTVVBNHlja2VTaUxENlhpT00KNmVtb05vQVpiQWErUTRkaFV0YXRScTRzdmt1VmcrRGR5TjlBSTVVWEhyTU9ESGdoNWZrRQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+-   tls.key: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS0NBUUVBcVl1eGQ2cTNob3hiTEVRcytGME41RTZFeDFoS0t6dDhOSkROM2tDcHoydFRZRVZ3Cnd3UW9ZbVRvZmJuZ0o5L1BFanB5UXB2NkJPN05xeEt6VC9VOG82VFgralZpWm4vNEtZWERPL3FQVVQzUUt3eVMKSmpGTzVwOGttWkdhRkRNOUJ2NktUQmNpRjNlYmxwb01CY1FiRHNwa2JxZnFwb25TT21kTWJYWXR1NklhZXZmMwp3M1c2aUNpNFIyQTQ5OHdpQlVISFBIWXgyNlRlcnFiQ2NMOFFHd3ZSeVBUbVBUUEJGMmRoNjBpaUwxaFl6aEVXCnBKTGVpL1pjMVdUNS9ocjZIZDZFRGdQMW5vM0JoajRZdVVGZ3NSdzlLREFWd3FGdEhUdEdhK1lYV01zYWR2Ni8KMHJhZ0ZqbEpiQi92R0JyMGRCdHZGc1pPQ21sY294UnE0QWFMcVFJREFRQUJBb0lCQUdFOFhwRjA5VUJUS3M3ZQpZclFtR2h0LzlLS25QaEpCVVdDTVU2Vk5qSllLeFl5SEJyNnhtYitrZzdubmFta3o4SHhSek1ucXpwOFpuaGFvCjZQSElnZmlRUjlXVjNGTlF2VENES0k4emloSmIweEY5YWl4QlJ6RDR3SExha0hWWlZYeTNhdlZzcHY2eWVDY04KUGl2b1ptUTdLeEpUZHozLytQUEozb2xBcDhYZHFTMmxweEFFemNkNnU0MDdRSmIyL0kzbzMzQjhFam1WckltTApPTkJOYkkyYy9OdTIyT2NkYXFtQlp4VVdyU3ZzSUZhMERSYTlabThHdnd3OTdVd2crNk5aaTZzOXVPcjhWK0pHCklENGdtY2k5NDJkSk01REtlem9yYk45KzdtMDVyZ2QzSXJnWFo4Kzl5dmtxb2ZsQXhwU3JCcURKZWJBOHd5a2EKTldSNzlza0NnWUVBMVVWaXNVRm1JYmxLRncxYlM0Um1UWnpaZXJWNlJLL0JqU1V6MlZJQ3RGOGFZSnZtU0lIbgpJT0hxaFdNYXBJbWdOMjBYYkpiK1hNbWs2dnNDbnQ2RWZQRjk3Z2lGcVQyVUY0Z09WNSswSmNhUjd5bmx6V1dwCmtEZjlESGl6Uzk1cDFOV1B3VXUybWxCYjJwS1N2QjZiR3VRQ0pPUVhqVGdzeExlQ2l0cVd3Q01DZ1lFQXk0T2wKU2tpYWxhSFlXMHFDbDdLK1R2a3NYYnlDTlUyQ0N0UjNwZy9ONlZDc0dqaXR3a1F2Z05nM2dlTWZWT2dKVVBnQQpNTStmblZCTERqTmlZdWEydFBDZmF2VG40ZEpzMGJ6c1MwN083aHNNL25raFRUWngwa1FNWTcvN0RjTVlEdTRhCnVncHMyYUVuOTk0dmpaYnN3bmF1d1pqT2g4S2ZhWVkyVGRML204TUNnWUFQeWhkSWNFTVRkQmhjSkkwQnhrZWMKcjJRYWhaMEx3TWRmbjhWNjdXdHQxeXlvd21JR05EZmNZMTF0aXF6S1NiWW01Rmk3bldJdmxHNDFSMmdtUXVzawpKT3poMXBldXMvUm0yWmZXUE9pbGMxSVNsdE9BcFdvc1Z6alExNDdPcXlUQ3NSejNmcGVDVFRpL3NlSlRNeURnCm1NamYybE0wRFZpako4THViTWlFYVFLQmdCdVRTdUkxMUR4U0lhNjgrZFQwTXpVZ0xoTEZhQjh3MFY0R1MvQUUKVkRJNDdCamhkU25OYzJKUjZiTi93czhPWWJURzViKzNZamsrbCt6a3FZQWRJc1NCbGhnMzl2TnlQNnhybk5qWApaTkorZDlSRE5XL3c0SnRNL1NERzhvMTYwZGUwQzRzSnZwWCtjQnYxenh1d1I0UlI4SHZxNkpFY25keitnbjBwCkNkbGhBb0dCQUpKZkxaK0NzSVBEb0llNWZJWjBJNGo4a2F4cWJyWmc5dVlKTllKWVBRSFFvVVhDMWYvTHRONGwKNU1zRUNsNUVpNk1VSWMxUzdNYjM4bW50YVZTTnBDUnUxMjlrMEplZFd0cForSkdaY1BPanphTGRiOWtCUTFXOAp6dlVZaSt1bkxTMHFabVhvaUtrTVJnMmxYbDgvMlZVYmhQbFhNRnNybHYreFZ5d1piRVhGCi0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==
+- kind: Secret
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: webhook-cert-nws-resource
+-   namespace: cae-infra
+- type: kubernetes.io/tls
+- apiVersion: v1
+- data:
+-   tls.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUROVENDQWgyZ0F3SUJBZ0lKQVAxVy9OSStHNGw4TUEwR0NTcUdTSWIzRFFFQkN3VUFNQmN4RlRBVEJnTlYKQkFNTURHRmtiV2x6YzJsdmJsOWpZVEFnRncweU1qRXhNVFF5TWpNd05UVmFHQTh5TWprMk1EZ3lPVEl5TXpBMQpOVm93THpFdE1Dc0dBMVVFQXd3a2MzQnNkVzVyTFdsdVpHVjRMWFpoYkdsa1lYUnZjaTVqWVdVdGFXNW1jbUV1CmMzWmpNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXRtWUp4Uks4TUNFZVZ0OGkKRXpya2dQNGRPdG1DaHE0TSs3TUVwN25vejBQSzBBN0VMY2lxRG0veXFOaStJL1ZmV2MzSnByNURUSUh4LzVwcwpPN2sxUzAwT1RDRjZ6bnlwYlJCc251MkEzd09XMXBzNklyWDdnTVQ3MmkvNDhBRmVaK2I4TVI1RlIwUGxtd0NlClJlMmFDcDh4TkZSM2p6OGVoeGxVcEZDMlBER0xNZExSVGhWWGhGeDkwZUdpU0ZvRUVxY1M1WDZER1ZlTDg2aWsKeHN4aVZQa09wQlJIMDlJMkFyMllDaVB6MFM2cHJtaW9sM0VadmRLYjZ2bGlER1pacDhLWDJxcTRObzUvWDRSKwpyZFhkSVlpSjUxSUpGdlVsd2JnMllwaXhmS0FaUXkrNGtmZmsyNEFsT3o4WUZVK05SbENlUnV4NXRYbEhGNjB6CndjY3dld0lEQVFBQm8yb3dhREFKQmdOVkhSTUVBakFBTUFzR0ExVWREd1FFQXdJRjREQWRCZ05WSFNVRUZqQVUKQmdnckJnRUZCUWNEQWdZSUt3WUJCUVVIQXdFd0x3WURWUjBSQkNnd0pvSWtjM0JzZFc1ckxXbHVaR1Y0TFhaaApiR2xrWVhSdmNpNWpZV1V0YVc1bWNtRXVjM1pqTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElCQVFBTEFicmlOSEViCkZWZ3Z6YkxIdzM4WTQrYWFldDRlWlJUb2pVZHVKS0JBbUVTZ1BaYlBWSVhpdTM1Y2I5b3dMTzlZZXlDN0hmQnAKVmwzUW96U25SdlUyNE1uMW1HSm5sRU42bVJIZk1VVkZtKzFQN283M2lVRGg0K0ZBZU5hWHVjb1FObVBwNVl6dQpHSHhNeTY5MjlsNHhZdzVpRmVIVUcrU0d3anIwSEFML3JRZWt1ajI2QlNhWnltdG44aEJkWFhDeU1SUnVydUw2CnJqWmRvelJyRXFleWtvNUNXb0VGMUdSK3Zha3dBb2VSQkl1VnhxNlRiSSsrdUpGdnhFcGtBWUtjd0pZblZRZ2gKY2kwY0p6ZklDc2g3NzF1ZzlCWDdqN2ZpZTJJRXlzOEFpRWpNRDJmK3VnY3RHQjFpSEpiVWFoNnhrUmlMRTF5OQppMGhUN21vL2U3MmkKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+-   tls.key: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBdG1ZSnhSSzhNQ0VlVnQ4aUV6cmtnUDRkT3RtQ2hxNE0rN01FcDdub3owUEswQTdFCkxjaXFEbS95cU5pK0kvVmZXYzNKcHI1RFRJSHgvNXBzTzdrMVMwME9UQ0Y2em55cGJSQnNudTJBM3dPVzFwczYKSXJYN2dNVDcyaS80OEFGZVorYjhNUjVGUjBQbG13Q2VSZTJhQ3A4eE5GUjNqejhlaHhsVXBGQzJQREdMTWRMUgpUaFZYaEZ4OTBlR2lTRm9FRXFjUzVYNkRHVmVMODZpa3hzeGlWUGtPcEJSSDA5STJBcjJZQ2lQejBTNnBybWlvCmwzRVp2ZEtiNnZsaURHWlpwOEtYMnFxNE5vNS9YNFIrcmRYZElZaUo1MUlKRnZVbHdiZzJZcGl4ZktBWlF5KzQKa2ZmazI0QWxPejhZRlUrTlJsQ2VSdXg1dFhsSEY2MHp3Y2N3ZXdJREFRQUJBb0lCQVFDY0IvZnRsVlJWRzgrMwpZdFBrZlduQ0N4LzRHdCswMUttWW01Q3M1cldJc0thTGkwWTVJRUtSYlNTNVdnaDEvRTZnSlJHT3lZNEtvZExoCjVEa1ljaHhzR1RQVTNvTU9wc2ZNMjlML3RZNmJ1SmROYUthMzBOT2dXV0pWU05wOGZiOUR4TzRTR3FJTEQ4TVgKOE5SMFg0aDU4NnFFNklrS2ltVlVEdEJBYkNjb240cWZxYWhleS9WM0QxVDJablluUDVldkVxbVE0N3ZYWVdrbQpNcHo3T3BnS2N6SHUvLzlwZTZ1MU5VN3ltdkZRbnhrN0J6czVUS3hWanNEOXp4TzI3OXZIT0VwcXZnNENZTDROCmdBSWY5bnZ1dVlMUmpSTE5Bd0dnWmRUdUVMNTJ3bkpCR25RSkJjYlpqQ2ZWSUNtL3pYMkExdFViNnRpc2tTMVQKc1YwOGdBaVJBb0dCQU9mM05peVhOSCtWeC84RWVFUGJSQ0ZWTzAyT2VmUjRBaTJqblp2ZmRhenR0SzRpL013dwptSFovUnZGdm9DMllWNldsczQzZDlnalk5a0NHRDQwelhCMGNRUG1lUzFRcGJYUnVjTGhUelozWkt6c253Z3hDCm9LQklYUFNUcnlIVmJ4NkVnaE44cWZhZFlGeHhzK3RBdXBCeUdWaUdvV3VtNGdvQVdkWVA4NmY1QW9HQkFNbE0KRk12TXZGSXk2bURHa3V5VXBpVHdZUlFJYVl2bUo4eUpIUnQ2NVZKZzZ6dHBVTHUxcU1rbUlncVFqVFZvblhqVwowK1gzdmhuUGx6QmF0Um9oMEo3T2ZsWXJvN3NuNkMwL1JTZ0oyci9JSDJzTjhGTmNPVkFBUFBITVZFNFBnamZpCmpXdCszQk5IUkE2bFMrUTJlM0FVcGpsMXQzcVNzYnVWSWdsalI4RVRBb0dBTDNpa0daUUlKbVFjdmMvSVhQcXUKZ3JQU294aVpWTEtLbjVSd1dNbnVaeWx1WklTOGYzMGlkbjJ0b3hOWkVIdXcxREdKQVd0L1FtaEVYUWdTZnE4WQpGczBGYnhBNkVrczRIeS9LMmE0czBqVHpaL1BHL29OVUkva3JMTkpjY093aEJYblF0UFE2UkVJSXltSnFrNlozCmg4QVI5OC8xa1BaaUkvSFdjTHhxL09FQ2dZRUF4TVJIOThkVHRvM3FxVnF5Tit3K1ZCRmM4N1lkWmhFK2lpTGwKZnYwc3VNL2dZUnpiUEFHZzBhOGl5Mnp0ZTIyZHNJZGVib2N6SGd2YjMvcHEyUGFBOVJzb1I1YzAzemR0THYyUAoza2x6dU5Bb1ZmODBFbWd0NWRPMXZ5NWFva3Rxb0xJbVJ4T2trSHV6UFJXN0Q0TnFPZThWWlVsNlpxaUtiN0NoCnFzZVBWbDBDZ1lBUVhRNElZNi9QVTJXYkFsWW9idm5kKzE1MytyTkZlejhNbWtaVVFnZVRRdWZydEpaNys4MFEKeFZjUHMyT0ZrMEtSYjMxZTlZSkZoVDMxNFhKNDAzQVZPTG1YV0RRcXhJUFFicEN6empMdjR1eG5Eb1pXaUM2RApId3BUMytjN3Jxc3p5b1JBbFpmSm91cjY3Si9OMmJid2xjNml3bTNZK0ZnaThpYUlBelZ6dlE9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
+- kind: Secret
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: webhook-cert-splunk
+-   namespace: cae-infra
+- type: kubernetes.io/tls
+- apiVersion: v1
+- kind: Service
+- metadata:
+-   labels:
+-     app: cae-metrics-report-svc
+-     group: felix
+-     variant: prd
+-   name: cae-metrics-report-svc
+-   namespace: cae-infra
+- spec:
+-   ports:
+-   - name: https
+-     port: 5000
+-     protocol: TCP
+-   selector:
+-     app: cae-metrics-report-svc
+-     group: felix
+-     variant: prd
+- apiVersion: v1
+- kind: Service
+- metadata:
+-   labels:
+-     app: notification-controller
+-     group: felix
+-     variant: prd
+-   name: notification-controller
+-   namespace: cae-infra
+- spec:
+-   ports:
+-   - name: https
+-     port: 5000
+-     protocol: TCP
+-     targetPort: 5000
+-   selector:
+-     app: notification-controller
+-     group: felix
+-     variant: prd
+- apiVersion: v1
+- kind: Service
+- metadata:
+-   labels:
+-     app: nws-resource-validator
+-     group: felix
+-     variant: prd
+-   name: nws-resource-validator
+-   namespace: cae-infra
+- spec:
+-   ports:
+-   - name: https
+-     port: 443
+-     protocol: TCP
+-     targetPort: 8000
+-   selector:
+-     app: nws-resource-validator
+-     group: felix
+-     variant: prd
+- apiVersion: v1
+- kind: Service
+- metadata:
+-   labels:
+-     group: felix
+-     prometheus-app: felix-gslb-reflection-controller
+-     variant: prd
+-   name: prometheus-felix-gslb-reflection-controller-service
+-   namespace: cae-infra
+- spec:
+-   ports:
+-   - name: metrics
+-     port: 2112
+-   selector:
+-     app: gslb-reflection-controller
+-     group: felix
+-     variant: prd
+- apiVersion: v1
+- kind: Service
+- metadata:
+-   labels:
+-     group: felix
+-     prometheus-app: notification-controller
+-     variant: prd
+-   name: prometheus-notification-controller-service
+-   namespace: cae-infra
+- spec:
+-   ports:
+-   - name: metrics
+-     port: 2112
+-   selector:
+-     app: notification-controller
+-     group: felix
+-     variant: prd
+- apiVersion: v1
+- kind: Service
+- metadata:
+-   labels:
+-     group: felix
+-     prometheus-app: felix-splunk-validator
+-     variant: prd
+-   name: prometheus-splunk-validator-service
+-   namespace: cae-infra
+- spec:
+-   ports:
+-   - name: metrics
+-     port: 2112
+-   selector:
+-     app: splunk-index-validator
+-     group: felix
+-     variant: prd
+- apiVersion: v1
+- kind: Service
+- metadata:
+-   labels:
+-     app: splunk-validator
+-     group: felix
+-     variant: prd
+-   name: splunk-validator
+-   namespace: cae-infra
+- spec:
+-   ports:
+-   - name: https
+-     port: 443
+-     protocol: TCP
+-     targetPort: 8000
+-   selector:
+-     app: splunk-validator
+-     group: felix
+-     variant: prd
+- apiVersion: apps/v1
+- kind: Deployment
+- metadata:
+-   labels:
+-     app: cae-metrics-report-svc
+-     group: felix
+-     variant: prd
+-   name: cae-metrics-report-svc
+-   namespace: cae-infra
+- spec:
+-   replicas: 1
+-   selector:
+-     matchLabels:
+-       app: cae-metrics-report-svc
+-       group: felix
+-       variant: prd
+-   template:
+-     metadata:
+-       labels:
+-         app: cae-metrics-report-svc
+-         group: felix
+-         variant: prd
+-     spec:
+-       containers:
+-       - env:
+-         - name: DATABASE_NAME
+-           value: mcmp-billing-prd
+-         - name: AWS_REGION
+-           value: us-east-1
+-         - name: MONITORING_NAMESPACE
+-           value: openshift-user-workload-monitoring
+-         - name: AWS_SECRET_NAME
+-           value: aws-access-key
+-         envFrom:
+-         - configMapRef:
+-             name: global-config
+-         - configMapRef:
+-             name: lifecycle-config
+-         - configMapRef:
+-             name: cluster-config
+-         image: "containers.cisco.com/eps_mcmp/cae-metrics-report-svc:1.0.68"
+-         imagePullPolicy: IfNotPresent
+-         name: cae-metrics-report-svc
+-         ports:
+-         - containerPort: 5000
+-         resources:
+-           limits:
+-             cpu: 200m
+-             memory: 2Gi
+-           requests:
+-             cpu: 200m
+-         volumeMounts:
+-         - mountPath: /etc/config
+-           name: config-volume
+-         - mountPath: /app/ssl/
+-           name: metrics-certs
+-       imagePullSecrets:
+-       - name: image-pull-creds
+-       serviceAccountName: felix-services-sa
+-       volumes:
+-       - configMap:
+-           items:
+-           - key: LOG_LEVEL
+-             path: level
+-           name: lifecycle-config
+-         name: config-volume
+-       - name: metrics-certs
+-         secret:
+-           items:
+-           - key: ciscoprodtruststore.pem
+-             mode: 365
+-             path: ciscoprodtruststore.pem
+-           - key: cmsoshft.cer.pem
+-             mode: 365
+-             path: cmsoshft.cer.pem
+-           - key: cmsoshft.key.pem
+-             mode: 365
+-             path: cmsoshft.key.pem
+-           secretName: cae-metrics-secret
+- apiVersion: apps/v1
+- kind: Deployment
+- metadata:
+-   labels:
+-     app: gslb-deployment-controller
+-     group: felix
+-     variant: prd
+-   name: gslb-deployment-controller
+-   namespace: cae-infra
+- spec:
+-   replicas: 1
+-   selector:
+-     matchLabels:
+-       app: gslb-deployment-controller
+-       group: felix
+-       variant: prd
+-   template:
+-     metadata:
+-       labels:
+-         app: gslb-deployment-controller
+-         group: felix
+-         variant: prd
+-     spec:
+-       containers:
+-       - env:
+-         - name: NAME
+-           value: gslb-deployment-controller
+-         - name: WORKER_THREADS
+-           value: 10
+-         - name: RESYNC_PERIOD
+-           value: 30m
+-         - name: AM_USERNAME
+-           valueFrom:
+-             configMapKeyRef:
+-               key: FELIX_GEN_USER
+-               name: lifecycle-config
+-         - name: AM_PASSWORD
+-           valueFrom:
+-             secretKeyRef:
+-               key: felixGenPassword
+-               name: lifecycle-secret
+-         - name: PMT_USERNAME
+-           valueFrom:
+-             configMapKeyRef:
+-               key: FELIX_GEN_USER
+-               name: lifecycle-config
+-         - name: PMT_PASSWORD
+-           valueFrom:
+-             secretKeyRef:
+-               key: felixGenPassword
+-               name: lifecycle-secret
+-         - name: PKI_SERVICE_KEY
+-           valueFrom:
+-             secretKeyRef:
+-               key: sslCertPkiServiceKey
+-               name: global-secret
+-         - name: SSL_CERT_ENCRYPTION_KEY
+-           valueFrom:
+-             secretKeyRef:
+-               key: sslCertEncryptionKey
+-               name: global-secret
+-         envFrom:
+-         - configMapRef:
+-             name: cluster-map
+-         - configMapRef:
+-             name: global-config
+-         - configMapRef:
+-             name: lifecycle-config
+-         - configMapRef:
+-             name: cluster-config
+-         image: "containers.cisco.com/eps_mcmp/felix-gslb-deployment-controller:1.0.465"
+-         imagePullPolicy: IfNotPresent
+-         name: gslb-deployment-controller
+-         resources:
+-           limits:
+-             memory: 1G
+-           requests:
+-             cpu: 100m
+-         volumeMounts:
+-         - mountPath: /etc/config
+-           name: config-volume
+-       imagePullSecrets:
+-       - name: image-pull-creds
+-       serviceAccountName: felix-sa
+-       volumes:
+-       - configMap:
+-           items:
+-           - key: LOG_LEVEL
+-             path: level
+-           name: lifecycle-config
+-         name: config-volume
+- apiVersion: apps/v1
+- kind: Deployment
+- metadata:
+-   labels:
+-     app: nws-resource-validator
+-     group: felix
+-     variant: prd
+-   name: nws-resource-validator
+-   namespace: cae-infra
+- spec:
+-   replicas: 1
+-   selector:
+-     matchLabels:
+-       app: nws-resource-validator
+-       group: felix
+-       variant: prd
+-   template:
+-     metadata:
+-       labels:
+-         app: nws-resource-validator
+-         group: felix
+-         variant: prd
+-     spec:
+-       containers:
+-       - env:
+-         - name: NAME
+-           value: nws-resource-validator
+-         envFrom:
+-         - configMapRef:
+-             name: global-config
+-         - configMapRef:
+-             name: lifecycle-config
+-         - configMapRef:
+-             name: cluster-config
+-         image: "containers.cisco.com/eps_mcmp/nws-resource-validator:1.0.4"
+-         imagePullPolicy: IfNotPresent
+-         name: nws-resource-validator
+-         ports:
+-         - containerPort: 8000
+-           protocol: TCP
+-         resources:
+-           limits:
+-             memory: 1G
+-           requests:
+-             cpu: 200m
+-         volumeMounts:
+-         - mountPath: /etc/certs
+-           name: certs-conf
+-         - mountPath: /etc/config
+-           name: config-volume
+-       imagePullSecrets:
+-       - name: image-pull-creds
+-       serviceAccountName: felix-sa
+-       volumes:
+-       - configMap:
+-           items:
+-           - key: LOG_LEVEL
+-             path: level
+-           name: lifecycle-config
+-         name: config-volume
+-       - name: certs-conf
+-         secret:
+-           defaultMode: 420
+-           secretName: webhook-cert-nws-resource
+- apiVersion: apps/v1
+- kind: Deployment
+- metadata:
+-   labels:
+-     app: splunk-validator
+-     group: felix
+-     variant: prd
+-   name: splunk-validator
+-   namespace: cae-infra
+- spec:
+-   replicas: 1
+-   selector:
+-     matchLabels:
+-       app: splunk-validator
+-       group: felix
+-       variant: prd
+-   template:
+-     metadata:
+-       labels:
+-         app: splunk-validator
+-         group: felix
+-         variant: prd
+-     spec:
+-       containers:
+-       - env:
+-         - name: NAME
+-           value: splunk-index-validator
+-         envFrom:
+-         - configMapRef:
+-             name: global-config
+-         - configMapRef:
+-             name: lifecycle-config
+-         - configMapRef:
+-             name: cluster-config
+-         image: "containers.cisco.com/eps_mcmp/felix-splunk-validator:1.0.6"
+-         imagePullPolicy: IfNotPresent
+-         name: splunk-validator
+-         ports:
+-         - containerPort: 8000
+-           protocol: TCP
+-         resources:
+-           limits:
+-             memory: 1G
+-           requests:
+-             cpu: 200m
+-         volumeMounts:
+-         - mountPath: /etc/certs
+-           name: certs-conf
+-         - mountPath: /etc/config
+-           name: config-volume
+-       imagePullSecrets:
+-       - name: image-pull-creds
+-       serviceAccountName: felix-sa
+-       volumes:
+-       - configMap:
+-           items:
+-           - key: LOG_LEVEL
+-             path: level
+-           name: lifecycle-config
+-         name: config-volume
+-       - name: certs-conf
+-         secret:
+-           defaultMode: 420
+-           secretName: webhook-cert-splunk
+- apiVersion: monitoring.coreos.com/v1
+- kind: ServiceMonitor
+- metadata:
+-   labels:
+-     group: felix
+-     prometheus-app: felix-gslb-deployment-controller
+-     variant: prd
+-   name: felix-gslb-deployment-controller
+-   namespace: cae-infra
+- spec:
+-   endpoints:
+-   - interval: 30s
+-     port: metrics
+-     relabelings:
+-     - action: replace
+-       regex: "(.*)"
+-       replacement: $1
+-       sourceLabels:
+-       - __meta_kubernetes_endpoint_address_target_name
+-       targetLabel: instance
+-     - action: replace
+-       regex: "(.*)"
+-       replacement: $1
+-       sourceLabels:
+-       - __meta_kubernetes_pod_label_variant
+-       targetLabel: env
+-     scheme: http
+-     tlsConfig:
+-       insecureSkipVerify: true
+-   jobLabel: prometheus-app
+-   namespaceSelector:
+-     matchNames:
+-     - cae-infra
+-   selector:
+-     matchLabels:
+-       prometheus-app: felix-gslb-deployment-controller
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: MutatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: ca-cert.cae.cisco.com
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRQ1BvRzNtdEo1OEZEQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV5V2hnUE1qSTVOakE0TWpreU1qTXdOVEphTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU1JWTY4ZXRFZWhXZTAwYnBSTTRxaWNtd09FWFVCRG1JMTZmQXJjVTFOTTBqbEJSN0tFRFJDTFgKdGEzcm1BQXFpY0xKa0NIUmI1VE92WDVtM3d2cXk1OVFKUEJDVTVlc05PR1FpUjdFekJFQ1VNNWtkTEF1VjJnbgoyUjFrZVVGT3BtTkRUZzI5V1dLTWxOWUxDQVd5WXh1M2lZM3ExTFpuYnN5KzZDMU9QSm9rM0x6V3ZaQWV4ay9DClU0QzdrdWhiSWVURzlDWFZoVEU1eitNUzU0blprUVcwckRTRnVHenVJcE9wWlFSRGlLejZwekp1ZW1sbThyMkwKajRwVkhHODk3RExZUXg2dG5peCt1R1l3bXBTTmFubEFvZnp2dGRSczN6L3IycjE0OHRkMDZJc2pQNDZ6ZzNLdQpjUkhYUG1ETDZiTUtnREp2d2JQZjhCelh6N1U3b044Q0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCmFXQnloQ2F6RWY5Y25oVUllb3FtNE11SHliSmxoSmZNd05ZTHpNNTZqVVVOUGFTL2xOSytxdUV5aSt1TnhPaEsKZW5EenljSlBocVRZOTNQMWZwZ01yUWJRSmJVNnU4VnRvSnMzRXFZTFE5VXZETXRaU3kxdmFJSjltVnJWamlHOQpXSmtza0hFRmo2Vi9uTEJjb25KeS9GazFKRVVkam5EVVpuQ1c4eEF0NlJrK2JDOE9rWkFzMDV0SUhKQnFhcnp2CjhvVnVzSTdGb2xEaGZKUFhtK2ZVWDBXRW5JaUhRRHh1K3Q0MWpJbnIwOXdOMkpSak01SnRPdWNhdGFBUFFxOE8Ka01EdFBkU2NJTGhUcWR2UlhNUHV1alhJUFlGV3JsR1VyQzdweUpNTnJMOG9VYVVxSVdPMFkzcVpaUmR2aFlvMwpzNkhkMkc2VTN6Zy9CNDlpb0ZWd1ZnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+-     service:
+-       name: ca-cert-validator
+-       namespace: cae-infra
+-       path: /mutate
+-   failurePolicy: Ignore
+-   name: ca-cert.cae.cisco.com
+-   rules:
+-   - apiGroups:
+-     - cae.cisco.com
+-     apiVersions:
+-     - v1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     resources:
+-     - cacertificates
+-   sideEffects: None
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: MutatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: gslb-deployment.cae.cisco.com
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRREhsTHJCYm8rSWpqQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV5V2hnUE1qSTVOakE0TWpreU1qTXdOVEphTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQVA4MEJOaWkwakVCY0ZxS2Z6RDRYSlpYa3cwVG9rTWVvb3JmN0VRSnNuTVJ3bStNcmxVR0Y2bnQKRmJHKzFkekhXODJBakhaNGtGNEZ3ZVh1QjBHSTRpT09KdkY4aUJJTlFXbTJCUHU1Qms2MVEveUJ2VS9yMW9OVQo2TlduS1RSZDQ2a1BDQlpGSG9YeUp2cnFlV0x1dnFiN0NaajYzZW54UGdiUXdqbDBzd2xCT3pPVUZ6b0tpeWNXCkVBWUVaNXMvR2FnR01wdEx3WTdIRXA0RjZrblA3ZlU1anIrVmNsZmRlbmpsMFdzUU9OVko5UFhpcE1kQmhTV0cKYy9wemhKd3NIRUlLTWNiL3NkM0VXNm1iYUN6UHJWNHVKVFdpeHVtb2NjaWJJcUZ3RThORHYrVTh1QnREWHVsYgpuM25rOFR3OUVDUG8yU1NQekV4YmpEbFkrcWJjVHlzQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCmc3ZSsvY3ZiS2NEZERXS0JxTXNXUUhqSlUrNGlqSjlsSHRPLzhKT240T0JYU2FlNTZlR3lrZVpocUc5WjhUTDQKK2V5eGZneE42ME05bGo5b3c3V29oN3dEQzVLUy9kUStieXMrbjM1aEcwOG55Ny9BMGRESE9CWFRBUThEZUFZNApHQVNXcWR1UmpkSjFvQmJXYW1iSmNZNHI3VUgxd1A1ak1BT1ZtQXIzTGdZYVJtS3lGMDJTbVM0alZoNmR6UkQzCmlhTWNOWVpaUk40TnByK3RNY2RsdVhhWUxMTFo5dGdUMHNQYkpCbVNnU1J3d2xxRm9hRWhlclgzcStneEJEc0gKUjY2emJxM0QveXVYK0JJdjNNOXZGVHFrNFVlaWJTZ25WUno5YW5DbnE0Q1BPU2lNcm1YU2RJQlRPK1lZTXpNdgphVFBpVnFSdVRFVFFaN3V6TVord0pnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+-     service:
+-       name: gslb-deployment-validator
+-       namespace: cae-infra
+-       path: /mutate
+-   failurePolicy: Ignore
+-   name: gslb-deployment.cae.cisco.com
+-   rules:
+-   - apiGroups:
+-     - cae.cisco.com
+-     apiVersions:
+-     - v1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     resources:
+-     - gslbdeployments
+-   sideEffects: None
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: MutatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: kn-dm.serving.knative.dev
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFVENDQWZtZ0F3SUJBZ0lVSnJFNUl5bU1xSlpoQmVucVN1QldOY3ozeHY4d0RRWUpLb1pJaHZjTkFRRUwKQlFBd0Z6RVZNQk1HQTFVRUF3d01ZV1J0YVhOemFXOXVYMk5oTUNBWERUSXpNRGt3TWpFeE5EWXpOVm9ZRHpJeQpPVGN3TmpFM01URTBOak0xV2pBWE1SVXdFd1lEVlFRRERBeGhaRzFwYzNOcGIyNWZZMkV3Z2dFaU1BMEdDU3FHClNJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUNTbGpOUE5wbU9qOWJqaUlFMXJmZzJZTFZlTWRXQXIxY2IKSXRMV3Y3Wk1lMFRxK3lrZ2NTMHVPN0szQ3J4aHZiZEpZTjV0Y1FZc1VpU2IzMXZaWlpzMGVocVJ5MEdnVmwvQwoyT0Z1YjNjTVE0ZGlBMTg1TDdKTnl2Q0ZoSnRyeUhnKzgzREdDUk52Q2JrWmtZYXhSbkxWWVNHR2YwcXdlUjQ2ClNSWWhiOU9YcDIrMmNvTDQ1QlpQRzczL3NZbHVMS1J2V1BpVFNhSVF0ZTR3dis5NktpeFlhZTRmbWpmY1ZmMUcKSVdDT2kwamMwZFVlU0x2Q28wa1E0MDlDQ1ZJOWtFalRVNi90NnBmV0E5UDdaTG1xeS8rWHE4OHhOR2hyRkVzcApMOHJtT0JwWXlyc1pVU01yWEovSFhEdFRWclhVdXhPQkRzTys2WDgyTVhnL3ZOZmN4TmV2QWdNQkFBR2pVekJSCk1CMEdBMVVkRGdRV0JCUXE4My9KSmIweFRVdHNYTHFqcFhEOUd1Q2d3REFmQmdOVkhTTUVHREFXZ0JRcTgzL0oKSmIweFRVdHNYTHFqcFhEOUd1Q2d3REFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxR1NJYjNEUUVCQ3dVQQpBNElCQVFBS0ZCZzNQSXpCU2ZDYjQ0WC83WEZQSEg1RklzNHRtTmZ3SmkrZ0ZEY1llMVV5U2RLM0MzeGpBaGhXClhXMkd3MzIzY3ZlQ29VRjloR3ZmVmZ2bTJOdzVueExaczNtVkZBTVJUb2NZU0lIUHhwU004ajFHN2lhRWRhYkYKRjhKQnRUdE1wM3ZtU2FKQUhJWFhzYU90U3RDSHRMM1RrZkcxeTFYSGtNaFU4b1NZdXd5ZHlQVG15L0h1SmdEdwpWaWQra1lCV0NZc09XWEFqeWc4cXBvNk5vUVhRTHBRUjludVg3bzZhUzBpS0FCVGJSQkFxSFhmeFdMS2RxWVNnCjU4UVJVZ0k5WTI4QXVra0Q0QXRnL1duL1ViYzRXYklhS3VibTJ3dHprTi9iUGxMRzdTcW1EUW56enFReWFrRjkKV2xBZDA0UVpVbHJNZ3lieFBUOFF2Q2luTjdTZgotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+-     service:
+-       name: kn-dm-validator
+-       namespace: cae-infra
+-       path: /mutate
+-   failurePolicy: Ignore
+-   name: kn-dm.serving.knative.dev
+-   rules:
+-   - apiGroups:
+-     - serving.knative.dev
+-     apiVersions:
+-     - v1
+-     - v1beta1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     - DELETE
+-     resources:
+-     - domainmappings
+-   sideEffects: None
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: MutatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: kn-svc.serving.knative.dev
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRQ2lKR05CdjhmWDZqQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nak13T0RNeE1qRXlNREkyV2hnUE1qSTVOekEyTVRVeU1USXdNalphTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU5pV3VkczNRcG01b09FQWMwZDQ1dm1vV0lvRzJWS0RraXNEcjgwTmpObTJXVENwZ1gveXEvNHIKaTJmUjZnNGhqa0tpNVhJYW9aWmM5d0x6aHBYL1JVVWVsVG1sQlQ2K1VLY2p3eCtTRzh0VS9IOU9tMTlNNGVGQgpPWUp5UDFaWWM4RjNiMjRHZllZOEdPallXbWhnWk4wTk1VZ0JiYjVDWTZUUFdGdkVhUXJvZU0vV0VTeTRsSEt4CjhqR0lZd2dYUmFiTVZiQ0Mwd3ZFQ0IrSWo4V2hyNXBVVlVsdzRRSmdFZEpwbnlJY28rRzRkTm5teW84V0lzVmgKejlEOWdJTFJ6WTJJT0ZZYVdxUmVXaStiYy9HeWZLKzFWdjgwRm82MXg3eEEwQVlydmhBQkFJZmlXWHNiTnVTOApGWENOR3lLWEkzQWR0VllJSkhUcUtJY2wzdDZuZEljQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCjFMTlJGYnhHSFBZcDB0NnNFM2IxMm1KR05lTFd0b0w2YnF2WmdNSTMrVXNDOUdUWGNPOEZlQ1lPQ3h3MDIvZmkKR012RkRuaWkvVm9RZW9ObUZYVzdnTEdUY3Y5YmFjVGxhekx0OEgyNTBDcHVzUDJwY2gvT01wZzJrSEx2VjgzRwpJUlBNWDJrOGJ4ZFAvaTJtRitKaEJra2pvVFZYbm1DeVlVb2NpdU5QdDdnL21hRTQxQjU2N0lPY0FuVGtTanBLCnpjaEthZDkxbzJaeW9CUnQydDlDUlBKOWNNbTJFT3hQUmJyaDcyTkxKQVcrYy9JNnlkeGJZdkV1SDVyMW5NREUKc2JaT2lRMktod05CUFg0NzlUL0RCTnQxblpSR2lHK0dDZkRqblNObE50TjdJTms5NExKOHJwZzlDSkxBeDFGaApqUVRPTzlDaVFFNkIwTjEvamJaYnd3PT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+-     service:
+-       name: kn-svc-validator
+-       namespace: cae-infra
+-       path: /mutate
+-   failurePolicy: Ignore
+-   name: kn-svc.serving.knative.dev
+-   rules:
+-   - apiGroups:
+-     - serving.knative.dev
+-     apiVersions:
+-     - v1
+-     - v1beta1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     resources:
+-     - services
+-   sideEffects: None
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: ValidatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: ca-cert.cae.cisco.com
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRQ1BvRzNtdEo1OEZEQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV5V2hnUE1qSTVOakE0TWpreU1qTXdOVEphTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU1JWTY4ZXRFZWhXZTAwYnBSTTRxaWNtd09FWFVCRG1JMTZmQXJjVTFOTTBqbEJSN0tFRFJDTFgKdGEzcm1BQXFpY0xKa0NIUmI1VE92WDVtM3d2cXk1OVFKUEJDVTVlc05PR1FpUjdFekJFQ1VNNWtkTEF1VjJnbgoyUjFrZVVGT3BtTkRUZzI5V1dLTWxOWUxDQVd5WXh1M2lZM3ExTFpuYnN5KzZDMU9QSm9rM0x6V3ZaQWV4ay9DClU0QzdrdWhiSWVURzlDWFZoVEU1eitNUzU0blprUVcwckRTRnVHenVJcE9wWlFSRGlLejZwekp1ZW1sbThyMkwKajRwVkhHODk3RExZUXg2dG5peCt1R1l3bXBTTmFubEFvZnp2dGRSczN6L3IycjE0OHRkMDZJc2pQNDZ6ZzNLdQpjUkhYUG1ETDZiTUtnREp2d2JQZjhCelh6N1U3b044Q0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCmFXQnloQ2F6RWY5Y25oVUllb3FtNE11SHliSmxoSmZNd05ZTHpNNTZqVVVOUGFTL2xOSytxdUV5aSt1TnhPaEsKZW5EenljSlBocVRZOTNQMWZwZ01yUWJRSmJVNnU4VnRvSnMzRXFZTFE5VXZETXRaU3kxdmFJSjltVnJWamlHOQpXSmtza0hFRmo2Vi9uTEJjb25KeS9GazFKRVVkam5EVVpuQ1c4eEF0NlJrK2JDOE9rWkFzMDV0SUhKQnFhcnp2CjhvVnVzSTdGb2xEaGZKUFhtK2ZVWDBXRW5JaUhRRHh1K3Q0MWpJbnIwOXdOMkpSak01SnRPdWNhdGFBUFFxOE8Ka01EdFBkU2NJTGhUcWR2UlhNUHV1alhJUFlGV3JsR1VyQzdweUpNTnJMOG9VYVVxSVdPMFkzcVpaUmR2aFlvMwpzNkhkMkc2VTN6Zy9CNDlpb0ZWd1ZnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+-     service:
+-       name: ca-cert-validator
+-       namespace: cae-infra
+-       path: /validate
+-   failurePolicy: Ignore
+-   name: ca-cert.cae.cisco.com
+-   rules:
+-   - apiGroups:
+-     - cae.cisco.com
+-     apiVersions:
+-     - v1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     resources:
+-     - cacertificates
+-   sideEffects: None
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: ValidatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: gslb-config.cae.cisco.com
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRQ0dHbVlQY1hhRUFqQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV5V2hnUE1qSTVOakE0TWpreU1qTXdOVEphTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQUtXdjg1N1prbWZTakQxazAwNjZuMWRaOHBhTHZsclNPeG10VlFQcHhkQXNKazdFdjY5QmZHeVQKemx4RVBDR1BudkNQenIrcEFkTysrSngzbmFyQzZLbnMvM2JMR3AwWElUK1BQM2p1V2c5UTlKRUY4Tk5GUk5qTQpMRjFsLzdpYUxhUmM2UEtnNTBqVDdaL1JDRTgwbjU4ZkxJQUdPcTRoYU9Ra3RCMi9zQS9zSnBueWh5cWVvNkR2CklCNjBPb2pLeGduOXdIQ2E2VmZMSFVheTV1Sm5lS0wzNDZSRzN3RHNNVWlUYVhtUlh5ZU85c1JqQXM4eU1YQk0KdUNEY3ZBdnNkVWlkVkZRM21pN2JmTVUzMit0ZFU0QjlzQzBSckZZRXJURGdVSmdpTWtURnRmdVROYlVpdGRrbwoxZzU0dWl4VGlRNXlaL1BpZ0dFTm1hTXVQckF2MnRVQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCldPckdsdDZRSGMwZnBwUGswWmc1Vzg0Yk5pTHUzUW5PR1hjd2NicmpLclBEVHpsQWttWUFZNHh5Q0NDVWJBNW8KL0VkUWhPV0NqNWl5WUVGUFpmYWF4OEFRbUg4RlRwSVJXOE54WVFzL20vU2xoNG9Lc3JYMGNpOW1oUkplVHk1ZwpxNStrV0xOT1pvT1lycVlNbW81czZYMXpRaTdNZzN6ZVY5ODVZZWltNDFFdUtnU05LRUJwQ0ZpV3VwMThMNm9KClRFTWdJYmplMGE0dXhsdHU3OStpdlEvMzdoeSszQnZOZGxmV2JybnZXSzBIVWJ0ejIraG1DVy90amQxeS8zcS8KbE1IVTJkZ0lGOE9mRm1yam5VbzYwaWpWbk5RaDJ5TGI1V0NLaG8wQWs5TjFxK0lVL3VwVjcxWk9JYzRCcS8ybQpZVWhUdWtXeXV0U1djek9YNTlZQzVnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+-     service:
+-       name: gslb-config-validator
+-       namespace: cae-infra
+-       path: /validate
+-   failurePolicy: Ignore
+-   name: gslb-config.cae.cisco.com
+-   rules:
+-   - apiGroups:
+-     - cae.cisco.com
+-     apiVersions:
+-     - v1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     resources:
+-     - gslbconfigs
+-   sideEffects: None
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: ValidatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: gslb-deployment.cae.cisco.com
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRREhsTHJCYm8rSWpqQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV5V2hnUE1qSTVOakE0TWpreU1qTXdOVEphTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQVA4MEJOaWkwakVCY0ZxS2Z6RDRYSlpYa3cwVG9rTWVvb3JmN0VRSnNuTVJ3bStNcmxVR0Y2bnQKRmJHKzFkekhXODJBakhaNGtGNEZ3ZVh1QjBHSTRpT09KdkY4aUJJTlFXbTJCUHU1Qms2MVEveUJ2VS9yMW9OVQo2TlduS1RSZDQ2a1BDQlpGSG9YeUp2cnFlV0x1dnFiN0NaajYzZW54UGdiUXdqbDBzd2xCT3pPVUZ6b0tpeWNXCkVBWUVaNXMvR2FnR01wdEx3WTdIRXA0RjZrblA3ZlU1anIrVmNsZmRlbmpsMFdzUU9OVko5UFhpcE1kQmhTV0cKYy9wemhKd3NIRUlLTWNiL3NkM0VXNm1iYUN6UHJWNHVKVFdpeHVtb2NjaWJJcUZ3RThORHYrVTh1QnREWHVsYgpuM25rOFR3OUVDUG8yU1NQekV4YmpEbFkrcWJjVHlzQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCmc3ZSsvY3ZiS2NEZERXS0JxTXNXUUhqSlUrNGlqSjlsSHRPLzhKT240T0JYU2FlNTZlR3lrZVpocUc5WjhUTDQKK2V5eGZneE42ME05bGo5b3c3V29oN3dEQzVLUy9kUStieXMrbjM1aEcwOG55Ny9BMGRESE9CWFRBUThEZUFZNApHQVNXcWR1UmpkSjFvQmJXYW1iSmNZNHI3VUgxd1A1ak1BT1ZtQXIzTGdZYVJtS3lGMDJTbVM0alZoNmR6UkQzCmlhTWNOWVpaUk40TnByK3RNY2RsdVhhWUxMTFo5dGdUMHNQYkpCbVNnU1J3d2xxRm9hRWhlclgzcStneEJEc0gKUjY2emJxM0QveXVYK0JJdjNNOXZGVHFrNFVlaWJTZ25WUno5YW5DbnE0Q1BPU2lNcm1YU2RJQlRPK1lZTXpNdgphVFBpVnFSdVRFVFFaN3V6TVord0pnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+-     service:
+-       name: gslb-deployment-validator
+-       namespace: cae-infra
+-       path: /validate
+-   failurePolicy: Ignore
+-   name: gslb-deployment.cae.cisco.com
+-   rules:
+-   - apiGroups:
+-     - cae.cisco.com
+-     apiVersions:
+-     - v1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     resources:
+-     - gslbdeployments
+-   sideEffects: None
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: ValidatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: kn-dm.serving.knative.dev
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFVENDQWZtZ0F3SUJBZ0lVSnJFNUl5bU1xSlpoQmVucVN1QldOY3ozeHY4d0RRWUpLb1pJaHZjTkFRRUwKQlFBd0Z6RVZNQk1HQTFVRUF3d01ZV1J0YVhOemFXOXVYMk5oTUNBWERUSXpNRGt3TWpFeE5EWXpOVm9ZRHpJeQpPVGN3TmpFM01URTBOak0xV2pBWE1SVXdFd1lEVlFRRERBeGhaRzFwYzNOcGIyNWZZMkV3Z2dFaU1BMEdDU3FHClNJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUNTbGpOUE5wbU9qOWJqaUlFMXJmZzJZTFZlTWRXQXIxY2IKSXRMV3Y3Wk1lMFRxK3lrZ2NTMHVPN0szQ3J4aHZiZEpZTjV0Y1FZc1VpU2IzMXZaWlpzMGVocVJ5MEdnVmwvQwoyT0Z1YjNjTVE0ZGlBMTg1TDdKTnl2Q0ZoSnRyeUhnKzgzREdDUk52Q2JrWmtZYXhSbkxWWVNHR2YwcXdlUjQ2ClNSWWhiOU9YcDIrMmNvTDQ1QlpQRzczL3NZbHVMS1J2V1BpVFNhSVF0ZTR3dis5NktpeFlhZTRmbWpmY1ZmMUcKSVdDT2kwamMwZFVlU0x2Q28wa1E0MDlDQ1ZJOWtFalRVNi90NnBmV0E5UDdaTG1xeS8rWHE4OHhOR2hyRkVzcApMOHJtT0JwWXlyc1pVU01yWEovSFhEdFRWclhVdXhPQkRzTys2WDgyTVhnL3ZOZmN4TmV2QWdNQkFBR2pVekJSCk1CMEdBMVVkRGdRV0JCUXE4My9KSmIweFRVdHNYTHFqcFhEOUd1Q2d3REFmQmdOVkhTTUVHREFXZ0JRcTgzL0oKSmIweFRVdHNYTHFqcFhEOUd1Q2d3REFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxR1NJYjNEUUVCQ3dVQQpBNElCQVFBS0ZCZzNQSXpCU2ZDYjQ0WC83WEZQSEg1RklzNHRtTmZ3SmkrZ0ZEY1llMVV5U2RLM0MzeGpBaGhXClhXMkd3MzIzY3ZlQ29VRjloR3ZmVmZ2bTJOdzVueExaczNtVkZBTVJUb2NZU0lIUHhwU004ajFHN2lhRWRhYkYKRjhKQnRUdE1wM3ZtU2FKQUhJWFhzYU90U3RDSHRMM1RrZkcxeTFYSGtNaFU4b1NZdXd5ZHlQVG15L0h1SmdEdwpWaWQra1lCV0NZc09XWEFqeWc4cXBvNk5vUVhRTHBRUjludVg3bzZhUzBpS0FCVGJSQkFxSFhmeFdMS2RxWVNnCjU4UVJVZ0k5WTI4QXVra0Q0QXRnL1duL1ViYzRXYklhS3VibTJ3dHprTi9iUGxMRzdTcW1EUW56enFReWFrRjkKV2xBZDA0UVpVbHJNZ3lieFBUOFF2Q2luTjdTZgotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+-     service:
+-       name: kn-dm-validator
+-       namespace: cae-infra
+-       path: /validate
+-   failurePolicy: Ignore
+-   name: kn-dm.serving.knative.dev
+-   rules:
+-   - apiGroups:
+-     - serving.knative.dev
+-     apiVersions:
+-     - v1
+-     - v1beta1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     - DELETE
+-     resources:
+-     - domainmappings
+-   sideEffects: None
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: ValidatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: kn-svc.serving.knative.dev
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRQ2lKR05CdjhmWDZqQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nak13T0RNeE1qRXlNREkyV2hnUE1qSTVOekEyTVRVeU1USXdNalphTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU5pV3VkczNRcG01b09FQWMwZDQ1dm1vV0lvRzJWS0RraXNEcjgwTmpObTJXVENwZ1gveXEvNHIKaTJmUjZnNGhqa0tpNVhJYW9aWmM5d0x6aHBYL1JVVWVsVG1sQlQ2K1VLY2p3eCtTRzh0VS9IOU9tMTlNNGVGQgpPWUp5UDFaWWM4RjNiMjRHZllZOEdPallXbWhnWk4wTk1VZ0JiYjVDWTZUUFdGdkVhUXJvZU0vV0VTeTRsSEt4CjhqR0lZd2dYUmFiTVZiQ0Mwd3ZFQ0IrSWo4V2hyNXBVVlVsdzRRSmdFZEpwbnlJY28rRzRkTm5teW84V0lzVmgKejlEOWdJTFJ6WTJJT0ZZYVdxUmVXaStiYy9HeWZLKzFWdjgwRm82MXg3eEEwQVlydmhBQkFJZmlXWHNiTnVTOApGWENOR3lLWEkzQWR0VllJSkhUcUtJY2wzdDZuZEljQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCjFMTlJGYnhHSFBZcDB0NnNFM2IxMm1KR05lTFd0b0w2YnF2WmdNSTMrVXNDOUdUWGNPOEZlQ1lPQ3h3MDIvZmkKR012RkRuaWkvVm9RZW9ObUZYVzdnTEdUY3Y5YmFjVGxhekx0OEgyNTBDcHVzUDJwY2gvT01wZzJrSEx2VjgzRwpJUlBNWDJrOGJ4ZFAvaTJtRitKaEJra2pvVFZYbm1DeVlVb2NpdU5QdDdnL21hRTQxQjU2N0lPY0FuVGtTanBLCnpjaEthZDkxbzJaeW9CUnQydDlDUlBKOWNNbTJFT3hQUmJyaDcyTkxKQVcrYy9JNnlkeGJZdkV1SDVyMW5NREUKc2JaT2lRMktod05CUFg0NzlUL0RCTnQxblpSR2lHK0dDZkRqblNObE50TjdJTms5NExKOHJwZzlDSkxBeDFGaApqUVRPTzlDaVFFNkIwTjEvamJaYnd3PT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+-     service:
+-       name: kn-svc-validator
+-       namespace: cae-infra
+-       path: /validate
+-   failurePolicy: Ignore
+-   name: kn-svc.serving.knative.dev
+-   rules:
+-   - apiGroups:
+-     - serving.knative.dev
+-     apiVersions:
+-     - v1
+-     - v1beta1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     resources:
+-     - services
+-   sideEffects: None
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: ValidatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: network-policy.networking.k8s.io
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRREtFanhEUEFDMEh6QU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV6V2hnUE1qSTVOakE0TWpreU1qTXdOVE5hTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU9XY0NsYkJOdTJIeE1jUWpYTzBWbS9RU3Qyd2FJNGJ3VXV4VklxTWZNdGVFU2p5cktZd3FPN2QKZEs2TEgvYXoyZ25WQ2ZuU1ovUzhxMUJRV1JCS0NMbzMxZ1RWN2E0bGpwRnNueHlVcTVISlZjNDg0STlMOXRtOApLcW9JenNaU0tBd2JCQTEzZHZXc0doL040VmpxMEJuWlRUbFJIMFNFTk5qbmkvZTRvY1VkMm9pTnl4VjRIVllOCkFIdWVERldJQU5NTmNCY1FmWGFBQ2x1ajhRcVpHRmNMaXhXWEQ2OGlMRVVBSFA0SEthNkRTZ3pJM2k5eHh1NkgKTjRPeVhhV25UU25EQXpEV3A2enFFK1J2R1lNUzJWY3R2UWRmaDRkTm9zZFdQaHB5VkRTUXBabVFST0lBT1I1RQorbWFPOFVOckI1RGoxRU1OQWk1QVhtMjhKQzJVcENjQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBClJ1eUpCRGVvTjNjZUs1b1dJQ08rdFhYODdJalBENE11bUxUTjBGSnJFT0FmSzN6S2pLY3V1V28yQ3VveW9IYWsKNmgvTGdtMUl4ZmFvV3pydmY4ekFjNUhadGpxS0lvMzgvZ25JUnR0dDhvQVR2ZGo5dGdVNlhab2Z1Ny9VK3JIRgpud0g0OUdtZ2pqbytEWElyWUpRTTdRVVFMSHBTc1k4bEQ4M0tZNGRwS3QxZDFsYlBPMi8xUVZqV1Jkak54MG5VCjNQcWUzM2c1YVQ1TXJGTDVaaUpNLyt6bUIrSmVaNUl4Y3NScFEySHA2OEdlcnB2NWg1Ty9nMHl6ZDFIVTdadnAKNGxVQjVsc3B1TlhFUVhkc2hXdE5wTWhKK0hmWUtMcnF4THhwVkluUnJVdG9NdExWRGdTd05CcSs0LzhqZmN5egoxSlJOYkZPb29nejZlOU1XZzNWa2hBPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+-     service:
+-       name: network-policy-validator
+-       namespace: cae-infra
+-       path: /validate
+-   failurePolicy: Ignore
+-   name: network-policy.networking.k8s.io
+-   rules:
+-   - apiGroups:
+-     - networking.k8s.io
+-     apiVersions:
+-     - v1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     - DELETE
+-     resources:
+-     - networkpolicies
+-   sideEffects: None
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: ValidatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: nws-resource.apps.openshift.io
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRRFltc2FmOUYweTBEQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV6V2hnUE1qSTVOakE0TWpreU1qTXdOVE5hTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU9FNm5YQThWczFHZS83dVA3WTM4cm9Rang5eTY5K2JWT3NCcFF2bkRkc28wOFR4OXJqQjlwbjAKOU1YZStEMzR2UjBOL1lwVkFpam1wMnpYc3dzNzJVSnZVOFN1TkF0UXVKdHY2L21rUXJpNDdkU3Vhc2lIektjNgpQL2tWSC9VRFFMbW00bjljZHQwSCtNeHMrQTY2V3A1VE9lZXEvSXBaTnBqWUtXNWoxcDFEdTdZQjlkTFJoY1IxCkppblpucmNsaTkxQ1JFYjMwcHd1MmFVQk9BeWcwMnlUakF0TS9TK3l3ZUJzQWRNUFF1V1YwWE93ajRQR2ZUWTkKRHM4V3lTTXhkRXFNL3hnT1gyR3hIbEh4T0hVN29TYVZ1dGM4RVlCdUhRcWpwenh1RmV1bDVHcW1qZDJFdDVTSApubzlESzd0RnZtckF1VXZyc0ZEWTVRcEFMVFFKcVU4Q0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCk5valR2dVA4RVFqRzlOVnF4d3NZeWRwVTZTY0NpMzZRWTJNRi84M24xZVc2dkRTeXZmakFBU1g5bEJJK05LcFIKTUF2UmhLYkZHZUQvZHRDYmwvL3JZZHdXeEVpRnVZa3BKc3Blc3J4QnAyQ3c5V3RMYnhyQTc3NWJtb3BLMVVtMwpNaFYwbFJEVXlENllsbzN2bytHUFFpN2VselUwU3U5clNzbGlGZERxMTFkN3pETTB4aUFoL3hLWWw1QUFxQ2dYCnVVSURrQ1ZVdlg5MWc1YTNEeno4TGgyM3JsWlpCS1ZPdnBCbmpqWG5PZENlU3lYb1hJV1h5em5KWVJuY0tZODMKYS9MaWcxVVExNXhBMG0rZUk4M1N2WkNhWURnMU10VjJCaUdEeHV5dnFLMC96S0ZZRktBbkxEQnUrRFY3ODJRcgpybDM3Z0YwdHBDZXp3S08xWHhaY2FBPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+-     service:
+-       name: nws-resource-validator
+-       namespace: cae-infra
+-       path: /validate
+-   failurePolicy: Ignore
+-   name: nws-resource.apps.openshift.io
+-   rules:
+-   - apiGroups:
+-     - apps.openshift.io
+-     - apps
+-     - 
+-     apiVersions:
+-     - v1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     resources:
+-     - pods
+-     - deployments
+-     - statefulsets
+-     - replicasets
+-     - deploymentconfigs
+-     - DaemonSet
+-   sideEffects: None
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: ValidatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: project.cae.cisco.com
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRQ1VPTHRxelFYOHBEQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV6V2hnUE1qSTVOakE0TWpreU1qTXdOVE5hTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQUwzSkR6cThVbmdBaFZoSmdRQ3lKd0d4dlA5MUlwSEpUSXRJbDFMRGRYYkw2MGNUVmxCUnhzNWYKVklIMUM1YkZUVXFGMVRoRFFrRWdVZWZPTnFPVDFVQlh1Kys1U1VDSTNtNzFOYnlhNmhib3U1MEw1dnhZTnBVNQpxMGpqQU56Z3dwR2FVY05qNEd3aFhnaER3b01LMk5tMFBSdlNGMXBGUlBxVjEySng3Nll3WHpvOU8wTTQ5R2xTCjFPMUZFd0VWWFlzQWRIRklCZ3JFcDRBSEtzb1U0aCs4ZUppUVVBK0VGRUluVnJuMzhTUjZpWVhJVUR1Rkc4TXUKemNqeGNRT0lpOHJOOGtBcXI1aWhzQXdhZCs2cmwwRWF6VmJubXhhY09XSXBkZmhBY0d1NVMxb3V3c3dpUG52UApOdEpoakhEQ2NLVXdFU2RuN0g1VDVGZ0YrSFVLUDVNQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCk9KUE5UT0ZvUEJhM0hYbkxQNzcwT2pPdXowOXh0RGhQMmZTdkI4NXVpU0YvcTRLZDJZL1E0SHJaaWNiU2RwM0YKSEdKN2JFT2UwV2d6VHU4UGcra0M4dU85Q0NESUEreSt0N05ENVp0Wk9KWVlLVkdhUjNDTGhkWUtJeG1HemlaRgpUbWt2ZkRRdlpuNllyZmFPd0pRY1Z0V2dxUTBFVzhTWWxyMENibEdqMmlDaGdRQlV5VEE4K1pNak83ZUxMRVJCClM0MWtsbHhRcjNQeHdpTG01SzVET1pDNkZQSzI2a29kVjdMZk9iTU54RUNXZHBDbGdReW1yZFJGVHg0MzhkQWkKem9OdExZQ3dGNTdZTzYzWkIrZHNLV1hHUTBIVWFpbC9JMU9LKy8xK0wxVmhPSkNhVW1NK0VIaFRyakFHMWFmMQpEVHpsTE4xWUZRWFdQajNoQy9ENkhnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+-     service:
+-       name: project-validator
+-       namespace: cae-infra
+-       path: /validate
+-   failurePolicy: Ignore
+-   name: project.cae.cisco.com
+-   rules:
+-   - apiGroups:
+-     - cae.cisco.com
+-     apiVersions:
+-     - v1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     - DELETE
+-     resources:
+-     - felixprojects
+-   sideEffects: None
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: ValidatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: route.route.openshift.io
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRQ1BFZytZK0ZHWlVUQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFUwV2hnUE1qSTVOakE0TWpreU1qTXdOVFJhTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU9FYVpQZEplUUNCV3QrOWwzbE91cE1DR3lra211anhlVG5NemxQZFE5bHZDU2ZYanBCMzk1blEKdzI0cG1SOFk2TXBaR0NodTlveVZZbWhDc3NtVkY3R2V6UzUrc3FCdzlNTGxFQ2ltL2F5WWVBV1NWeUxZTms5WQpKQy9EbHFxZ1BSYmhXQzQ5bC9OTmpwVGRpYWcwVE9lWDB3eS9oSk16RGVZc2lJN1FNSWlrYTdHN1pIdnBBR3k5CjJkV3Z5ZnJYNkRBZXp0Y0JZNm5sRnZtUjVsMDdLYTRIajRiaWViWkl5cmtNR0RHOGx2U1hKOXNjQ3dnTEpRMkMKRXlBODZsaUo2NStGZTJoYlo5M05ITUc1UjEvQWhNakd2U3Q2c2d6RHlNdHcrUXFJMjVpNmNTY2NnbG5GMWVjZApYalMyQm42L2hHaGtwbmFxS2FpN3p0NmRTVkFyUFBFQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCnhwZ2tnU0N0WnVNcnVmN0hVcGJYdlIyWUdoRDJtNEdhTTBoUHR4Y2VhUlk2ZWR6TUhrNWF0M3FObFYwWWJuR0MKeFVleWJzZTJVaHhpaldJTWZ1OWo0czQvV0tkQnltL3RYek5CR1RjTFJnOVJxTXZtekJRNU5aWnNTTm51WUlTSgpWbHJXdGs0TG9MTWRzNFF5cHRkRmpLUERnRlBSdUt2NEp1UG04Mkh1NGNGQmNHUzM0anBOb1ZBQ204TDNPb2kzClVkeWM4U29iZU1PWWF6bFRNSHdDYmdGT2E0cnhPemh2bGcwNE5YK2NZWUFIUW9yTDdWU0I3bG8xWVBDYUhzZXAKT1NhWTJ5TGp0eGl1VU5hb3ExWnhUUXBSc0dQWGxEdGxibzQ2Q3JnRm1YcE1uUVB5RWdtSGtkeVRSNFdqTmxuTQppWTZyditCVERMbUIzbDJNakJudmdBPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+-     service:
+-       name: route-validator
+-       namespace: cae-infra
+-       path: /validate
+-   failurePolicy: Ignore
+-   name: route.route.openshift.io
+-   rules:
+-   - apiGroups:
+-     - route.openshift.io
+-     apiVersions:
+-     - v1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     - DELETE
+-     resources:
+-     - routes
+-   sideEffects: None
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: ValidatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: routestate.cae.cisco.com
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRRHJzOENOUHVQdzZ6QU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFUwV2hnUE1qSTVOakE0TWpreU1qTXdOVFJhTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQUoyczVtOWc4Z3NYY0lUWEtBbTRCTDhXRVFRa3JXNENpelVWbW1oMEE0WHVlWjRTMU1WT1Y5amsKNEN0ZHFuek5uWXZYQmdWaW9mckdmcGVSQ2ZOMGR3MzdBSGxDdlFFQk5TVnpXcnlTK2pvRGNpWWlaZzR4ZENJZwoycHAzeEtzblFERFUxNWtrMlo2YTdPVzM4RmdaQW9JVGU1VGhub3Q0V3E0MS9CY1Nvdnc2ZlFlMExOd1VuNWdLClhaSG5iR3o0NlpTU0dQVVhMU3cxbkEvcWg3ZVN3bmRPUXZNOG9uUGluSHRlMlZLRnd0Vnh3ZVE0SmQyc1NPSUEKcjg4TkdjcXI2L3VzL3JJYmJjNGE2K2s0V0p6RXMzUVZLYXI1RDlHTnRFekZjNXdDZEVDaFRyUUExSHEzU204UAp1TldmOVFYYWJpNGY1WEtleDB2dUJMU0N0VEdyK3lzQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCk1tUFBUQmVvVmpybFhiWUw3WTlkaFdLSElaQ1FXTnlBM3RDZ3QrVjJqMEVJRTlsdUk5Mi9QVUZGVTlXd1BYSG0Kc2p0c2xKQUQ0T3lWdC9Nd2tqc1REMzBQblVVc2hpcFZ2OW5RNmJEUnNRa1JtczFsYS9zK2NoU3MvSEFIOXBRcwo0aWovcVhxQnRhanM2UHZJT1hrViswYnpvY3RPYmVFc2pkQnUyN3U2M1U4OGVKL2dOTW9wVnlQN3d4RnIyOGY3Ck8zeXlobExrWkVZMlJFc2llOGsrd1dnUVB0eU9wcG4zSC9rRXUwLzFOMmo0aHVDZ2VtWk4rM1luaTJMb2oyWXIKaC9BR0FscDFJQkNsa3hlcGRaUUFTTW5nK29nRStWcVZzWkNGQk9ranBOWmJXeDBac0Z5VmJqM3RZY0xTRHhLVApadFROYUtVNGN6WVZsQ01ISHl3eVdnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+-     service:
+-       name: routestate-validator
+-       namespace: cae-infra
+-       path: /validate
+-   failurePolicy: Ignore
+-   name: routestate.cae.cisco.com
+-   rules:
+-   - apiGroups:
+-     - cae.cisco.com
+-     apiVersions:
+-     - v1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     - DELETE
+-     resources:
+-     - routestates
+-   sideEffects: None
+- apiVersion: admissionregistration.k8s.io/v1
+- kind: ValidatingWebhookConfiguration
+- metadata:
+-   labels:
+-     group: felix
+-     variant: prd
+-   name: splunk.cae.cisco.com
+-   namespace: cae-infra
+- webhooks:
+- - admissionReviewVersions:
+-   - v1
+-   - v1beta1
+-   clientConfig:
+-     caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRRGU4ekdabE4rN3FEQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFUxV2hnUE1qSTVOakE0TWpreU1qTXdOVFZhTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU56OXJ0c3ZBdWEzbzY0S2o2NGVndVdBdm1wUldPUkd5ZlY1a1AwSlR0VityWXlxQ3RjcHR5VGgKNDQ4Nm9OdFFyandOL2xzWElYa01KWDhjOTlSM2RjUTNmeVVlV2pHNzZGbzdWVDNyeDlmQk5aMVdtYnVSWmdCOQp1UnZOZUg1a3lsczJ2N2FnbzN0eUhTREpNKzY3M3pSdm5CSXlZdmNqUTZSTXlrekh2VE85ei93Z1pFU3prQmlnCm82a0h3QXNsWEh4eEQvYlh3UlRVN2tUWHVrcWpCNXVaQjc1cjNkYzU5N2liczZhOFUzTkNYTXJXV3h6bVZIdU8KcFV5YlRmSldyYURpZVRFWnhOYnp3QUFXVEs3S2NvbWhrNE4zc1Y2c0xqTEE4M3ZOYytYUkpsQkk0VDlvS2h1OQppbnE4UVR5SzBjc0RpbTRCRjBXS3RwaW5oc2Naa3pNQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCk5lcnJyb0ZkV3Z3ZFM1c0RXbGVKMzROK2ZzWjYrQi9XU3dPTS94VEc0U01rSUFFaHhXOWl6UC85N0NuOE9GVFcKa3NCdUdaZzhYOWRvYjExTUNHbGsvd3N2MzFGQ3dTMmh0a1VtVFVLdnV1OGhuVUFFWEZDYkdPWGFsd0UxZ1RBOAo5VXBYVkEwbUc1NlBRVmh3RXd3MW1pK1lhK3VRZnhSVjlkOUZ5M2dDNWR6bVphdGdmc3ZiVFpPOWdjSTgxUTAyCmFqS0RWSDZXdzRmcENWTElIZ05xd1JnTmpickJEaUJ3Tk83VXdSaTh4REdCakg4UUx1ZnJwRXRUUEV3cmpKSWYKdEF0VFRUVG5FNk82RjNPVzBBT2V5Qy8rWjQ5cG9UMFdNWTRjY2NkRlc1WG5PY1B2ZUZMTTFsL1VYRU5QY0Q2ZgpUZE5hOFp6cXFINEhzelF4dGpqd0JnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+-     service:
+-       name: splunk-validator
+-       namespace: cae-infra
+-       path: /validate
+-   failurePolicy: Ignore
+-   name: splunk.cae.cisco.com
+-   rules:
+-   - apiGroups:
+-     - cae.cisco.com
+-     apiVersions:
+-     - v1
+-     operations:
+-     - CREATE
+-     - UPDATE
+-     - DELETE
+-     resources:
+-     - splunkindexs
+-   sideEffects: None
+!   ---
++   apiVersion: v1
++   data:
++     cmrs-np.cisco.com: "{"production":false,"health_probe_url":"/v1/health","host":"felix-nonprod-cmrs.cisco.com"}"
++     cmrs.cisco.com: "{"production":true,"health_probe_url":"/v1/health","use_local":true,"host":"cae-metrics-report:5000"}"
++     felix-api-np.cisco.com: "{"production":false,"datacenterurl":{"ALLN":"felix-np-ppi-alln-01.cisco.com","RCDN":"felix-np-ppi-rcdn-01.cisco.com","RTP":"felix-np-ppi-rtp-01.cisco.com","RTP2":"felix-np-ppi-rtp-02.cisco.com"},"host":"felix-nonprod-ppi.cisco.com"}"
++     felix-api.cisco.com: "{"production":true,"use_local":true,"host":"envoy-proxy-ppi:5000"}"
++     felix-icm.cisco.com: "{"production":true,"use_local":true,"host":"envoy-proxy-icm:5000"}"
++     felix-np-icm.cisco.com: "{"production":false,"host":"felix-nonprod-icm.cisco.com"}"
++     felix-sdaas-np.cisco.com: "{"production":false,"host":"felix-nonprod-sdaas.cisco.com"}"
++     felix-sdaas.cisco.com: "{"production":true,"use_local":true,"host":"envoy-proxy-sdaas:5000"}"
++   kind: ConfigMap
++   metadata:
++     name: host-rewrite
++     namespace: cae-infra
++     labels:
++       group: felix
++       variant: prd
++   apiVersion: v1
++   data:
++     tls.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURTekNDQWpPZ0F3SUJBZ0lKQVBZa0htNG9jVFh4TUEwR0NTcUdTSWIzRFFFQkN3VUFNQmN4RlRBVEJnTlYKQkFNTURHRmtiV2x6YzJsdmJsOWpZVEFnRncweU1qRXhNVFF5TWpNd05USmFHQTh5TWprMk1EZ3lPVEl5TXpBMQpNbG93S2pFb01DWUdBMVVFQXd3ZlkyRXRZMlZ5ZEMxMllXeHBaR0YwYjNJdVkyRmxMV2x1Wm5KaExuTjJZekNDCkFTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTHh0R25Qbnl4NzRuc0hwUFl5Z0hweFkKeEtCL3pSTDZJZVhaTE1vV3NwWE1vTzFFN0dPUzZvMWlFRDI4Q3ZqSStGVUlydEl1LzkvZ20vekJSbmZYbDdDOQpEb3ZDOGNOai90SVhCYStsRmlNUmp2V0ErSkxyb28raWtYTlBGK2JDdExucXMrTkoxanJYUjh4SkRBR2lKUDlwCjJ0QXZZcGtTUnlsL3ZVekQ2L3VzU2U1MmNTZytkMlowYzdWMHhlQnNsWG96a0lXZDZWekp6aFV3NWt0cWQrNjYKeE8wZGNXaDNoRGQ3dDM1Vis5UjFGbk1KbG9UaFAxSmtQQTJRSXVxSytBTkF1aHUvelYvVzNKY0lLcUx5ektYNApoNUg5dUhoaVU5VTR5OUM3c2dLMjJwOSt3RkwwdjJDR2xSRTAvVmpnQXJkU2l4MWI5UFpRK2hQNGRkY1hlVGNDCkF3RUFBYU9CaERDQmdUQUpCZ05WSFJNRUFqQUFNQXNHQTFVZER3UUVBd0lGNERBZEJnTlZIU1VFRmpBVUJnZ3IKQmdFRkJRY0RBZ1lJS3dZQkJRVUhBd0V3U0FZRFZSMFJCRUV3UDRJZlkyRXRZMlZ5ZEMxMllXeHBaR0YwYjNJdQpZMkZsTFdsdVpuSmhMbk4yWTRJY1kyVnlkQzEyWVd4cFpHRjBiM0l1WTJGbExXbHVabkpoTG5OMll6QU5CZ2txCmhraUc5dzBCQVFzRkFBT0NBUUVBcWVRRFo4YnhkQnM4RlJXSzc5UFQ4SWpJZ0hUcll0MFFsaGhZWDF5YlNrbEMKZ2M4RmtvQXlqd1BTK1Z2UU1QcFJFWXpjTGhCSVZxbjhIeG0vOWtQZWhRbXBWVXhRMTJzZ2MvVUEwVTZIQVZUawpWZjVzWXlGa2YvQ2N3R1Yrd3dFNEVGOTViNGZUNlE0djBHWU9GRmh5YUFiMnA4OWh5L1doMXlBNVdNNVV2L2hKCkYxQ3JVOFc0eFlXTWEyR1VKb3IrZ3VMdTZ2L0lMZlJhbjVxTGFUZnlXZmpPMXZFUjRMcUFCUk5hc1ovY0lrZjEKY2pQSFFHbVY5bjVITnlaRFE0K1JQOUo3TlV2dWw0QUZLNi9LcHhqV2JleEdrOWpCRHBtd1FwaExVcnFJOTRYTQpFa1YzbmNRMTR6aUlMSFhaOFdxZUc5ZTNWd0NFeVlpVzlMcjZMZENIYVE9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
++     tls.key: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcFFJQkFBS0NBUUVBdkcwYWMrZkxIdmlld2VrOWpLQWVuRmpFb0gvTkV2b2g1ZGtzeWhheWxjeWc3VVRzClk1THFqV0lRUGJ3SytNajRWUWl1MGk3LzMrQ2IvTUZHZDllWHNMME9pOEx4dzJQKzBoY0ZyNlVXSXhHTzlZRDQKa3V1aWo2S1JjMDhYNXNLMHVlcXo0MG5XT3RkSHpFa01BYUlrLzJuYTBDOWltUkpIS1grOVRNUHIrNnhKN25aeApLRDUzWm5SenRYVEY0R3lWZWpPUWhaM3BYTW5PRlREbVMycDM3cnJFN1IxeGFIZUVOM3UzZmxYNzFIVVdjd21XCmhPRS9VbVE4RFpBaTZvcjRBMEM2RzcvTlg5YmNsd2dxb3ZMTXBmaUhrZjI0ZUdKVDFUakwwTHV5QXJiYW4zN0EKVXZTL1lJYVZFVFQ5V09BQ3QxS0xIVnYwOWxENkUvaDExeGQ1TndJREFRQUJBb0lCQVFDNHZNZFlxQU92dzlYegpERGg2TFdxVm96cDBtWmg0YUtEZmQwUEFodXhramhHaFR4ZnNzRmdpY2VpMmZpekxxazQvSUpvMkhEcG1SeExvCmhwNE9WV08xdGtZU3BQamZ0cVJaV3BVS2xuTFR3eDFFZWtRNzE2YXo2SkZ1V2pkMjJhTFRQTmRObWxEZHM4QUMKL0FNM2ZyK0RZMGRUSVlJcnpZM1RsQmdHc1hnbWNDQUpUVXhaZk5VQXU4cldtWFhnK3NPUi9kc2FDSGdPRlJVdgpiakxwVGlFTXVnakVHaEp5bnJqUTlRa21rVVA3cGhSbnB2WkFKc0xacEdlUUZmSmg0dFQ4QlgrRHg5bncxMURpCmRneDZMQk82Q0NyQ1ZBVnNmYVY4ZWZHbjZBd2V3TWxmc2lnWXduS0tXUlEvWG5ySTRHdHFIZ3B0YWxRMkNjK1AKQ0RkUHZ1QmhBb0dCQU53V1lDaTk3QXVCN050dXM3dVVZZm5YcFhwcWxFOWNTM1h3ZDcwRm1UQkpsU1hkNVJzUwpzQlZEenBtMHp4bmtGTVpYZUprUGZ1VDRIdlN3WU10bzVURXVBV2FqZ1JDQ2ROMXVETlBoZU1rN25FQkd2SWhiCmtZWW45NUQ5enlaMFVzNVFlekJJcFMyeWh6Y2wxdFBGV0NtUXRxK3hhYThldGFHUUdqUitETmpaQW9HQkFOc3MKSi9NOC9ET2hOYXgxYm41eFBEbU9wUE9EN1V3c01BU2lBU2wvY000cDc0U2d1Q0hCeVNRUS9BampRMWt3cGgyYwo5Nk9hU2lndW4zR3dwOVoxa2hWWGpXTFg5S3c5YjhKYXMyT0JHUkFCVEVBOWJ6TEZueFN5eTR0WVRzMldRb3hzCkdiRVF4MnFOUWNuejdsRlRPcUl1elc4bVNLalM2OXdlRUt0NGhoaVBBb0dBTXY2WVB6aHFSZXhQeGpRclB1NU4KbVVjbkYyczBmQUxsbFNrbmhVdVR5QVYwb25aOGpENVRRRW9heDdDR1AvaUIrOGJ1c1lCT3BaejhCelFLNlhhZgpqRHFkcG51Qi95SkxFN2RaRDRyeG9xYkdPSHByV3FqazJoSE9vZkM5RzZyZU9PR2ErWUFMamNBTTVuRkZDb0p5ClFBZEEzUXFkY3k4SlpLcnY5M094WkZrQ2dZRUF3enBFNThUMS9lTm1sUlVSZEczWE1JbmdZczJzTFlMYXp2V2oKeFZ3d2xtUUNaNGhtSENPcTBJYVVpakl0eHArd0NJYk9pNXVlM01ZUzNzbDE1M0ZZeTh2dU5CS2JibVZYVEs5UQpSWjAwUHU1NUJtdnl4aTRFY3dLRWpyMzlpK0dCcStXS3lROWlJb1pyQ01KUkVYM3FwNWE3Qlh2N2t1NDJqQjczCnlGV1dWUDhDZ1lFQWxUMndNQTMySWMrRHliMnJFYkxOMVZZZVJrNFdzZG54dDg3TEFvajRLYkNINS9rWjFEWmoKQklOMlNqRDlhNjF1OENZQ3BkdlRzTWVVV3BjbVQ5NDFnNGJCSTFuOHh4OHlJZVNvbDQrV1BYbnNXYWdFWjNucAp5R2paaHlJYU95TmhXbXFRVC9oVVlsT3l4M1ZVNHRBWHFKcjExTUxwTDVhdVlidWh4TWx6QlFNPQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
++   kind: Secret
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: webhook-ca-certificate
++     namespace: cae-infra
++   type: kubernetes.io/tls
++   apiVersion: v1
++   data:
++     tls.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURJekNDQWd1Z0F3SUJBZ0lKQUlzL0NmWkZGZEh1TUEwR0NTcUdTSWIzRFFFQkN3VUFNQmN4RlRBVEJnTlYKQkFNTURHRmtiV2x6YzJsdmJsOWpZVEFnRncweU1qRXhNVFF5TWpNd05UTmFHQTh5TWprMk1EZ3lPVEl5TXpBMQpNMW93SmpFa01DSUdBMVVFQXd3YmJuZHpMWFpoYkdsa1lYUnZjaTVqWVdVdGFXNW1jbUV1YzNaak1JSUJJakFOCkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXFZdXhkNnEzaG94YkxFUXMrRjBONUU2RXgxaEsKS3p0OE5KRE4za0NwejJ0VFlFVnd3d1FvWW1Ub2ZibmdKOS9QRWpweVFwdjZCTzdOcXhLelQvVThvNlRYK2pWaQpabi80S1lYRE8vcVBVVDNRS3d5U0pqRk81cDhrbVpHYUZETTlCdjZLVEJjaUYzZWJscG9NQmNRYkRzcGticWZxCnBvblNPbWRNYlhZdHU2SWFldmYzdzNXNmlDaTRSMkE0OTh3aUJVSEhQSFl4MjZUZXJxYkNjTDhRR3d2UnlQVG0KUFRQQkYyZGg2MGlpTDFoWXpoRVdwSkxlaS9aYzFXVDUvaHI2SGQ2RURnUDFubzNCaGo0WXVVRmdzUnc5S0RBVgp3cUZ0SFR0R2ErWVhXTXNhZHY2LzByYWdGamxKYkIvdkdCcjBkQnR2RnNaT0NtbGNveFJxNEFhTHFRSURBUUFCCm8yRXdYekFKQmdOVkhSTUVBakFBTUFzR0ExVWREd1FFQXdJRjREQWRCZ05WSFNVRUZqQVVCZ2dyQmdFRkJRY0QKQWdZSUt3WUJCUVVIQXdFd0pnWURWUjBSQkI4d0hZSWJibmR6TFhaaGJHbGtZWFJ2Y2k1allXVXRhVzVtY21FdQpjM1pqTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElCQVFDKytiRnB6TkRyTysrbEtZcklyY2p4TjBHQ2p4NzN1dW5zClVRcHUzak4xK002dnkvRlFaRzFJZGNMTHNFcTU5dCtPcy9ZcGhPb1ZLcHgrWk1Pa203WmVQSHVDbWhSOThYb2cKZ3NXSU9OZkkzQmJ1REtoaDhTT3RZZVZ3VHRNMWJ6aUxyN3phWk5sMjQ3QTlTL1o4d3BhQmo0b1Y4R05Wc1hyRwpJbTdacEQ5VlFBcVFyUUV0SnRrM1B6NHlVbUVWbHJFbHZRYk95cm1JdDFSc3NkY281N3lsY3JvL3ZhSHVsWmg5Clc2cmdqdUk0emViQk5zaFQwQTFZU1VpcHJwclBOZXlsS3Bvay9iOFdXV0dPMGhJTVVBNHlja2VTaUxENlhpT00KNmVtb05vQVpiQWErUTRkaFV0YXRScTRzdmt1VmcrRGR5TjlBSTVVWEhyTU9ESGdoNWZrRQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
++     tls.key: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS0NBUUVBcVl1eGQ2cTNob3hiTEVRcytGME41RTZFeDFoS0t6dDhOSkROM2tDcHoydFRZRVZ3Cnd3UW9ZbVRvZmJuZ0o5L1BFanB5UXB2NkJPN05xeEt6VC9VOG82VFgralZpWm4vNEtZWERPL3FQVVQzUUt3eVMKSmpGTzVwOGttWkdhRkRNOUJ2NktUQmNpRjNlYmxwb01CY1FiRHNwa2JxZnFwb25TT21kTWJYWXR1NklhZXZmMwp3M1c2aUNpNFIyQTQ5OHdpQlVISFBIWXgyNlRlcnFiQ2NMOFFHd3ZSeVBUbVBUUEJGMmRoNjBpaUwxaFl6aEVXCnBKTGVpL1pjMVdUNS9ocjZIZDZFRGdQMW5vM0JoajRZdVVGZ3NSdzlLREFWd3FGdEhUdEdhK1lYV01zYWR2Ni8KMHJhZ0ZqbEpiQi92R0JyMGRCdHZGc1pPQ21sY294UnE0QWFMcVFJREFRQUJBb0lCQUdFOFhwRjA5VUJUS3M3ZQpZclFtR2h0LzlLS25QaEpCVVdDTVU2Vk5qSllLeFl5SEJyNnhtYitrZzdubmFta3o4SHhSek1ucXpwOFpuaGFvCjZQSElnZmlRUjlXVjNGTlF2VENES0k4emloSmIweEY5YWl4QlJ6RDR3SExha0hWWlZYeTNhdlZzcHY2eWVDY04KUGl2b1ptUTdLeEpUZHozLytQUEozb2xBcDhYZHFTMmxweEFFemNkNnU0MDdRSmIyL0kzbzMzQjhFam1WckltTApPTkJOYkkyYy9OdTIyT2NkYXFtQlp4VVdyU3ZzSUZhMERSYTlabThHdnd3OTdVd2crNk5aaTZzOXVPcjhWK0pHCklENGdtY2k5NDJkSk01REtlem9yYk45KzdtMDVyZ2QzSXJnWFo4Kzl5dmtxb2ZsQXhwU3JCcURKZWJBOHd5a2EKTldSNzlza0NnWUVBMVVWaXNVRm1JYmxLRncxYlM0Um1UWnpaZXJWNlJLL0JqU1V6MlZJQ3RGOGFZSnZtU0lIbgpJT0hxaFdNYXBJbWdOMjBYYkpiK1hNbWs2dnNDbnQ2RWZQRjk3Z2lGcVQyVUY0Z09WNSswSmNhUjd5bmx6V1dwCmtEZjlESGl6Uzk1cDFOV1B3VXUybWxCYjJwS1N2QjZiR3VRQ0pPUVhqVGdzeExlQ2l0cVd3Q01DZ1lFQXk0T2wKU2tpYWxhSFlXMHFDbDdLK1R2a3NYYnlDTlUyQ0N0UjNwZy9ONlZDc0dqaXR3a1F2Z05nM2dlTWZWT2dKVVBnQQpNTStmblZCTERqTmlZdWEydFBDZmF2VG40ZEpzMGJ6c1MwN083aHNNL25raFRUWngwa1FNWTcvN0RjTVlEdTRhCnVncHMyYUVuOTk0dmpaYnN3bmF1d1pqT2g4S2ZhWVkyVGRML204TUNnWUFQeWhkSWNFTVRkQmhjSkkwQnhrZWMKcjJRYWhaMEx3TWRmbjhWNjdXdHQxeXlvd21JR05EZmNZMTF0aXF6S1NiWW01Rmk3bldJdmxHNDFSMmdtUXVzawpKT3poMXBldXMvUm0yWmZXUE9pbGMxSVNsdE9BcFdvc1Z6alExNDdPcXlUQ3NSejNmcGVDVFRpL3NlSlRNeURnCm1NamYybE0wRFZpako4THViTWlFYVFLQmdCdVRTdUkxMUR4U0lhNjgrZFQwTXpVZ0xoTEZhQjh3MFY0R1MvQUUKVkRJNDdCamhkU25OYzJKUjZiTi93czhPWWJURzViKzNZamsrbCt6a3FZQWRJc1NCbGhnMzl2TnlQNnhybk5qWApaTkorZDlSRE5XL3c0SnRNL1NERzhvMTYwZGUwQzRzSnZwWCtjQnYxenh1d1I0UlI4SHZxNkpFY25keitnbjBwCkNkbGhBb0dCQUpKZkxaK0NzSVBEb0llNWZJWjBJNGo4a2F4cWJyWmc5dVlKTllKWVBRSFFvVVhDMWYvTHRONGwKNU1zRUNsNUVpNk1VSWMxUzdNYjM4bW50YVZTTnBDUnUxMjlrMEplZFd0cForSkdaY1BPanphTGRiOWtCUTFXOAp6dlVZaSt1bkxTMHFabVhvaUtrTVJnMmxYbDgvMlZVYmhQbFhNRnNybHYreFZ5d1piRVhGCi0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==
++   kind: Secret
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: webhook-cert-nws
++     namespace: cae-infra
++   type: kubernetes.io/tls
++   apiVersion: v1
++   data:
++     tls.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUROVENDQWgyZ0F3SUJBZ0lKQVAxVy9OSStHNGw4TUEwR0NTcUdTSWIzRFFFQkN3VUFNQmN4RlRBVEJnTlYKQkFNTURHRmtiV2x6YzJsdmJsOWpZVEFnRncweU1qRXhNVFF5TWpNd05UVmFHQTh5TWprMk1EZ3lPVEl5TXpBMQpOVm93THpFdE1Dc0dBMVVFQXd3a2MzQnNkVzVyTFdsdVpHVjRMWFpoYkdsa1lYUnZjaTVqWVdVdGFXNW1jbUV1CmMzWmpNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXRtWUp4Uks4TUNFZVZ0OGkKRXpya2dQNGRPdG1DaHE0TSs3TUVwN25vejBQSzBBN0VMY2lxRG0veXFOaStJL1ZmV2MzSnByNURUSUh4LzVwcwpPN2sxUzAwT1RDRjZ6bnlwYlJCc251MkEzd09XMXBzNklyWDdnTVQ3MmkvNDhBRmVaK2I4TVI1RlIwUGxtd0NlClJlMmFDcDh4TkZSM2p6OGVoeGxVcEZDMlBER0xNZExSVGhWWGhGeDkwZUdpU0ZvRUVxY1M1WDZER1ZlTDg2aWsKeHN4aVZQa09wQlJIMDlJMkFyMllDaVB6MFM2cHJtaW9sM0VadmRLYjZ2bGlER1pacDhLWDJxcTRObzUvWDRSKwpyZFhkSVlpSjUxSUpGdlVsd2JnMllwaXhmS0FaUXkrNGtmZmsyNEFsT3o4WUZVK05SbENlUnV4NXRYbEhGNjB6CndjY3dld0lEQVFBQm8yb3dhREFKQmdOVkhSTUVBakFBTUFzR0ExVWREd1FFQXdJRjREQWRCZ05WSFNVRUZqQVUKQmdnckJnRUZCUWNEQWdZSUt3WUJCUVVIQXdFd0x3WURWUjBSQkNnd0pvSWtjM0JzZFc1ckxXbHVaR1Y0TFhaaApiR2xrWVhSdmNpNWpZV1V0YVc1bWNtRXVjM1pqTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElCQVFBTEFicmlOSEViCkZWZ3Z6YkxIdzM4WTQrYWFldDRlWlJUb2pVZHVKS0JBbUVTZ1BaYlBWSVhpdTM1Y2I5b3dMTzlZZXlDN0hmQnAKVmwzUW96U25SdlUyNE1uMW1HSm5sRU42bVJIZk1VVkZtKzFQN283M2lVRGg0K0ZBZU5hWHVjb1FObVBwNVl6dQpHSHhNeTY5MjlsNHhZdzVpRmVIVUcrU0d3anIwSEFML3JRZWt1ajI2QlNhWnltdG44aEJkWFhDeU1SUnVydUw2CnJqWmRvelJyRXFleWtvNUNXb0VGMUdSK3Zha3dBb2VSQkl1VnhxNlRiSSsrdUpGdnhFcGtBWUtjd0pZblZRZ2gKY2kwY0p6ZklDc2g3NzF1ZzlCWDdqN2ZpZTJJRXlzOEFpRWpNRDJmK3VnY3RHQjFpSEpiVWFoNnhrUmlMRTF5OQppMGhUN21vL2U3MmkKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
++     tls.key: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBdG1ZSnhSSzhNQ0VlVnQ4aUV6cmtnUDRkT3RtQ2hxNE0rN01FcDdub3owUEswQTdFCkxjaXFEbS95cU5pK0kvVmZXYzNKcHI1RFRJSHgvNXBzTzdrMVMwME9UQ0Y2em55cGJSQnNudTJBM3dPVzFwczYKSXJYN2dNVDcyaS80OEFGZVorYjhNUjVGUjBQbG13Q2VSZTJhQ3A4eE5GUjNqejhlaHhsVXBGQzJQREdMTWRMUgpUaFZYaEZ4OTBlR2lTRm9FRXFjUzVYNkRHVmVMODZpa3hzeGlWUGtPcEJSSDA5STJBcjJZQ2lQejBTNnBybWlvCmwzRVp2ZEtiNnZsaURHWlpwOEtYMnFxNE5vNS9YNFIrcmRYZElZaUo1MUlKRnZVbHdiZzJZcGl4ZktBWlF5KzQKa2ZmazI0QWxPejhZRlUrTlJsQ2VSdXg1dFhsSEY2MHp3Y2N3ZXdJREFRQUJBb0lCQVFDY0IvZnRsVlJWRzgrMwpZdFBrZlduQ0N4LzRHdCswMUttWW01Q3M1cldJc0thTGkwWTVJRUtSYlNTNVdnaDEvRTZnSlJHT3lZNEtvZExoCjVEa1ljaHhzR1RQVTNvTU9wc2ZNMjlML3RZNmJ1SmROYUthMzBOT2dXV0pWU05wOGZiOUR4TzRTR3FJTEQ4TVgKOE5SMFg0aDU4NnFFNklrS2ltVlVEdEJBYkNjb240cWZxYWhleS9WM0QxVDJablluUDVldkVxbVE0N3ZYWVdrbQpNcHo3T3BnS2N6SHUvLzlwZTZ1MU5VN3ltdkZRbnhrN0J6czVUS3hWanNEOXp4TzI3OXZIT0VwcXZnNENZTDROCmdBSWY5bnZ1dVlMUmpSTE5Bd0dnWmRUdUVMNTJ3bkpCR25RSkJjYlpqQ2ZWSUNtL3pYMkExdFViNnRpc2tTMVQKc1YwOGdBaVJBb0dCQU9mM05peVhOSCtWeC84RWVFUGJSQ0ZWTzAyT2VmUjRBaTJqblp2ZmRhenR0SzRpL013dwptSFovUnZGdm9DMllWNldsczQzZDlnalk5a0NHRDQwelhCMGNRUG1lUzFRcGJYUnVjTGhUelozWkt6c253Z3hDCm9LQklYUFNUcnlIVmJ4NkVnaE44cWZhZFlGeHhzK3RBdXBCeUdWaUdvV3VtNGdvQVdkWVA4NmY1QW9HQkFNbE0KRk12TXZGSXk2bURHa3V5VXBpVHdZUlFJYVl2bUo4eUpIUnQ2NVZKZzZ6dHBVTHUxcU1rbUlncVFqVFZvblhqVwowK1gzdmhuUGx6QmF0Um9oMEo3T2ZsWXJvN3NuNkMwL1JTZ0oyci9JSDJzTjhGTmNPVkFBUFBITVZFNFBnamZpCmpXdCszQk5IUkE2bFMrUTJlM0FVcGpsMXQzcVNzYnVWSWdsalI4RVRBb0dBTDNpa0daUUlKbVFjdmMvSVhQcXUKZ3JQU294aVpWTEtLbjVSd1dNbnVaeWx1WklTOGYzMGlkbjJ0b3hOWkVIdXcxREdKQVd0L1FtaEVYUWdTZnE4WQpGczBGYnhBNkVrczRIeS9LMmE0czBqVHpaL1BHL29OVUkva3JMTkpjY093aEJYblF0UFE2UkVJSXltSnFrNlozCmg4QVI5OC8xa1BaaUkvSFdjTHhxL09FQ2dZRUF4TVJIOThkVHRvM3FxVnF5Tit3K1ZCRmM4N1lkWmhFK2lpTGwKZnYwc3VNL2dZUnpiUEFHZzBhOGl5Mnp0ZTIyZHNJZGVib2N6SGd2YjMvcHEyUGFBOVJzb1I1YzAzemR0THYyUAoza2x6dU5Bb1ZmODBFbWd0NWRPMXZ5NWFva3Rxb0xJbVJ4T2trSHV6UFJXN0Q0TnFPZThWWlVsNlpxaUtiN0NoCnFzZVBWbDBDZ1lBUVhRNElZNi9QVTJXYkFsWW9idm5kKzE1MytyTkZlejhNbWtaVVFnZVRRdWZydEpaNys4MFEKeFZjUHMyT0ZrMEtSYjMxZTlZSkZoVDMxNFhKNDAzQVZPTG1YV0RRcXhJUFFicEN6empMdjR1eG5Eb1pXaUM2RApId3BUMytjN3Jxc3p5b1JBbFpmSm91cjY3Si9OMmJid2xjNml3bTNZK0ZnaThpYUlBelZ6dlE9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
++   kind: Secret
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: webhook-cert-splunk-index
++     namespace: cae-infra
++   type: kubernetes.io/tls
++   apiVersion: v1
++   kind: Service
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: cae-metrics-report
++     namespace: cae-infra
++   spec:
++     ports:
++     - port: 5000
++       protocol: TCP
++     selector:
++       app: cae-metrics-report
++       group: felix
++       variant: prd
++   apiVersion: v1
++   kind: Service
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: notification
++     namespace: cae-infra
++   spec:
++     ports:
++     - port: 5000
++       protocol: TCP
++     selector:
++       app: notification-controller
++       group: felix
++       variant: prd
++   apiVersion: v1
++   kind: Service
++   metadata:
++     labels:
++       app: nws-validator
++       group: felix
++       variant: prd
++     name: nws-validator
++     namespace: cae-infra
++   spec:
++     ports:
++     - name: https
++       port: 443
++       protocol: TCP
++       targetPort: 8000
++     selector:
++       app: nws-validator
++       group: felix
++       variant: prd
++   apiVersion: v1
++   kind: Service
++   metadata:
++     labels:
++       group: felix
++       prometheus-app: cats-notification
++       variant: prd
++     name: prometheus-cats-notification
++     namespace: cae-infra
++   spec:
++     ports:
++     - name: metrics
++       port: 2112
++     selector:
++       app: cats-notification
++       group: felix
++       variant: prd
++   apiVersion: v1
++   kind: Service
++   metadata:
++     labels:
++       group: felix
++       prometheus-app: felix-gslb-reflection-controller
++       variant: prd
++     name: prometheus-felix-gslb-reflection-controller
++     namespace: cae-infra
++   spec:
++     ports:
++     - name: metrics
++       port: 2112
++     selector:
++       app: gslb-reflection-controller
++       group: felix
++       variant: prd
++   apiVersion: v1
++   kind: Service
++   metadata:
++     labels:
++       group: felix
++       prometheus-app: felix-splunk-index-validator
++       variant: prd
++     name: prometheus-splunk-index-validator-service
++     namespace: cae-infra
++   spec:
++     ports:
++     - name: metrics
++       port: 2112
++     selector:
++       app: splunk-index-validator
++       group: felix
++       variant: prd
++   apiVersion: v1
++   kind: Service
++   metadata:
++     labels:
++       app: splunk-index-validator
++       group: felix
++       variant: prd
++     name: splunk-index-validator
++     namespace: cae-infra
++   spec:
++     ports:
++     - name: https
++       port: 443
++       protocol: TCP
++       targetPort: 8000
++     selector:
++       app: splunk-index-validator
++       group: felix
++       variant: prd
++   apiVersion: apps/v1
++   kind: Deployment
++   metadata:
++     labels:
++       app: cae-metrics-report
++       group: felix
++       variant: prd
++     name: cae-metrics-report
++     namespace: cae-infra
++   spec:
++     replicas: 1
++     selector:
++       matchLabels:
++         app: cae-metrics-report
++         group: felix
++         variant: prd
++     template:
++       metadata:
++         labels:
++           app: cae-metrics-report
++           group: felix
++           variant: prd
++       spec:
++         containers:
++         - env:
++           - name: DATABASE_NAME
++             value: mcmp-billing-prd
++           - name: AWS_REGION
++             value: us-east-1
++           - name: MONITORING_NAMESPACE
++             value: openshift-user-workload-monitoring
++           - name: AWS_SECRET_NAME
++             value: aws-access-key
++           envFrom:
++           - configMapRef:
++               name: global-config
++           - configMapRef:
++               name: lifecycle-config
++           - configMapRef:
++               name: cluster-config
++           image: "containers.cisco.com/eps_mcmp/cae-metrics-report-svc:1.0.68"
++           imagePullPolicy: IfNotPresent
++           name: cae-metrics-report
++           ports:
++           - containerPort: 5000
++           resources:
++             limits:
++               cpu: 200m
++               memory: 2Gi
++             requests:
++               memory: 1Gi
++           volumeMounts:
++           - mountPath: /etc/config
++             name: config-volume
++           - mountPath: /app/ssl/
++             name: metrics-certs
++         imagePullSecrets:
++         - name: image-pull-creds
++         serviceAccountName: felix-sa
++         volumes:
++         - configMap:
++             items:
++             - key: LOG_LEVEL
++               path: level
++             name: lifecycle-config
++           name: config-volume
++         - name: metrics-certs
++           secret:
++             items:
++             - key: ciscoprodtruststore.pem
++               mode: 365
++               path: ciscoprodtruststore.pem
++             - key: cmsoshft.cer.pem
++               mode: 365
++               path: cmsoshft.cer.pem
++             - key: cmsoshft.key.pem
++               mode: 365
++               path: cmsoshft.key.pem
++             secretName: cae-metrics-secret
++   apiVersion: apps/v1
++   kind: Deployment
++   metadata:
++     labels:
++       app: gslb-deploy-controller
++       group: felix
++       variant: prd
++     name: gslb-deploy-controller
++     namespace: cae-infra
++   spec:
++     replicas: 1
++     selector:
++       matchLabels:
++         app: gslb-deploy-controller
++         group: felix
++         variant: prd
++     template:
++       metadata:
++         labels:
++           app: gslb-deploy-controller
++           group: felix
++           variant: prd
++       spec:
++         containers:
++         - env:
++           - name: NAME
++             value: gslb-deployment-controller
++           - name: WORKER_THREADS
++             value: 10
++           - name: RESYNC_PERIOD
++             value: 30m
++           - name: AM_USERNAME
++             valueFrom:
++               configMapKeyRef:
++                 key: FELIX_GEN_USER
++                 name: lifecycle-config
++           - name: AM_PASSWORD
++             valueFrom:
++               secretKeyRef:
++                 key: felixGenPassword
++                 name: lifecycle-secret
++           - name: PMT_USERNAME
++             valueFrom:
++               configMapKeyRef:
++                 key: FELIX_GEN_USER
++                 name: lifecycle-config
++           - name: PMT_PASSWORD
++             valueFrom:
++               secretKeyRef:
++                 key: felixGenPassword
++                 name: lifecycle-secret
++           - name: PKI_SERVICE_KEY
++             valueFrom:
++               secretKeyRef:
++                 key: sslCertPkiServiceKey
++                 name: global-secret
++           - name: SSL_CERT_ENCRYPTION_KEY
++             valueFrom:
++               secretKeyRef:
++                 key: sslCertEncryptionKey
++                 name: global-secret
++           envFrom:
++           - configMapRef:
++               name: global-config
++           - configMapRef:
++               name: lifecycle-config
++           - configMapRef:
++               name: cluster-config
++           - configMapRef:
++               name: cluster-map
++           image: "containers.cisco.com/eps_mcmp/felix-gslb-deployment-controller:1.0.458"
++           imagePullPolicy: IfNotPresent
++           name: gslb-deploy-controller
++           resources:
++             limits:
++               memory: 1G
++             requests:
++               cpu: 100m
++           volumeMounts:
++           - mountPath: /etc/config
++             name: config-volume
++         imagePullSecrets:
++         - name: image-pull-creds
++         serviceAccountName: felix-sa
++         volumes:
++         - configMap:
++             items:
++             - key: LOG_LEVEL
++               path: level
++             name: lifecycle-config
++           name: config-volume
++   apiVersion: apps/v1
++   kind: Deployment
++   metadata:
++     labels:
++       app: nws-validator
++       group: felix
++       variant: prd
++     name: nws-validator
++     namespace: cae-infra
++   spec:
++     replicas: 0
++     selector:
++       matchLabels:
++         app: nws-validator
++         group: felix
++         variant: prd
++     template:
++       metadata:
++         labels:
++           app: nws-validator
++           group: felix
++           variant: prd
++       spec:
++         containers:
++         - env:
++           - name: NAME
++             value: nws-validator
++           envFrom:
++           - configMapRef:
++               name: global-config
++           - configMapRef:
++               name: lifecycle-config
++           - configMapRef:
++               name: cluster-config
++           image: "containers.cisco.com/eps_mcmp/nws-resource-validator:1.0.4"
++           imagePullPolicy: Always
++           name: nws-validator
++           ports:
++           - containerPort: 8000
++           resources:
++             limits:
++               memory: 1G
++             requests:
++               cpu: 200m
++           volumeMounts:
++           - mountPath: /etc/certs
++             name: certs-conf
++           - mountPath: /etc/config
++             name: config-volume
++         imagePullSecrets:
++         - name: image-pull-creds
++         serviceAccountName: felix-sa
++         volumes:
++         - name: certs-conf
++           secret:
++             defaultMode: 420
++             secretName: webhook-cert-nws
++         - configMap:
++             items:
++             - key: LOG_LEVEL
++               path: level
++             name: lifecycle-config
++           name: config-volume
++   apiVersion: apps/v1
++   kind: Deployment
++   metadata:
++     labels:
++       app: splunk-index-validator
++       group: felix
++       variant: prd
++     name: splunk-index-validator
++     namespace: cae-infra
++   spec:
++     replicas: 1
++     selector:
++       matchLabels:
++         app: splunk-index-validator
++         group: felix
++         variant: prd
++     template:
++       metadata:
++         labels:
++           app: splunk-index-validator
++           group: felix
++           variant: prd
++       spec:
++         containers:
++         - env:
++           - name: NAME
++             value: splunk-index-validator
++           envFrom:
++           - configMapRef:
++               name: global-config
++           - configMapRef:
++               name: lifecycle-config
++           - configMapRef:
++               name: cluster-config
++           image: "containers.cisco.com/eps_mcmp/felix-splunk-validator:1.0.6"
++           imagePullPolicy: IfNotPresent
++           name: splunk-index-validator
++           ports:
++           - containerPort: 8000
++           resources:
++             limits:
++               memory: 1G
++             requests:
++               cpu: 200m
++           volumeMounts:
++           - mountPath: /etc/certs
++             name: certs-conf
++           - mountPath: /etc/config
++             name: config-volume
++         imagePullSecrets:
++         - name: image-pull-creds
++         serviceAccountName: felix-sa
++         volumes:
++         - name: certs-conf
++           secret:
++             defaultMode: 420
++             secretName: webhook-cert-splunk-index
++         - configMap:
++             items:
++             - key: LOG_LEVEL
++               path: level
++             name: lifecycle-config
++           name: config-volume
++   apiVersion: apps/v1
++   kind: Deployment
++   metadata:
++     labels:
++       app: sso-init-config-watcher
++       group: felix
++       variant: prd
++     name: sso-init-config-watcher
++     namespace: cae-infra
++   spec:
++     replicas: 1
++     selector:
++       matchLabels:
++         app: sso-init-config-watcher
++         group: felix
++         variant: prd
++     template:
++       metadata:
++         labels:
++           app: sso-init-config-watcher
++           group: felix
++           variant: prd
++       spec:
++         containers:
++         - env:
++           - name: NAME
++             value: sso-init-config-watcher
++           - name: MAX_CONCURRENT_RECONCILES
++             value: 1
++           - name: CACHE_SYNC_TIMEOUT
++             value: 5m
++           envFrom:
++           - configMapRef:
++               name: global-config
++           - configMapRef:
++               name: lifecycle-config
++           - configMapRef:
++               name: cluster-config
++           image: "containers.cisco.com/eps_mcmp/sso-init-config-watcher:stable-prd"
++           imagePullPolicy: Always
++           name: sso-init-config-watcher
++           resources:
++             limits:
++               memory: 1G
++             requests:
++               cpu: 250m
++           volumeMounts:
++           - mountPath: /etc/config
++             name: config-volume
++         imagePullSecrets:
++         - name: image-pull-creds
++         serviceAccountName: felix-sa
++         volumes:
++         - configMap:
++             items:
++             - key: LOG_LEVEL
++               path: level
++             name: lifecycle-config
++           name: config-volume
++   apiVersion: apps/v1
++   kind: Deployment
++   metadata:
++     labels:
++       app: stats-monitor
++       group: felix
++       variant: prd
++     name: stats-monitor
++     namespace: cae-infra
++   spec:
++     replicas: 0
++     selector:
++       matchLabels:
++         app: stats-monitor
++         group: felix
++         variant: prd
++     template:
++       metadata:
++         labels:
++           app: stats-monitor
++           group: felix
++           variant: prd
++       spec:
++         containers:
++         - envFrom:
++           - configMapRef:
++               name: global-config
++           - configMapRef:
++               name: lifecycle-config
++           - configMapRef:
++               name: cluster-config
++           - configMapRef:
++               name: stats-monitor
++           image: "containers.cisco.com/eps_mcmp/felix-stats-monitor:latest"
++           imagePullPolicy: IfNotPresent
++           name: stats-monitor
++           resources:
++             limits:
++               memory: 3G
++             requests:
++               cpu: 200m
++           volumeMounts:
++           - mountPath: /etc/config
++             name: config-volume
++         imagePullSecrets:
++         - name: image-pull-creds
++         serviceAccountName: felix-sa
++         volumes:
++         - configMap:
++             items:
++             - key: LOG_LEVEL
++               path: level
++             name: lifecycle-config
++           name: config-volume
++   apiVersion: monitoring.coreos.com/v1
++   kind: ServiceMonitor
++   metadata:
++     labels:
++       group: felix
++       prometheus-app: felix-gslb-deploy-controller
++       variant: prd
++     name: felix-gslb-deploy-controller
++     namespace: cae-infra
++   spec:
++     endpoints:
++     - interval: 30s
++       port: metrics
++       relabelings:
++       - action: replace
++         regex: "(.*)"
++         replacement: $1
++         sourceLabels:
++         - __meta_kubernetes_endpoint_address_target_name
++         targetLabel: instance
++       - action: replace
++         regex: "(.*)"
++         replacement: $1
++         sourceLabels:
++         - __meta_kubernetes_pod_label_variant
++         targetLabel: env
++       scheme: http
++       tlsConfig:
++         insecureSkipVerify: true
++     jobLabel: prometheus-app
++     namespaceSelector:
++       matchNames:
++       - cae-infra
++     selector:
++       matchLabels:
++         prometheus-app: felix-gslb-deploy-controller
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: MutatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: ca-cert-mutating-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     - v1beta1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRQ1BvRzNtdEo1OEZEQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV5V2hnUE1qSTVOakE0TWpreU1qTXdOVEphTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU1JWTY4ZXRFZWhXZTAwYnBSTTRxaWNtd09FWFVCRG1JMTZmQXJjVTFOTTBqbEJSN0tFRFJDTFgKdGEzcm1BQXFpY0xKa0NIUmI1VE92WDVtM3d2cXk1OVFKUEJDVTVlc05PR1FpUjdFekJFQ1VNNWtkTEF1VjJnbgoyUjFrZVVGT3BtTkRUZzI5V1dLTWxOWUxDQVd5WXh1M2lZM3ExTFpuYnN5KzZDMU9QSm9rM0x6V3ZaQWV4ay9DClU0QzdrdWhiSWVURzlDWFZoVEU1eitNUzU0blprUVcwckRTRnVHenVJcE9wWlFSRGlLejZwekp1ZW1sbThyMkwKajRwVkhHODk3RExZUXg2dG5peCt1R1l3bXBTTmFubEFvZnp2dGRSczN6L3IycjE0OHRkMDZJc2pQNDZ6ZzNLdQpjUkhYUG1ETDZiTUtnREp2d2JQZjhCelh6N1U3b044Q0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCmFXQnloQ2F6RWY5Y25oVUllb3FtNE11SHliSmxoSmZNd05ZTHpNNTZqVVVOUGFTL2xOSytxdUV5aSt1TnhPaEsKZW5EenljSlBocVRZOTNQMWZwZ01yUWJRSmJVNnU4VnRvSnMzRXFZTFE5VXZETXRaU3kxdmFJSjltVnJWamlHOQpXSmtza0hFRmo2Vi9uTEJjb25KeS9GazFKRVVkam5EVVpuQ1c4eEF0NlJrK2JDOE9rWkFzMDV0SUhKQnFhcnp2CjhvVnVzSTdGb2xEaGZKUFhtK2ZVWDBXRW5JaUhRRHh1K3Q0MWpJbnIwOXdOMkpSak01SnRPdWNhdGFBUFFxOE8Ka01EdFBkU2NJTGhUcWR2UlhNUHV1alhJUFlGV3JsR1VyQzdweUpNTnJMOG9VYVVxSVdPMFkzcVpaUmR2aFlvMwpzNkhkMkc2VTN6Zy9CNDlpb0ZWd1ZnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
++       service:
++         name: ca-cert-validator
++         namespace: cae-infra
++         path: /mutate
++     failurePolicy: Ignore
++     name: mutate-cert.openshift.io
++     rules:
++     - apiGroups:
++       - cae.cisco.com
++       apiVersions:
++       - v1
++       operations:
++       - CREATE
++       - UPDATE
++       resources:
++       - cacertificates
++     sideEffects: None
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: MutatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: gslb-deployment-mutating-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     - v1beta1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRREhsTHJCYm8rSWpqQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV5V2hnUE1qSTVOakE0TWpreU1qTXdOVEphTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQVA4MEJOaWkwakVCY0ZxS2Z6RDRYSlpYa3cwVG9rTWVvb3JmN0VRSnNuTVJ3bStNcmxVR0Y2bnQKRmJHKzFkekhXODJBakhaNGtGNEZ3ZVh1QjBHSTRpT09KdkY4aUJJTlFXbTJCUHU1Qms2MVEveUJ2VS9yMW9OVQo2TlduS1RSZDQ2a1BDQlpGSG9YeUp2cnFlV0x1dnFiN0NaajYzZW54UGdiUXdqbDBzd2xCT3pPVUZ6b0tpeWNXCkVBWUVaNXMvR2FnR01wdEx3WTdIRXA0RjZrblA3ZlU1anIrVmNsZmRlbmpsMFdzUU9OVko5UFhpcE1kQmhTV0cKYy9wemhKd3NIRUlLTWNiL3NkM0VXNm1iYUN6UHJWNHVKVFdpeHVtb2NjaWJJcUZ3RThORHYrVTh1QnREWHVsYgpuM25rOFR3OUVDUG8yU1NQekV4YmpEbFkrcWJjVHlzQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCmc3ZSsvY3ZiS2NEZERXS0JxTXNXUUhqSlUrNGlqSjlsSHRPLzhKT240T0JYU2FlNTZlR3lrZVpocUc5WjhUTDQKK2V5eGZneE42ME05bGo5b3c3V29oN3dEQzVLUy9kUStieXMrbjM1aEcwOG55Ny9BMGRESE9CWFRBUThEZUFZNApHQVNXcWR1UmpkSjFvQmJXYW1iSmNZNHI3VUgxd1A1ak1BT1ZtQXIzTGdZYVJtS3lGMDJTbVM0alZoNmR6UkQzCmlhTWNOWVpaUk40TnByK3RNY2RsdVhhWUxMTFo5dGdUMHNQYkpCbVNnU1J3d2xxRm9hRWhlclgzcStneEJEc0gKUjY2emJxM0QveXVYK0JJdjNNOXZGVHFrNFVlaWJTZ25WUno5YW5DbnE0Q1BPU2lNcm1YU2RJQlRPK1lZTXpNdgphVFBpVnFSdVRFVFFaN3V6TVord0pnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
++       service:
++         name: gslb-deployment-validator
++         namespace: cae-infra
++         path: /mutate
++     failurePolicy: Ignore
++     name: mutategslb-deployment.openshift.io
++     rules:
++     - apiGroups:
++       - cae.cisco.com
++       apiVersions:
++       - v1
++       operations:
++       - CREATE
++       - UPDATE
++       resources:
++       - gslbdeployments
++     sideEffects: None
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: MutatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: kn-dm-mutating-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     - v1beta1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFVENDQWZtZ0F3SUJBZ0lVSnJFNUl5bU1xSlpoQmVucVN1QldOY3ozeHY4d0RRWUpLb1pJaHZjTkFRRUwKQlFBd0Z6RVZNQk1HQTFVRUF3d01ZV1J0YVhOemFXOXVYMk5oTUNBWERUSXpNRGt3TWpFeE5EWXpOVm9ZRHpJeQpPVGN3TmpFM01URTBOak0xV2pBWE1SVXdFd1lEVlFRRERBeGhaRzFwYzNOcGIyNWZZMkV3Z2dFaU1BMEdDU3FHClNJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUNTbGpOUE5wbU9qOWJqaUlFMXJmZzJZTFZlTWRXQXIxY2IKSXRMV3Y3Wk1lMFRxK3lrZ2NTMHVPN0szQ3J4aHZiZEpZTjV0Y1FZc1VpU2IzMXZaWlpzMGVocVJ5MEdnVmwvQwoyT0Z1YjNjTVE0ZGlBMTg1TDdKTnl2Q0ZoSnRyeUhnKzgzREdDUk52Q2JrWmtZYXhSbkxWWVNHR2YwcXdlUjQ2ClNSWWhiOU9YcDIrMmNvTDQ1QlpQRzczL3NZbHVMS1J2V1BpVFNhSVF0ZTR3dis5NktpeFlhZTRmbWpmY1ZmMUcKSVdDT2kwamMwZFVlU0x2Q28wa1E0MDlDQ1ZJOWtFalRVNi90NnBmV0E5UDdaTG1xeS8rWHE4OHhOR2hyRkVzcApMOHJtT0JwWXlyc1pVU01yWEovSFhEdFRWclhVdXhPQkRzTys2WDgyTVhnL3ZOZmN4TmV2QWdNQkFBR2pVekJSCk1CMEdBMVVkRGdRV0JCUXE4My9KSmIweFRVdHNYTHFqcFhEOUd1Q2d3REFmQmdOVkhTTUVHREFXZ0JRcTgzL0oKSmIweFRVdHNYTHFqcFhEOUd1Q2d3REFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxR1NJYjNEUUVCQ3dVQQpBNElCQVFBS0ZCZzNQSXpCU2ZDYjQ0WC83WEZQSEg1RklzNHRtTmZ3SmkrZ0ZEY1llMVV5U2RLM0MzeGpBaGhXClhXMkd3MzIzY3ZlQ29VRjloR3ZmVmZ2bTJOdzVueExaczNtVkZBTVJUb2NZU0lIUHhwU004ajFHN2lhRWRhYkYKRjhKQnRUdE1wM3ZtU2FKQUhJWFhzYU90U3RDSHRMM1RrZkcxeTFYSGtNaFU4b1NZdXd5ZHlQVG15L0h1SmdEdwpWaWQra1lCV0NZc09XWEFqeWc4cXBvNk5vUVhRTHBRUjludVg3bzZhUzBpS0FCVGJSQkFxSFhmeFdMS2RxWVNnCjU4UVJVZ0k5WTI4QXVra0Q0QXRnL1duL1ViYzRXYklhS3VibTJ3dHprTi9iUGxMRzdTcW1EUW56enFReWFrRjkKV2xBZDA0UVpVbHJNZ3lieFBUOFF2Q2luTjdTZgotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
++       service:
++         name: kn-dm-validator
++         namespace: cae-infra
++         path: /mutate
++     failurePolicy: Ignore
++     name: felix-dmmutate.knative.dev
++     rules:
++     - apiGroups:
++       - serving.knative.dev
++       apiVersions:
++       - v1
++       - v1beta1
++       operations:
++       - CREATE
++       - UPDATE
++       resources:
++       - domainmappings
++     sideEffects: None
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: MutatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: kn-svc-mutating-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRQ2lKR05CdjhmWDZqQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nak13T0RNeE1qRXlNREkyV2hnUE1qSTVOekEyTVRVeU1USXdNalphTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU5pV3VkczNRcG01b09FQWMwZDQ1dm1vV0lvRzJWS0RraXNEcjgwTmpObTJXVENwZ1gveXEvNHIKaTJmUjZnNGhqa0tpNVhJYW9aWmM5d0x6aHBYL1JVVWVsVG1sQlQ2K1VLY2p3eCtTRzh0VS9IOU9tMTlNNGVGQgpPWUp5UDFaWWM4RjNiMjRHZllZOEdPallXbWhnWk4wTk1VZ0JiYjVDWTZUUFdGdkVhUXJvZU0vV0VTeTRsSEt4CjhqR0lZd2dYUmFiTVZiQ0Mwd3ZFQ0IrSWo4V2hyNXBVVlVsdzRRSmdFZEpwbnlJY28rRzRkTm5teW84V0lzVmgKejlEOWdJTFJ6WTJJT0ZZYVdxUmVXaStiYy9HeWZLKzFWdjgwRm82MXg3eEEwQVlydmhBQkFJZmlXWHNiTnVTOApGWENOR3lLWEkzQWR0VllJSkhUcUtJY2wzdDZuZEljQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCjFMTlJGYnhHSFBZcDB0NnNFM2IxMm1KR05lTFd0b0w2YnF2WmdNSTMrVXNDOUdUWGNPOEZlQ1lPQ3h3MDIvZmkKR012RkRuaWkvVm9RZW9ObUZYVzdnTEdUY3Y5YmFjVGxhekx0OEgyNTBDcHVzUDJwY2gvT01wZzJrSEx2VjgzRwpJUlBNWDJrOGJ4ZFAvaTJtRitKaEJra2pvVFZYbm1DeVlVb2NpdU5QdDdnL21hRTQxQjU2N0lPY0FuVGtTanBLCnpjaEthZDkxbzJaeW9CUnQydDlDUlBKOWNNbTJFT3hQUmJyaDcyTkxKQVcrYy9JNnlkeGJZdkV1SDVyMW5NREUKc2JaT2lRMktod05CUFg0NzlUL0RCTnQxblpSR2lHK0dDZkRqblNObE50TjdJTms5NExKOHJwZzlDSkxBeDFGaApqUVRPTzlDaVFFNkIwTjEvamJaYnd3PT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
++       service:
++         name: kn-svc-validator
++         namespace: cae-infra
++         path: /mutate
++     failurePolicy: Ignore
++     name: felix-svcmutate.knative.dev
++     rules:
++     - apiGroups:
++       - serving.knative.dev
++       apiVersions:
++       - v1
++       operations:
++       - CREATE
++       - UPDATE
++       resources:
++       - services
++     sideEffects: None
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: ValidatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: ca-cert-validator-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     - v1beta1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRQ1BvRzNtdEo1OEZEQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV5V2hnUE1qSTVOakE0TWpreU1qTXdOVEphTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU1JWTY4ZXRFZWhXZTAwYnBSTTRxaWNtd09FWFVCRG1JMTZmQXJjVTFOTTBqbEJSN0tFRFJDTFgKdGEzcm1BQXFpY0xKa0NIUmI1VE92WDVtM3d2cXk1OVFKUEJDVTVlc05PR1FpUjdFekJFQ1VNNWtkTEF1VjJnbgoyUjFrZVVGT3BtTkRUZzI5V1dLTWxOWUxDQVd5WXh1M2lZM3ExTFpuYnN5KzZDMU9QSm9rM0x6V3ZaQWV4ay9DClU0QzdrdWhiSWVURzlDWFZoVEU1eitNUzU0blprUVcwckRTRnVHenVJcE9wWlFSRGlLejZwekp1ZW1sbThyMkwKajRwVkhHODk3RExZUXg2dG5peCt1R1l3bXBTTmFubEFvZnp2dGRSczN6L3IycjE0OHRkMDZJc2pQNDZ6ZzNLdQpjUkhYUG1ETDZiTUtnREp2d2JQZjhCelh6N1U3b044Q0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCmFXQnloQ2F6RWY5Y25oVUllb3FtNE11SHliSmxoSmZNd05ZTHpNNTZqVVVOUGFTL2xOSytxdUV5aSt1TnhPaEsKZW5EenljSlBocVRZOTNQMWZwZ01yUWJRSmJVNnU4VnRvSnMzRXFZTFE5VXZETXRaU3kxdmFJSjltVnJWamlHOQpXSmtza0hFRmo2Vi9uTEJjb25KeS9GazFKRVVkam5EVVpuQ1c4eEF0NlJrK2JDOE9rWkFzMDV0SUhKQnFhcnp2CjhvVnVzSTdGb2xEaGZKUFhtK2ZVWDBXRW5JaUhRRHh1K3Q0MWpJbnIwOXdOMkpSak01SnRPdWNhdGFBUFFxOE8Ka01EdFBkU2NJTGhUcWR2UlhNUHV1alhJUFlGV3JsR1VyQzdweUpNTnJMOG9VYVVxSVdPMFkzcVpaUmR2aFlvMwpzNkhkMkc2VTN6Zy9CNDlpb0ZWd1ZnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
++       service:
++         name: ca-cert-validator
++         namespace: cae-infra
++         path: /validate
++     failurePolicy: Ignore
++     name: validate-cert.openshift.io
++     rules:
++     - apiGroups:
++       - cae.cisco.com
++       apiVersions:
++       - v1
++       operations:
++       - CREATE
++       - UPDATE
++       resources:
++       - cacertificates
++     sideEffects: None
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: ValidatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: felixproject-validating-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     - v1beta1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRQ1VPTHRxelFYOHBEQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV6V2hnUE1qSTVOakE0TWpreU1qTXdOVE5hTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQUwzSkR6cThVbmdBaFZoSmdRQ3lKd0d4dlA5MUlwSEpUSXRJbDFMRGRYYkw2MGNUVmxCUnhzNWYKVklIMUM1YkZUVXFGMVRoRFFrRWdVZWZPTnFPVDFVQlh1Kys1U1VDSTNtNzFOYnlhNmhib3U1MEw1dnhZTnBVNQpxMGpqQU56Z3dwR2FVY05qNEd3aFhnaER3b01LMk5tMFBSdlNGMXBGUlBxVjEySng3Nll3WHpvOU8wTTQ5R2xTCjFPMUZFd0VWWFlzQWRIRklCZ3JFcDRBSEtzb1U0aCs4ZUppUVVBK0VGRUluVnJuMzhTUjZpWVhJVUR1Rkc4TXUKemNqeGNRT0lpOHJOOGtBcXI1aWhzQXdhZCs2cmwwRWF6VmJubXhhY09XSXBkZmhBY0d1NVMxb3V3c3dpUG52UApOdEpoakhEQ2NLVXdFU2RuN0g1VDVGZ0YrSFVLUDVNQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCk9KUE5UT0ZvUEJhM0hYbkxQNzcwT2pPdXowOXh0RGhQMmZTdkI4NXVpU0YvcTRLZDJZL1E0SHJaaWNiU2RwM0YKSEdKN2JFT2UwV2d6VHU4UGcra0M4dU85Q0NESUEreSt0N05ENVp0Wk9KWVlLVkdhUjNDTGhkWUtJeG1HemlaRgpUbWt2ZkRRdlpuNllyZmFPd0pRY1Z0V2dxUTBFVzhTWWxyMENibEdqMmlDaGdRQlV5VEE4K1pNak83ZUxMRVJCClM0MWtsbHhRcjNQeHdpTG01SzVET1pDNkZQSzI2a29kVjdMZk9iTU54RUNXZHBDbGdReW1yZFJGVHg0MzhkQWkKem9OdExZQ3dGNTdZTzYzWkIrZHNLV1hHUTBIVWFpbC9JMU9LKy8xK0wxVmhPSkNhVW1NK0VIaFRyakFHMWFmMQpEVHpsTE4xWUZRWFdQajNoQy9ENkhnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
++       service:
++         name: project-validator
++         namespace: cae-infra
++         path: /validate
++     failurePolicy: Ignore
++     name: validatefp.cae.cisco.com
++     rules:
++     - apiGroups:
++       - cae.cisco.com
++       apiVersions:
++       - v1
++       operations:
++       - CREATE
++       - UPDATE
++       - DELETE
++       resources:
++       - felixprojects
++     sideEffects: None
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: ValidatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: gslb-config-validator-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     - v1beta1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRQ0dHbVlQY1hhRUFqQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV5V2hnUE1qSTVOakE0TWpreU1qTXdOVEphTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQUtXdjg1N1prbWZTakQxazAwNjZuMWRaOHBhTHZsclNPeG10VlFQcHhkQXNKazdFdjY5QmZHeVQKemx4RVBDR1BudkNQenIrcEFkTysrSngzbmFyQzZLbnMvM2JMR3AwWElUK1BQM2p1V2c5UTlKRUY4Tk5GUk5qTQpMRjFsLzdpYUxhUmM2UEtnNTBqVDdaL1JDRTgwbjU4ZkxJQUdPcTRoYU9Ra3RCMi9zQS9zSnBueWh5cWVvNkR2CklCNjBPb2pLeGduOXdIQ2E2VmZMSFVheTV1Sm5lS0wzNDZSRzN3RHNNVWlUYVhtUlh5ZU85c1JqQXM4eU1YQk0KdUNEY3ZBdnNkVWlkVkZRM21pN2JmTVUzMit0ZFU0QjlzQzBSckZZRXJURGdVSmdpTWtURnRmdVROYlVpdGRrbwoxZzU0dWl4VGlRNXlaL1BpZ0dFTm1hTXVQckF2MnRVQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCldPckdsdDZRSGMwZnBwUGswWmc1Vzg0Yk5pTHUzUW5PR1hjd2NicmpLclBEVHpsQWttWUFZNHh5Q0NDVWJBNW8KL0VkUWhPV0NqNWl5WUVGUFpmYWF4OEFRbUg4RlRwSVJXOE54WVFzL20vU2xoNG9Lc3JYMGNpOW1oUkplVHk1ZwpxNStrV0xOT1pvT1lycVlNbW81czZYMXpRaTdNZzN6ZVY5ODVZZWltNDFFdUtnU05LRUJwQ0ZpV3VwMThMNm9KClRFTWdJYmplMGE0dXhsdHU3OStpdlEvMzdoeSszQnZOZGxmV2JybnZXSzBIVWJ0ejIraG1DVy90amQxeS8zcS8KbE1IVTJkZ0lGOE9mRm1yam5VbzYwaWpWbk5RaDJ5TGI1V0NLaG8wQWs5TjFxK0lVL3VwVjcxWk9JYzRCcS8ybQpZVWhUdWtXeXV0U1djek9YNTlZQzVnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
++       service:
++         name: gslb-config-validator
++         namespace: cae-infra
++         path: /validate
++     failurePolicy: Ignore
++     name: validategslb-config.openshift.io
++     rules:
++     - apiGroups:
++       - cae.cisco.com
++       apiVersions:
++       - v1
++       operations:
++       - CREATE
++       - UPDATE
++       resources:
++       - gslbconfigs
++     sideEffects: None
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: ValidatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: gslb-deployment-validator-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     - v1beta1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRREhsTHJCYm8rSWpqQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV5V2hnUE1qSTVOakE0TWpreU1qTXdOVEphTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQVA4MEJOaWkwakVCY0ZxS2Z6RDRYSlpYa3cwVG9rTWVvb3JmN0VRSnNuTVJ3bStNcmxVR0Y2bnQKRmJHKzFkekhXODJBakhaNGtGNEZ3ZVh1QjBHSTRpT09KdkY4aUJJTlFXbTJCUHU1Qms2MVEveUJ2VS9yMW9OVQo2TlduS1RSZDQ2a1BDQlpGSG9YeUp2cnFlV0x1dnFiN0NaajYzZW54UGdiUXdqbDBzd2xCT3pPVUZ6b0tpeWNXCkVBWUVaNXMvR2FnR01wdEx3WTdIRXA0RjZrblA3ZlU1anIrVmNsZmRlbmpsMFdzUU9OVko5UFhpcE1kQmhTV0cKYy9wemhKd3NIRUlLTWNiL3NkM0VXNm1iYUN6UHJWNHVKVFdpeHVtb2NjaWJJcUZ3RThORHYrVTh1QnREWHVsYgpuM25rOFR3OUVDUG8yU1NQekV4YmpEbFkrcWJjVHlzQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCmc3ZSsvY3ZiS2NEZERXS0JxTXNXUUhqSlUrNGlqSjlsSHRPLzhKT240T0JYU2FlNTZlR3lrZVpocUc5WjhUTDQKK2V5eGZneE42ME05bGo5b3c3V29oN3dEQzVLUy9kUStieXMrbjM1aEcwOG55Ny9BMGRESE9CWFRBUThEZUFZNApHQVNXcWR1UmpkSjFvQmJXYW1iSmNZNHI3VUgxd1A1ak1BT1ZtQXIzTGdZYVJtS3lGMDJTbVM0alZoNmR6UkQzCmlhTWNOWVpaUk40TnByK3RNY2RsdVhhWUxMTFo5dGdUMHNQYkpCbVNnU1J3d2xxRm9hRWhlclgzcStneEJEc0gKUjY2emJxM0QveXVYK0JJdjNNOXZGVHFrNFVlaWJTZ25WUno5YW5DbnE0Q1BPU2lNcm1YU2RJQlRPK1lZTXpNdgphVFBpVnFSdVRFVFFaN3V6TVord0pnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
++       service:
++         name: gslb-deployment-validator
++         namespace: cae-infra
++         path: /validate
++     failurePolicy: Ignore
++     name: validategslb-deployment.openshift.io
++     rules:
++     - apiGroups:
++       - cae.cisco.com
++       apiVersions:
++       - v1
++       operations:
++       - CREATE
++       - UPDATE
++       resources:
++       - gslbdeployments
++     sideEffects: None
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: ValidatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: kn-dm-validator-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     - v1beta1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFVENDQWZtZ0F3SUJBZ0lVSnJFNUl5bU1xSlpoQmVucVN1QldOY3ozeHY4d0RRWUpLb1pJaHZjTkFRRUwKQlFBd0Z6RVZNQk1HQTFVRUF3d01ZV1J0YVhOemFXOXVYMk5oTUNBWERUSXpNRGt3TWpFeE5EWXpOVm9ZRHpJeQpPVGN3TmpFM01URTBOak0xV2pBWE1SVXdFd1lEVlFRRERBeGhaRzFwYzNOcGIyNWZZMkV3Z2dFaU1BMEdDU3FHClNJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUNTbGpOUE5wbU9qOWJqaUlFMXJmZzJZTFZlTWRXQXIxY2IKSXRMV3Y3Wk1lMFRxK3lrZ2NTMHVPN0szQ3J4aHZiZEpZTjV0Y1FZc1VpU2IzMXZaWlpzMGVocVJ5MEdnVmwvQwoyT0Z1YjNjTVE0ZGlBMTg1TDdKTnl2Q0ZoSnRyeUhnKzgzREdDUk52Q2JrWmtZYXhSbkxWWVNHR2YwcXdlUjQ2ClNSWWhiOU9YcDIrMmNvTDQ1QlpQRzczL3NZbHVMS1J2V1BpVFNhSVF0ZTR3dis5NktpeFlhZTRmbWpmY1ZmMUcKSVdDT2kwamMwZFVlU0x2Q28wa1E0MDlDQ1ZJOWtFalRVNi90NnBmV0E5UDdaTG1xeS8rWHE4OHhOR2hyRkVzcApMOHJtT0JwWXlyc1pVU01yWEovSFhEdFRWclhVdXhPQkRzTys2WDgyTVhnL3ZOZmN4TmV2QWdNQkFBR2pVekJSCk1CMEdBMVVkRGdRV0JCUXE4My9KSmIweFRVdHNYTHFqcFhEOUd1Q2d3REFmQmdOVkhTTUVHREFXZ0JRcTgzL0oKSmIweFRVdHNYTHFqcFhEOUd1Q2d3REFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxR1NJYjNEUUVCQ3dVQQpBNElCQVFBS0ZCZzNQSXpCU2ZDYjQ0WC83WEZQSEg1RklzNHRtTmZ3SmkrZ0ZEY1llMVV5U2RLM0MzeGpBaGhXClhXMkd3MzIzY3ZlQ29VRjloR3ZmVmZ2bTJOdzVueExaczNtVkZBTVJUb2NZU0lIUHhwU004ajFHN2lhRWRhYkYKRjhKQnRUdE1wM3ZtU2FKQUhJWFhzYU90U3RDSHRMM1RrZkcxeTFYSGtNaFU4b1NZdXd5ZHlQVG15L0h1SmdEdwpWaWQra1lCV0NZc09XWEFqeWc4cXBvNk5vUVhRTHBRUjludVg3bzZhUzBpS0FCVGJSQkFxSFhmeFdMS2RxWVNnCjU4UVJVZ0k5WTI4QXVra0Q0QXRnL1duL1ViYzRXYklhS3VibTJ3dHprTi9iUGxMRzdTcW1EUW56enFReWFrRjkKV2xBZDA0UVpVbHJNZ3lieFBUOFF2Q2luTjdTZgotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
++       service:
++         name: kn-dm-validator
++         namespace: cae-infra
++         path: /validate
++     failurePolicy: Ignore
++     name: felix-dmvalidate.knative.dev
++     rules:
++     - apiGroups:
++       - serving.knative.dev
++       apiVersions:
++       - v1
++       - v1beta1
++       operations:
++       - CREATE
++       - UPDATE
++       - DELETE
++       resources:
++       - domainmappings
++     sideEffects: None
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: ValidatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: kn-svc-validator-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRQ2lKR05CdjhmWDZqQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nak13T0RNeE1qRXlNREkyV2hnUE1qSTVOekEyTVRVeU1USXdNalphTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU5pV3VkczNRcG01b09FQWMwZDQ1dm1vV0lvRzJWS0RraXNEcjgwTmpObTJXVENwZ1gveXEvNHIKaTJmUjZnNGhqa0tpNVhJYW9aWmM5d0x6aHBYL1JVVWVsVG1sQlQ2K1VLY2p3eCtTRzh0VS9IOU9tMTlNNGVGQgpPWUp5UDFaWWM4RjNiMjRHZllZOEdPallXbWhnWk4wTk1VZ0JiYjVDWTZUUFdGdkVhUXJvZU0vV0VTeTRsSEt4CjhqR0lZd2dYUmFiTVZiQ0Mwd3ZFQ0IrSWo4V2hyNXBVVlVsdzRRSmdFZEpwbnlJY28rRzRkTm5teW84V0lzVmgKejlEOWdJTFJ6WTJJT0ZZYVdxUmVXaStiYy9HeWZLKzFWdjgwRm82MXg3eEEwQVlydmhBQkFJZmlXWHNiTnVTOApGWENOR3lLWEkzQWR0VllJSkhUcUtJY2wzdDZuZEljQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCjFMTlJGYnhHSFBZcDB0NnNFM2IxMm1KR05lTFd0b0w2YnF2WmdNSTMrVXNDOUdUWGNPOEZlQ1lPQ3h3MDIvZmkKR012RkRuaWkvVm9RZW9ObUZYVzdnTEdUY3Y5YmFjVGxhekx0OEgyNTBDcHVzUDJwY2gvT01wZzJrSEx2VjgzRwpJUlBNWDJrOGJ4ZFAvaTJtRitKaEJra2pvVFZYbm1DeVlVb2NpdU5QdDdnL21hRTQxQjU2N0lPY0FuVGtTanBLCnpjaEthZDkxbzJaeW9CUnQydDlDUlBKOWNNbTJFT3hQUmJyaDcyTkxKQVcrYy9JNnlkeGJZdkV1SDVyMW5NREUKc2JaT2lRMktod05CUFg0NzlUL0RCTnQxblpSR2lHK0dDZkRqblNObE50TjdJTms5NExKOHJwZzlDSkxBeDFGaApqUVRPTzlDaVFFNkIwTjEvamJaYnd3PT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
++       service:
++         name: kn-svc-validator
++         namespace: cae-infra
++         path: /validate
++     failurePolicy: Ignore
++     name: felix-svcvalidate.knative.dev
++     rules:
++     - apiGroups:
++       - serving.knative.dev
++       apiVersions:
++       - v1
++       operations:
++       - CREATE
++       - UPDATE
++       resources:
++       - services
++     sideEffects: None
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: ValidatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: network-policy-validator-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     - v1beta1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRREtFanhEUEFDMEh6QU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV6V2hnUE1qSTVOakE0TWpreU1qTXdOVE5hTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU9XY0NsYkJOdTJIeE1jUWpYTzBWbS9RU3Qyd2FJNGJ3VXV4VklxTWZNdGVFU2p5cktZd3FPN2QKZEs2TEgvYXoyZ25WQ2ZuU1ovUzhxMUJRV1JCS0NMbzMxZ1RWN2E0bGpwRnNueHlVcTVISlZjNDg0STlMOXRtOApLcW9JenNaU0tBd2JCQTEzZHZXc0doL040VmpxMEJuWlRUbFJIMFNFTk5qbmkvZTRvY1VkMm9pTnl4VjRIVllOCkFIdWVERldJQU5NTmNCY1FmWGFBQ2x1ajhRcVpHRmNMaXhXWEQ2OGlMRVVBSFA0SEthNkRTZ3pJM2k5eHh1NkgKTjRPeVhhV25UU25EQXpEV3A2enFFK1J2R1lNUzJWY3R2UWRmaDRkTm9zZFdQaHB5VkRTUXBabVFST0lBT1I1RQorbWFPOFVOckI1RGoxRU1OQWk1QVhtMjhKQzJVcENjQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBClJ1eUpCRGVvTjNjZUs1b1dJQ08rdFhYODdJalBENE11bUxUTjBGSnJFT0FmSzN6S2pLY3V1V28yQ3VveW9IYWsKNmgvTGdtMUl4ZmFvV3pydmY4ekFjNUhadGpxS0lvMzgvZ25JUnR0dDhvQVR2ZGo5dGdVNlhab2Z1Ny9VK3JIRgpud0g0OUdtZ2pqbytEWElyWUpRTTdRVVFMSHBTc1k4bEQ4M0tZNGRwS3QxZDFsYlBPMi8xUVZqV1Jkak54MG5VCjNQcWUzM2c1YVQ1TXJGTDVaaUpNLyt6bUIrSmVaNUl4Y3NScFEySHA2OEdlcnB2NWg1Ty9nMHl6ZDFIVTdadnAKNGxVQjVsc3B1TlhFUVhkc2hXdE5wTWhKK0hmWUtMcnF4THhwVkluUnJVdG9NdExWRGdTd05CcSs0LzhqZmN5egoxSlJOYkZPb29nejZlOU1XZzNWa2hBPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
++       service:
++         name: network-policy-validator
++         namespace: cae-infra
++         path: /validate
++     failurePolicy: Ignore
++     name: validate-network-policy.openshift.io
++     rules:
++     - apiGroups:
++       - networking.k8s.io
++       apiVersions:
++       - v1
++       operations:
++       - CREATE
++       - UPDATE
++       - DELETE
++       resources:
++       - networkpolicies
++     sideEffects: None
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: ValidatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: nws-validator-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRRFltc2FmOUYweTBEQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFV6V2hnUE1qSTVOakE0TWpreU1qTXdOVE5hTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU9FNm5YQThWczFHZS83dVA3WTM4cm9Rang5eTY5K2JWT3NCcFF2bkRkc28wOFR4OXJqQjlwbjAKOU1YZStEMzR2UjBOL1lwVkFpam1wMnpYc3dzNzJVSnZVOFN1TkF0UXVKdHY2L21rUXJpNDdkU3Vhc2lIektjNgpQL2tWSC9VRFFMbW00bjljZHQwSCtNeHMrQTY2V3A1VE9lZXEvSXBaTnBqWUtXNWoxcDFEdTdZQjlkTFJoY1IxCkppblpucmNsaTkxQ1JFYjMwcHd1MmFVQk9BeWcwMnlUakF0TS9TK3l3ZUJzQWRNUFF1V1YwWE93ajRQR2ZUWTkKRHM4V3lTTXhkRXFNL3hnT1gyR3hIbEh4T0hVN29TYVZ1dGM4RVlCdUhRcWpwenh1RmV1bDVHcW1qZDJFdDVTSApubzlESzd0RnZtckF1VXZyc0ZEWTVRcEFMVFFKcVU4Q0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCk5valR2dVA4RVFqRzlOVnF4d3NZeWRwVTZTY0NpMzZRWTJNRi84M24xZVc2dkRTeXZmakFBU1g5bEJJK05LcFIKTUF2UmhLYkZHZUQvZHRDYmwvL3JZZHdXeEVpRnVZa3BKc3Blc3J4QnAyQ3c5V3RMYnhyQTc3NWJtb3BLMVVtMwpNaFYwbFJEVXlENllsbzN2bytHUFFpN2VselUwU3U5clNzbGlGZERxMTFkN3pETTB4aUFoL3hLWWw1QUFxQ2dYCnVVSURrQ1ZVdlg5MWc1YTNEeno4TGgyM3JsWlpCS1ZPdnBCbmpqWG5PZENlU3lYb1hJV1h5em5KWVJuY0tZODMKYS9MaWcxVVExNXhBMG0rZUk4M1N2WkNhWURnMU10VjJCaUdEeHV5dnFLMC96S0ZZRktBbkxEQnUrRFY3ODJRcgpybDM3Z0YwdHBDZXp3S08xWHhaY2FBPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
++       service:
++         name: nws-validator
++         namespace: cae-infra
++         path: /validate
++     failurePolicy: Ignore
++     name: nwsvalidator.core.v1
++     rules:
++     - apiGroups:
++       - 
++       - apps
++       - apps.openshift.io
++       apiVersions:
++       - v1
++       operations:
++       - CREATE
++       - UPDATE
++       resources:
++       - pods
++       - deployments
++       - statefulsets
++       - replicasets
++       - deploymentconfigs
++       - DaemonSet
++     sideEffects: None
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: ValidatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: route-validator-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     - v1beta1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRQ1BFZytZK0ZHWlVUQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFUwV2hnUE1qSTVOakE0TWpreU1qTXdOVFJhTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU9FYVpQZEplUUNCV3QrOWwzbE91cE1DR3lra211anhlVG5NemxQZFE5bHZDU2ZYanBCMzk1blEKdzI0cG1SOFk2TXBaR0NodTlveVZZbWhDc3NtVkY3R2V6UzUrc3FCdzlNTGxFQ2ltL2F5WWVBV1NWeUxZTms5WQpKQy9EbHFxZ1BSYmhXQzQ5bC9OTmpwVGRpYWcwVE9lWDB3eS9oSk16RGVZc2lJN1FNSWlrYTdHN1pIdnBBR3k5CjJkV3Z5ZnJYNkRBZXp0Y0JZNm5sRnZtUjVsMDdLYTRIajRiaWViWkl5cmtNR0RHOGx2U1hKOXNjQ3dnTEpRMkMKRXlBODZsaUo2NStGZTJoYlo5M05ITUc1UjEvQWhNakd2U3Q2c2d6RHlNdHcrUXFJMjVpNmNTY2NnbG5GMWVjZApYalMyQm42L2hHaGtwbmFxS2FpN3p0NmRTVkFyUFBFQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCnhwZ2tnU0N0WnVNcnVmN0hVcGJYdlIyWUdoRDJtNEdhTTBoUHR4Y2VhUlk2ZWR6TUhrNWF0M3FObFYwWWJuR0MKeFVleWJzZTJVaHhpaldJTWZ1OWo0czQvV0tkQnltL3RYek5CR1RjTFJnOVJxTXZtekJRNU5aWnNTTm51WUlTSgpWbHJXdGs0TG9MTWRzNFF5cHRkRmpLUERnRlBSdUt2NEp1UG04Mkh1NGNGQmNHUzM0anBOb1ZBQ204TDNPb2kzClVkeWM4U29iZU1PWWF6bFRNSHdDYmdGT2E0cnhPemh2bGcwNE5YK2NZWUFIUW9yTDdWU0I3bG8xWVBDYUhzZXAKT1NhWTJ5TGp0eGl1VU5hb3ExWnhUUXBSc0dQWGxEdGxibzQ2Q3JnRm1YcE1uUVB5RWdtSGtkeVRSNFdqTmxuTQppWTZyditCVERMbUIzbDJNakJudmdBPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
++       service:
++         name: route-validator
++         namespace: cae-infra
++         path: /validate
++     failurePolicy: Ignore
++     name: validateroute.route.openshift.io
++     rules:
++     - apiGroups:
++       - route.openshift.io
++       apiVersions:
++       - v1
++       operations:
++       - CREATE
++       - UPDATE
++       - DELETE
++       resources:
++       - routes
++     sideEffects: None
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: ValidatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: routestate-validator-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     - v1beta1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRRHJzOENOUHVQdzZ6QU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFUwV2hnUE1qSTVOakE0TWpreU1qTXdOVFJhTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQUoyczVtOWc4Z3NYY0lUWEtBbTRCTDhXRVFRa3JXNENpelVWbW1oMEE0WHVlWjRTMU1WT1Y5amsKNEN0ZHFuek5uWXZYQmdWaW9mckdmcGVSQ2ZOMGR3MzdBSGxDdlFFQk5TVnpXcnlTK2pvRGNpWWlaZzR4ZENJZwoycHAzeEtzblFERFUxNWtrMlo2YTdPVzM4RmdaQW9JVGU1VGhub3Q0V3E0MS9CY1Nvdnc2ZlFlMExOd1VuNWdLClhaSG5iR3o0NlpTU0dQVVhMU3cxbkEvcWg3ZVN3bmRPUXZNOG9uUGluSHRlMlZLRnd0Vnh3ZVE0SmQyc1NPSUEKcjg4TkdjcXI2L3VzL3JJYmJjNGE2K2s0V0p6RXMzUVZLYXI1RDlHTnRFekZjNXdDZEVDaFRyUUExSHEzU204UAp1TldmOVFYYWJpNGY1WEtleDB2dUJMU0N0VEdyK3lzQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCk1tUFBUQmVvVmpybFhiWUw3WTlkaFdLSElaQ1FXTnlBM3RDZ3QrVjJqMEVJRTlsdUk5Mi9QVUZGVTlXd1BYSG0Kc2p0c2xKQUQ0T3lWdC9Nd2tqc1REMzBQblVVc2hpcFZ2OW5RNmJEUnNRa1JtczFsYS9zK2NoU3MvSEFIOXBRcwo0aWovcVhxQnRhanM2UHZJT1hrViswYnpvY3RPYmVFc2pkQnUyN3U2M1U4OGVKL2dOTW9wVnlQN3d4RnIyOGY3Ck8zeXlobExrWkVZMlJFc2llOGsrd1dnUVB0eU9wcG4zSC9rRXUwLzFOMmo0aHVDZ2VtWk4rM1luaTJMb2oyWXIKaC9BR0FscDFJQkNsa3hlcGRaUUFTTW5nK29nRStWcVZzWkNGQk9ranBOWmJXeDBac0Z5VmJqM3RZY0xTRHhLVApadFROYUtVNGN6WVZsQ01ISHl3eVdnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
++       service:
++         name: routestate-validator
++         namespace: cae-infra
++         path: /validate
++     failurePolicy: Ignore
++     name: validateroutestate.routestate.openshift.io
++     rules:
++     - apiGroups:
++       - cae.cisco.com
++       apiVersions:
++       - v1
++       operations:
++       - CREATE
++       - UPDATE
++       - DELETE
++       resources:
++       - routestates
++     sideEffects: None
++   apiVersion: admissionregistration.k8s.io/v1
++   kind: ValidatingWebhookConfiguration
++   metadata:
++     labels:
++       group: felix
++       variant: prd
++     name: splunk-index-validator-webhook
++     namespace: cae-infra
++   webhooks:
++   - admissionReviewVersions:
++     - v1
++     - v1beta1
++     clientConfig:
++       caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNyRENDQVpRQ0NRRGU4ekdabE4rN3FEQU5CZ2txaGtpRzl3MEJBUXNGQURBWE1SVXdFd1lEVlFRRERBeGgKWkcxcGMzTnBiMjVmWTJFd0lCY05Nakl4TVRFME1qSXpNRFUxV2hnUE1qSTVOakE0TWpreU1qTXdOVFZhTUJjeApGVEFUQmdOVkJBTU1ER0ZrYldsemMybHZibDlqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDCkFRb0NnZ0VCQU56OXJ0c3ZBdWEzbzY0S2o2NGVndVdBdm1wUldPUkd5ZlY1a1AwSlR0VityWXlxQ3RjcHR5VGgKNDQ4Nm9OdFFyandOL2xzWElYa01KWDhjOTlSM2RjUTNmeVVlV2pHNzZGbzdWVDNyeDlmQk5aMVdtYnVSWmdCOQp1UnZOZUg1a3lsczJ2N2FnbzN0eUhTREpNKzY3M3pSdm5CSXlZdmNqUTZSTXlrekh2VE85ei93Z1pFU3prQmlnCm82a0h3QXNsWEh4eEQvYlh3UlRVN2tUWHVrcWpCNXVaQjc1cjNkYzU5N2liczZhOFUzTkNYTXJXV3h6bVZIdU8KcFV5YlRmSldyYURpZVRFWnhOYnp3QUFXVEs3S2NvbWhrNE4zc1Y2c0xqTEE4M3ZOYytYUkpsQkk0VDlvS2h1OQppbnE4UVR5SzBjc0RpbTRCRjBXS3RwaW5oc2Naa3pNQ0F3RUFBVEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBCk5lcnJyb0ZkV3Z3ZFM1c0RXbGVKMzROK2ZzWjYrQi9XU3dPTS94VEc0U01rSUFFaHhXOWl6UC85N0NuOE9GVFcKa3NCdUdaZzhYOWRvYjExTUNHbGsvd3N2MzFGQ3dTMmh0a1VtVFVLdnV1OGhuVUFFWEZDYkdPWGFsd0UxZ1RBOAo5VXBYVkEwbUc1NlBRVmh3RXd3MW1pK1lhK3VRZnhSVjlkOUZ5M2dDNWR6bVphdGdmc3ZiVFpPOWdjSTgxUTAyCmFqS0RWSDZXdzRmcENWTElIZ05xd1JnTmpickJEaUJ3Tk83VXdSaTh4REdCakg4UUx1ZnJwRXRUUEV3cmpKSWYKdEF0VFRUVG5FNk82RjNPVzBBT2V5Qy8rWjQ5cG9UMFdNWTRjY2NkRlc1WG5PY1B2ZUZMTTFsL1VYRU5QY0Q2ZgpUZE5hOFp6cXFINEhzelF4dGpqd0JnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
++       service:
++         name: splunk-index-validator
++         namespace: cae-infra
++         path: /validate
++     failurePolicy: Ignore
++     name: validatesplunk-index.openshift.io
++     rules:
++     - apiGroups:
++       - cae.cisco.com
++       apiVersions:
++       - v1
++       operations:
++       - CREATE
++       - UPDATE
++       - DELETE
++       resources:
++       - splunkindexs
++     sideEffects: None
+
+@@ subjects @@
+# rbac.authorization.k8s.io/v1/RoleBinding/cae-infra/felix-gslb-admin
+! ⇆ order changed
+- alksinha, devanata, rajesred, shathrey
++ alksinha, rajesred, shathrey, devanata
+! - two list entries removed:
+- - name: arselvan
+-   apiGroup: rbac.authorization.k8s.io
+-   kind: User
+- - name: wedsouza
+-   apiGroup: rbac.authorization.k8s.io
+-   kind: User
+
+@@ subjects @@
+# rbac.authorization.k8s.io/v1/RoleBinding/cae-infra/felix-project-admin
+! ⇆ order changed
+- alksinha, devanata, rajesred, shathrey
++ alksinha, rajesred, shathrey, devanata
+! - two list entries removed:
+- - name: arselvan
+-   apiGroup: rbac.authorization.k8s.io
+-   kind: User
+- - name: wedsouza
+-   apiGroup: rbac.authorization.k8s.io
+-   kind: User
+
+@@ subjects.felix-services-sa @@
+# rbac.authorization.k8s.io/v1/RoleBinding/cae-infra/felix-service-rolebinding
+! - one map entry removed:
+- namespace: cae-infra
+
+@@ data.ALLOW_PING @@
+# v1/ConfigMap/cae-infra/cluster-config
+! ± value change
+- True
++ true
+
+@@ data.envoy.yaml @@
+# v1/ConfigMap/cae-infra/envoy-config
+! ± value change in multiline text (53 inserts, 31 deletions)
+-             - name: envoy.http_connection_manager
+-               typed_config:
+-                 "@type": type.googleapis.com/envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager
+-                 stat_prefix: ingress_http
+-                 route_config:
+-                   name: local_route
+-                   virtual_hosts:
+-                     - name: netscaler-int-alln
+-                       domains:
+-                         - "envoy-proxy-netscaler-int-alln:5000"
+-                         - "envoy-proxy-netscaler-int-alln.cae-infra.svc.cluster.local:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: alln01-sdx3-dci04n-cae-gslb1.cisco.com
+-                             cluster: service-netscaler-int-alln
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-int-alln-a
+-                       domains:
+-                         - "envoy-proxy-netscaler-int-alln-a:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: alln01-sdx3-dci04n-cae-gslb1a.cisco.com
+-                             cluster: service-netscaler-int-alln-a
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-int-alln-b
+-                       domains:
+-                         - "envoy-proxy-netscaler-int-alln-b:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: alln01-sdx4-dci04n-cae-gslb1b.cisco.com
+-                             cluster: service-netscaler-int-alln-b
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-int-rcdn
+-                       domains:
+-                         - "envoy-proxy-netscaler-int-rcdn:5000"
+-                         - "envoy-proxy-netscaler-int-rcdn.cae-infra.svc.cluster.local:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: rcdn9-sdx3-dci13n-cae-gslb1.cisco.com
+-                             cluster: service-netscaler-int-rcdn
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-int-rcdn-a
+-                       domains:
+-                         - "envoy-proxy-netscaler-int-rcdn-a:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: rcdn9-sdx3-dci13n-cae-gslb1a.cisco.com
+-                             cluster: service-netscaler-int-rcdn-a
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-int-rcdn-b
+-                       domains:
+-                         - "envoy-proxy-netscaler-int-rcdn-b:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: rcdn9-sdx4-dci13n-cae-gslb1b.cisco.com
+-                             cluster: service-netscaler-int-rcdn-b
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-int-rtp
+-                       domains:
+-                         - "envoy-proxy-netscaler-int-rtp:5000"
+-                         - "envoy-proxy-netscaler-int-rtp.cae-infra.svc.cluster.local:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: rtp1-sdx7-dcm01n-cae-gslb1.cisco.com
+-                             cluster: service-netscaler-int-rtp
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-int-rtp-a
+-                       domains:
+-                         - "envoy-proxy-netscaler-int-rtp-a:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: rtp1-sdx7-dcm01n-cae-gslb1a.cisco.com
+-                             cluster: service-netscaler-int-rtp-a
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-int-rtp-b
+-                       domains:
+-                         - "envoy-proxy-netscaler-int-rtp-b:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: rtp1-sdx8-dcm01n-cae-gslb1b.cisco.com
+-                             cluster: service-netscaler-int-rtp-b
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-ext-alln
+-                       domains:
+-                         - "envoy-proxy-netscaler-ext-alln:5000"
+-                         - "envoy-proxy-netscaler-ext-alln.cae-infra.svc.cluster.local:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: alln01-ucs-dcz03n-cae-gslb3.cisco.com
+-                             cluster: service-netscaler-ext-alln
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-ext-alln-a
+-                       domains:
+-                         - "envoy-proxy-netscaler-ext-alln-a:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: alln01-ucs-dcz03n-cae-gslb3a.cisco.com
+-                             cluster: service-netscaler-ext-alln-a
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-ext-alln-b
+-                       domains:
+-                         - "envoy-proxy-netscaler-ext-alln-b:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: alln01-ucs-dcz03n-cae-gslb3b.cisco.com
+-                             cluster: service-netscaler-ext-alln-b
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-ext-rcdn
+-                       domains:
+-                         - "envoy-proxy-netscaler-ext-rcdn:5000"
+-                         - "envoy-proxy-netscaler-ext-rcdn.cae-infra.svc.cluster.local:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: rcdn9-ucs-dcz05n-cae-gslb3.cisco.com
+-                             cluster: service-netscaler-ext-rcdn
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-ext-rcdn-a
+-                       domains:
+-                         - "envoy-proxy-netscaler-ext-rcdn-a:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: rcdn9-ucs-dcz05n-cae-gslb3a.cisco.com
+-                             cluster: service-netscaler-ext-rcdn-a
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-ext-rcdn-b
+-                       domains:
+-                         - "envoy-proxy-netscaler-ext-rcdn-b:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: rcdn9-ucs-dcz05n-cae-gslb3b.cisco.com
+-                             cluster: service-netscaler-ext-rcdn-b
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-ext-rtp
+-                       domains:
+-                         - "envoy-proxy-netscaler-ext-rtp:5000"
+-                         - "envoy-proxy-netscaler-ext-rtp.cae-infra.svc.cluster.local:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: rtp1-ucs-dcz01n-cae-gslb3.cisco.com
+-                             cluster: service-netscaler-ext-rtp
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-ext-rtp-a
+-                       domains:
+-                         - "envoy-proxy-netscaler-ext-rtp-a:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: rtp1-ucs-dcz01n-cae-gslb3a.cisco.com
+-                             cluster: service-netscaler-ext-rtp-a
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: netscaler-ext-rtp-b
+-                       domains:
+-                         - "envoy-proxy-netscaler-ext-rtp-b:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: rtp1-ucs-dcz01n-cae-gslb3b.cisco.com
+-                             cluster: service-netscaler-ext-rtp-b
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_50000_per_hour"
+-                     - name: external-am
+-                       domains:
+-                         - "envoy-proxy-am:5000"
+-                         - "envoy-proxy-am.cae-infra.svc.cluster.local:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: am.cisco.com
+-                             cluster: service-am
+-                             timeout: 60s
+-                       retry_policy:
+-                         retry_on: "5xx"
+-                         num_retries: 3
+-                         per_try_timeout: 60s
+-                       rate_limits:
+-                         - actions:
+-                             - generic_key:
+-                                 descriptor_value: "limit_5000_per_hour"
+-                             - destination_cluster: { }
+-                     - name: external-pmt
+-                       domains:
+-                         - "envoy-proxy-pmt:5000"
+-                         - "envoy-proxy-pmt.cae-infra.svc.cluster.local:5000"
+-                       request_headers_to_add:
+-                         - header:
+-                             key: GW-Forwarded-Host
+-                             value: wampmtapi.cisco.com:443
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: wampmtapi.cisco.com
+-                             cluster: service-pmt
+-                             retry_policy:
+-                               retry_on: "5xx"
+-                               num_retries: 3
+-                               per_try_timeout: 15s
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_20000_per_hour"
+-                                   - destination_cluster: { }
+-                     - name: external-ssl
+-                       domains:
+-                         - "envoy-proxy-ssl:5000"
+-                         - "envoy-proxy-ssl.cae-infra.svc.cluster.local:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             host_rewrite_literal: sslcerts.cisco.com
+-                             cluster: service-ssl
+-                             retry_policy:
+-                               retry_on: "5xx"
+-                               num_retries: 3
+-                               per_try_timeout: 15s
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_5000_per_hour"
+-                                   - destination_cluster: { }
+-                     - name: internal-ppi
+-                       domains:
+-                         - "felix-api.cisco.com"
+-                         - "envoy-proxy-ppi:5000"
+-                         - "envoy-proxy-ppi.cae-infra.svc.cluster.local:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/api/v1/health"
+-                           route:
+-                             cluster: service-ppi-health
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             cluster: service-ppi
+-                             timeout: 60s
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_5000_per_hour"
+-                     - name: internal-sdaas
+-                       domains:
+-                         - "felix-sdaas.cisco.com"
+-                         - "envoy-proxy-sdaas:5000"
+-                         - "envoy-proxy-sdaas.cae-infra.svc.cluster.local:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/api/v1/health"
+-                           route:
+-                             cluster: service-sdaas-health
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             cluster: service-sdaas
+-                             timeout: 300s
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_20000_per_hour"
+-                                   - destination_cluster: { }
+-                     - name: internal-icm
+-                       domains:
+-                         - "felix-icm.cisco.com"
+-                         - "envoy-proxy-icm:5000"
+-                         - "envoy-proxy-icm.cae-infra.svc.cluster.local:5000"
+-                       routes:
+-                         - match:
+-                             prefix: "/api/v1/health"
+-                           route:
+-                             cluster: service-icm-health
+-                         - match:
+-                             prefix: "/"
+-                           route:
+-                             cluster: service-icm
+-                             timeout: 60s
+-                             rate_limits:
+-                               - actions:
+-                                   - generic_key:
+-                                       descriptor_value: "limit_5000_per_hour"
+-                 http_filters:
+-                   - name: envoy.filters.http.ratelimit
+-                     typed_config:
+-                       "@type": type.googleapis.com/envoy.extensions.filters.http.ratelimit.v3.RateLimit
+-                       domain: envoy_ratelimit
+-                       stage: 0
+-                       failure_mode_deny: false
+-                       rate_limit_service:
+-                         transport_api_version: V3
+-                         grpc_service:
+-                           envoy_grpc:
+-                             cluster_name: service-ratelimit
+-                           timeout: 30s
++           - name: envoy.http_connection_manager
++             typed_config:
++               "@type": type.googleapis.com/envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager
++               stat_prefix: ingress_http
++               route_config:
++                 name: local_route
++                 virtual_hosts:
++                   - name: netscaler-int-alln
++                     domains:
++                       - "envoy-proxy-netscaler-int-alln:5000"
++                       - "envoy-proxy-netscaler-int-alln.cae-infra.svc.cluster.local:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: alln01-sdx3-dci04n-cae-gslb1.cisco.com
++                           cluster: service-netscaler-int-alln
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-int-alln-a
++                     domains:
++                       - "envoy-proxy-netscaler-int-alln-a:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: alln01-sdx3-dci04n-cae-gslb1a.cisco.com
++                           cluster: service-netscaler-int-alln-a
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-int-alln-b
++                     domains:
++                       - "envoy-proxy-netscaler-int-alln-b:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: alln01-sdx4-dci04n-cae-gslb1b.cisco.com
++                           cluster: service-netscaler-int-alln-b
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-int-rcdn
++                     domains:
++                       - "envoy-proxy-netscaler-int-rcdn:5000"
++                       - "envoy-proxy-netscaler-int-rcdn.cae-infra.svc.cluster.local:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: rcdn9-sdx3-dci13n-cae-gslb1.cisco.com
++                           cluster: service-netscaler-int-rcdn
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-int-rcdn-a
++                     domains:
++                       - "envoy-proxy-netscaler-int-rcdn-a:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: rcdn9-sdx3-dci13n-cae-gslb1a.cisco.com
++                           cluster: service-netscaler-int-rcdn-a
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-int-rcdn-b
++                     domains:
++                       - "envoy-proxy-netscaler-int-rcdn-b:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: rcdn9-sdx4-dci13n-cae-gslb1b.cisco.com
++                           cluster: service-netscaler-int-rcdn-b
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-int-rtp
++                     domains:
++                       - "envoy-proxy-netscaler-int-rtp:5000"
++                       - "envoy-proxy-netscaler-int-rtp.cae-infra.svc.cluster.local:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: rtp1-sdx7-dcm01n-cae-gslb1.cisco.com
++                           cluster: service-netscaler-int-rtp
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-int-rtp-a
++                     domains:
++                       - "envoy-proxy-netscaler-int-rtp-a:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: rtp1-sdx7-dcm01n-cae-gslb1a.cisco.com
++                           cluster: service-netscaler-int-rtp-a
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-int-rtp-b
++                     domains:
++                       - "envoy-proxy-netscaler-int-rtp-b:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: rtp1-sdx8-dcm01n-cae-gslb1b.cisco.com
++                           cluster: service-netscaler-int-rtp-b
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-ext-alln
++                     domains:
++                       - "envoy-proxy-netscaler-ext-alln:5000"
++                       - "envoy-proxy-netscaler-ext-alln.cae-infra.svc.cluster.local:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: alln01-ucs-dcz03n-cae-gslb3.cisco.com
++                           cluster: service-netscaler-ext-alln
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-ext-alln-a
++                     domains:
++                       - "envoy-proxy-netscaler-ext-alln-a:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: alln01-ucs-dcz03n-cae-gslb3a.cisco.com
++                           cluster: service-netscaler-ext-alln-a
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-ext-alln-b
++                     domains:
++                       - "envoy-proxy-netscaler-ext-alln-b:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: alln01-ucs-dcz03n-cae-gslb3b.cisco.com
++                           cluster: service-netscaler-ext-alln-b
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-ext-rcdn
++                     domains:
++                       - "envoy-proxy-netscaler-ext-rcdn:5000"
++                       - "envoy-proxy-netscaler-ext-rcdn.cae-infra.svc.cluster.local:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: rcdn9-ucs-dcz05n-cae-gslb3.cisco.com
++                           cluster: service-netscaler-ext-rcdn
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-ext-rcdn-a
++                     domains:
++                       - "envoy-proxy-netscaler-ext-rcdn-a:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: rcdn9-ucs-dcz05n-cae-gslb3a.cisco.com
++                           cluster: service-netscaler-ext-rcdn-a
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-ext-rcdn-b
++                     domains:
++                       - "envoy-proxy-netscaler-ext-rcdn-b:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: rcdn9-ucs-dcz05n-cae-gslb3b.cisco.com
++                           cluster: service-netscaler-ext-rcdn-b
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-ext-rtp
++                     domains:
++                       - "envoy-proxy-netscaler-ext-rtp:5000"
++                       - "envoy-proxy-netscaler-ext-rtp.cae-infra.svc.cluster.local:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: rtp1-ucs-dcz01n-cae-gslb3.cisco.com
++                           cluster: service-netscaler-ext-rtp
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-ext-rtp-a
++                     domains:
++                       - "envoy-proxy-netscaler-ext-rtp-a:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: rtp1-ucs-dcz01n-cae-gslb3a.cisco.com
++                           cluster: service-netscaler-ext-rtp-a
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: netscaler-ext-rtp-b
++                     domains:
++                       - "envoy-proxy-netscaler-ext-rtp-b:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: rtp1-ucs-dcz01n-cae-gslb3b.cisco.com
++                           cluster: service-netscaler-ext-rtp-b
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_50000_per_hour"
++                   - name: external-am
++                     domains:
++                       - "envoy-proxy-am:5000"
++                       - "envoy-proxy-am.cae-infra.svc.cluster.local:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: am.cisco.com
++                           cluster: service-am
++                           timeout: 60s
++                     retry_policy:
++                       retry_on: "5xx"
++                       num_retries: 3
++                       per_try_timeout: 60s
++                     rate_limits:
++                       - actions:
++                         - generic_key:
++                             descriptor_value: "limit_5000_per_hour"
++                         - destination_cluster: {}
++                   - name: external-pmt
++                     domains:
++                       - "envoy-proxy-pmt:5000"
++                       - "envoy-proxy-pmt.cae-infra.svc.cluster.local:5000"
++                     request_headers_to_add:
++                       - header:
++                           key: GW-Forwarded-Host
++                           value: wampmtapi.cisco.com:443
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal:  wampmtapi.cisco.com
++                           cluster: service-pmt
++                           retry_policy:
++                             retry_on: "5xx"
++                             num_retries: 3
++                             per_try_timeout: 15s
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_20000_per_hour"
++                               - destination_cluster: {}
++                   - name: external-ssl
++                     domains:
++                       - "envoy-proxy-ssl:5000"
++                       - "envoy-proxy-ssl.cae-infra.svc.cluster.local:5000"
++                     routes:
++                       - match:
++                           prefix: "/"
++                         route:
++                           host_rewrite_literal: sslcerts.cisco.com
++                           cluster: service-ssl
++                           retry_policy:
++                             retry_on: "5xx"
++                             num_retries: 3
++                             per_try_timeout: 15s
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_5000_per_hour"
++                               - destination_cluster: {}
++                   - name: internal-ppi
++                     domains:
++                       - "felix-api.cisco.com"
++                       - "envoy-proxy-ppi:5000"
++                       - "envoy-proxy-ppi.cae-infra.svc.cluster.local:5000"
++                     routes:
++                       - match:
++                           prefix: "/api/v1/health"
++                         route:
++                           cluster: service-ppi-health
++                       - match:
++                           prefix: "/"
++                         route:
++                           cluster: service-ppi
++                           timeout: 60s
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_5000_per_hour"
++                   - name: internal-sdaas
++                     domains:
++                       - "felix-sdaas.cisco.com"
++                       - "envoy-proxy-sdaas:5000"
++                       - "envoy-proxy-sdaas.cae-infra.svc.cluster.local:5000"
++                     routes:
++                       - match:
++                           prefix: "/api/v1/health"
++                         route:
++                           cluster: service-sdaas-health
++                       - match:
++                           prefix: "/"
++                         route:
++                           cluster: service-sdaas
++                           timeout: 300s
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_20000_per_hour"
++                               - destination_cluster: {}
++                   - name: internal-icm
++                     domains:
++                       - "felix-icm.cisco.com"
++                       - "envoy-proxy-icm:5000"
++                       - "envoy-proxy-icm.cae-infra.svc.cluster.local:5000"
++                     routes:
++                       - match:
++                           prefix: "/api/v1/health"
++                         route:
++                           cluster: service-icm-health
++                       - match:
++                           prefix: "/"
++                         route:
++                           cluster: service-icm
++                           timeout: 60s
++                           rate_limits:
++                             - actions:
++                               - generic_key:
++                                   descriptor_value: "limit_5000_per_hour"
++               http_filters:
++                 - name: envoy.filters.http.ratelimit
++                   typed_config:
++                     "@type": type.googleapis.com/envoy.extensions.filters.http.ratelimit.v3.RateLimit
++                     domain: envoy_ratelimit
++                     stage: 0
++                     failure_mode_deny: false
++                     rate_limit_service:
++                       transport_api_version: V3
++                       grpc_service:
++                         envoy_grpc:
++                           cluster_name: service-ratelimit
++                         timeout: 30s
+-                   # this must be last item in the list
+-                   - name: envoy.filters.http.router
+-                     typed_config: { }
+-                 access_log:
+-                   - name: envoy.access_loggers.file
+-                     typed_config:
+-                       "@type": type.googleapis.com/envoy.extensions.access_loggers.file.v3.FileAccessLog
+-                       path: "/dev/stdout"
+-                       log_format:
+-                         json_format:
+-                           time: "%START_TIME%"
+-                           method: "%REQ(:METHOD)%"
+-                           path: "%REQ(X-ENVOY-ORIGINAL-PATH?:PATH)%"
+-                           protocol: "%PROTOCOL%"
+-                           response_code: "%RESPONSE_CODE%"
+-                           x_forwarded_for: "%REQ(X-FORWARDED-FOR)%"
+-                           host: "%REQ(HOST)%"
+-                           user_agent: "%REQ(USER-AGENT)%"
+-                           id: "%REQ(X-REQUEST-ID)%"
+-                           authority: "%REQ(:AUTHORITY)%"
+-                           upstream_host: "%UPSTREAM_HOST%"
+-                           duration: "%DURATION%"
++                 # this must be last item in the list
++                 - name: envoy.filters.http.router
++                   typed_config: {}
++               access_log:
++                 - name: envoy.access_loggers.file
++                   typed_config:
++                     "@type": type.googleapis.com/envoy.extensions.access_loggers.file.v3.FileAccessLog
++                     path: "/dev/stdout"
++                     log_format:
++                       json_format:
++                         time: "%START_TIME%"
++                         method: "%REQ(:METHOD)%"
++                         path: "%REQ(X-ENVOY-ORIGINAL-PATH?:PATH)%"
++                         protocol: "%PROTOCOL%"
++                         response_code: "%RESPONSE_CODE%"
++                         x_forwarded_for: "%REQ(X-FORWARDED-FOR)%"
++                         host: "%REQ(HOST)%"
++                         user_agent: "%REQ(USER-AGENT)%"
++                         id: "%REQ(X-REQUEST-ID)%"
++                         authority: "%REQ(:AUTHORITY)%"
++                         upstream_host: "%UPSTREAM_HOST%"
++                         duration: "%DURATION%"
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: am.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: am.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: wampmtapi.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: wampmtapi.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: sslcerts.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: sslcerts.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: alln01-sdx3-dci04n-cae-gslb1.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: alln01-sdx3-dci04n-cae-gslb1.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: alln01-sdx3-dci04n-cae-gslb1a.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: alln01-sdx3-dci04n-cae-gslb1a.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: alln01-sdx4-dci04n-cae-gslb1b.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: alln01-sdx4-dci04n-cae-gslb1b.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: rcdn9-sdx3-dci13n-cae-gslb1.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: rcdn9-sdx3-dci13n-cae-gslb1.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: rcdn9-sdx3-dci13n-cae-gslb1a.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: rcdn9-sdx3-dci13n-cae-gslb1a.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: rcdn9-sdx4-dci13n-cae-gslb1b.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: rcdn9-sdx4-dci13n-cae-gslb1b.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: rtp1-sdx7-dcm01n-cae-gslb1.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: rtp1-sdx7-dcm01n-cae-gslb1.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: rtp1-sdx7-dcm01n-cae-gslb1a.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: rtp1-sdx7-dcm01n-cae-gslb1a.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: rtp1-sdx8-dcm01n-cae-gslb1b.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: rtp1-sdx8-dcm01n-cae-gslb1b.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: alln01-ucs-dcz03n-cae-gslb3.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: alln01-ucs-dcz03n-cae-gslb3.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: alln01-ucs-dcz03n-cae-gslb3a.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: alln01-ucs-dcz03n-cae-gslb3a.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: alln01-ucs-dcz03n-cae-gslb3b.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: alln01-ucs-dcz03n-cae-gslb3b.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: rcdn9-ucs-dcz05n-cae-gslb3.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: rcdn9-ucs-dcz05n-cae-gslb3.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: rcdn9-ucs-dcz05n-cae-gslb3a.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: rcdn9-ucs-dcz05n-cae-gslb3a.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: rcdn9-ucs-dcz05n-cae-gslb3b.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: rcdn9-ucs-dcz05n-cae-gslb3b.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: rtp1-ucs-dcz01n-cae-gslb3.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: rtp1-ucs-dcz01n-cae-gslb3.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: rtp1-ucs-dcz01n-cae-gslb3a.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: rtp1-ucs-dcz01n-cae-gslb3a.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: rtp1-ucs-dcz01n-cae-gslb3b.cisco.com
+-                       port_value: 443
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: rtp1-ucs-dcz01n-cae-gslb3b.cisco.com
++                   port_value: 443
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: ppi
+-                       port_value: 5000
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: ppi
++                   port_value: 5000
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: ppi
+-                       port_value: 5000
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: ppi
++                   port_value: 5000
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: sdaas
+-                       port_value: 5000
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: sdaas
++                   port_value: 5000
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: sdaas
+-                       port_value: 5000
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: sdaas
++                   port_value: 5000
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: icm
+-                       port_value: 5000
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: icm
++                   port_value: 5000
++ 
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: icm
+-                       port_value: 5000
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: icm
++                   port_value: 5000
++ 
+-       http2_protocol_options: { }
++       http2_protocol_options: {}
+-           - lb_endpoints:
+-               - endpoint:
+-                   address:
+-                     socket_address:
+-                       address: envoy-ratelimit
+-                       port_value: 8081
++         - lb_endpoints:
++           - endpoint:
++               address:
++                 socket_address:
++                   address: envoy-ratelimit
++                   port_value: 8081
++ # envoy admin UI
+
+@@ data @@
+# v1/ConfigMap/cae-infra/global-config
+! + one map entry added:
++   FELIX_GEN_USER: felix.gen
+
+@@ data.NOTIFICATIONS_ENDPOINT @@
+# v1/ConfigMap/cae-infra/global-config
+! ± value change
+- http://notification-controller:5000/api/v1/notification
++ http://notification:5000/api/v1/notification
+
+@@ data @@
+# v1/ConfigMap/cae-infra/lifecycle-config
+! - one map entry removed:
+- REPLY_TO_URL_EXPECTED_STATUS_CODE: "{"felix-project-status-cb-prd.cisco.com":200}"
+
+@@ data.FELIX_GEN_USER @@
+# v1/ConfigMap/cae-infra/lifecycle-config
+! ± value change
+- felix-prod.gen
++ felix.gen
+
+@@ metadata @@
+# v1/Secret/cae-infra/webhook-cert-network-policy
+! + one map entry added:
++   creationTimestamp: null
+
+@@ metadata.labels @@
+# v1/Service/cae-infra/felix-data-svc
+! - one map entry removed:
+- app: felix-data-svc
+
+@@ spec.ports.0 @@
+# v1/Service/cae-infra/felix-data-svc
+! - one map entry removed:
+- name: https
+
+@@ metadata.labels @@
+# v1/Service/cae-infra/felix-gateway
+! - one map entry removed:
+- app: felix-gateway
+
+@@ spec.ports.0 @@
+# v1/Service/cae-infra/felix-gateway
+! - one map entry removed:
+- name: https
+
+@@ metadata.labels @@
+# v1/Service/cae-infra/icm
+! - one map entry removed:
+- app: icm
+
+@@ spec.ports.0 @@
+# v1/Service/cae-infra/icm
+! - one map entry removed:
+- name: https
+
+@@ metadata.labels @@
+# v1/Service/cae-infra/ppi
+! - one map entry removed:
+- app: ppi
+
+@@ spec.ports.0 @@
+# v1/Service/cae-infra/ppi
+! - one map entry removed:
+- name: https
+
+@@ spec.selector.app @@
+# v1/Service/cae-infra/prometheus-gslb-deployment-controller-service
+! ± value change
+- gslb-deployment-controller
++ gslb-deploy-controller
+
+@@ metadata.labels @@
+# v1/Service/cae-infra/sdaas
+! - one map entry removed:
+- app: sdaas
+
+@@ spec.ports.0 @@
+# v1/Service/cae-infra/sdaas
+! - one map entry removed:
+- name: https
+
+@@ spec.template.spec @@
+# apps/v1/Deployment/cae-infra/busybox
+! - two map entries removed:
+- serviceAccountName: felix-sa
+- volumes:
+- - name: config-volume
+-   configMap:
+-     name: lifecycle-config
+-     items:
+-     - key: LOG_LEVEL
+-       path: level
+
+@@ spec.template.spec.containers.busybox @@
+# apps/v1/Deployment/cae-infra/busybox
+! - three map entries removed:
+- resources:
+-   limits:
+-     memory: 1G
+-   requests:
+-     cpu: 100m
+- volumeMounts:
+- - name: config-volume
+-   mountPath: /etc/config
+- envFrom:
+- - configMapRef:
+-     name: global-config
+- - configMapRef:
+-     name: lifecycle-config
+- - configMapRef:
+-     name: cluster-config
+
+@@ spec.template.spec.containers.ca-cert-validator.ports.0 @@
+# apps/v1/Deployment/cae-infra/ca-cert-validator
+! - one map entry removed:
+- protocol: TCP
+
+@@ spec.template.spec.volumes @@
+# apps/v1/Deployment/cae-infra/ca-cert-validator
+! ⇆ order changed
+- config-volume, certs-conf
++ certs-conf, config-volume
+
+@@ spec.template.spec.volumes.certs-conf.secret.secretName @@
+# apps/v1/Deployment/cae-infra/ca-cert-validator
+! ± value change
+- webhook-cert-ca-cert
++ webhook-ca-certificate
+
+@@ spec.template.spec.containers.cname-controller.envFrom @@
+# apps/v1/Deployment/cae-infra/cname-controller
+! ⇆ order changed
+  configMapRef:                        configMapRef:
+    name: route-ignorelist               name: global-config
+
+  configMapRef:                        configMapRef:
+    name: felix-ignore-events-config     name: lifecycle-config
+
+  configMapRef:                        configMapRef:
+    name: global-config                  name: cluster-config
+
+  configMapRef:                        configMapRef:
+    name: lifecycle-config               name: route-ignorelist
+
+  configMapRef:                        configMapRef:
+    name: cluster-config                 name: felix-ignore-events-config
+
+@@ spec.replicas @@
+# apps/v1/Deployment/cae-infra/felix-data-svc
+! ± value change
+- 1
++ 0
+
+@@ spec.template.spec.containers.felix-data-svc.envFrom @@
+# apps/v1/Deployment/cae-infra/felix-data-svc
+! ⇆ order changed
+  configMapRef:                 configMapRef:
+    name: cluster-map             name: global-config
+
+  configMapRef:                 configMapRef:
+    name: metrics-data-config     name: lifecycle-config
+
+  configMapRef:                 configMapRef:
+    name: migrate-config          name: cluster-config
+
+  configMapRef:                 configMapRef:
+    name: global-config           name: cluster-map
+
+  configMapRef:                 configMapRef:
+    name: lifecycle-config        name: metrics-data-config
+
+  configMapRef:                 configMapRef:
+    name: cluster-config          name: migrate-config
+
+@@ spec.template.spec.containers.felix-data-svc.image @@
+# apps/v1/Deployment/cae-infra/felix-data-svc
+! ± value change
+- containers.cisco.com/eps_mcmp/felix-data-svc:stable-prd
++ containers.cisco.com/eps_mcmp/felix-data-svc:1.0.69
+
+@@ spec.template.spec.containers.felix-data-svc.resources.requests @@
+# apps/v1/Deployment/cae-infra/felix-data-svc
+! - one map entry removed:
+- cpu: 200m
+! + one map entry added:
++   memory: 1Gi
+
+@@ spec.template.spec.containers.felix-gateway.resources.limits.cpu @@
+# apps/v1/Deployment/cae-infra/felix-gateway
+! ± value change
+- 200m
++ 50m
+
+@@ spec.template.spec.containers.felix-gateway.resources.limits.memory @@
+# apps/v1/Deployment/cae-infra/felix-gateway
+! ± value change
+- 2Gi
++ 500Mi
+
+@@ spec.template.spec.containers.felix-gateway.resources.requests @@
+# apps/v1/Deployment/cae-infra/felix-gateway
+! - one map entry removed:
+- cpu: 200m
+! + one map entry added:
++   memory: 300Mi
+
+@@ spec.template.spec.containers.gslb-config-controller @@
+# apps/v1/Deployment/cae-infra/gslb-config-controller
+! - one map entry removed:
+- resources:
+-   limits:
+-     memory: 1G
+-   requests:
+-     cpu: 100m
+
+@@ spec.template.spec.containers.gslb-config-controller.env @@
+# apps/v1/Deployment/cae-infra/gslb-config-controller
+! ⇆ order changed
+  NAME             NAME
+  WORKER_THREADS   WORKER_THREADS
+  RESYNC_PERIOD    RESYNC_PERIOD
+  NS_SSL_VERIFY    NS_PASSWORD
+  NS_PASSWORD      NS_SSL_VERIFY
+
+@@ spec.template.spec.containers.gslb-config-validator.ports.0 @@
+# apps/v1/Deployment/cae-infra/gslb-config-validator
+! - one map entry removed:
+- protocol: TCP
+
+@@ spec.template.spec.volumes @@
+# apps/v1/Deployment/cae-infra/gslb-config-validator
+! ⇆ order changed
+- config-volume, certs-conf
++ certs-conf, config-volume
+
+@@ spec.template.spec.containers.gslb-deployment-validator.envFrom @@
+# apps/v1/Deployment/cae-infra/gslb-deployment-validator
+! ⇆ order changed
+  configMapRef:              configMapRef:
+    name: cluster-map          name: global-config
+
+  configMapRef:              configMapRef:
+    name: global-config        name: lifecycle-config
+
+  configMapRef:              configMapRef:
+    name: lifecycle-config     name: cluster-config
+
+  configMapRef:              configMapRef:
+    name: cluster-config       name: cluster-map
+
+@@ spec.template.spec.containers.gslb-deployment-validator.image @@
+# apps/v1/Deployment/cae-infra/gslb-deployment-validator
+! ± value change
+- containers.cisco.com/eps_mcmp/felix-gslb-deployment-validator:1.0.241
++ containers.cisco.com/eps_mcmp/felix-gslb-deployment-validator:1.0.237
+
+@@ spec.template.spec.containers.gslb-deployment-validator.ports.0 @@
+# apps/v1/Deployment/cae-infra/gslb-deployment-validator
+! - one map entry removed:
+- protocol: TCP
+
+@@ spec.template.spec.volumes @@
+# apps/v1/Deployment/cae-infra/gslb-deployment-validator
+! ⇆ order changed
+- config-volume, certs-conf
++ certs-conf, config-volume
+
+@@ spec.template.spec.containers.gslb-reflection-controller @@
+# apps/v1/Deployment/cae-infra/gslb-reflection-controller
+! - one map entry removed:
+- resources:
+-   limits:
+-     memory: 1G
+-   requests:
+-     cpu: 100m
+
+@@ spec.template.spec.containers.gslb-reflection-controller.envFrom @@
+# apps/v1/Deployment/cae-infra/gslb-reflection-controller
+! ⇆ order changed
+  configMapRef:              configMapRef:
+    name: cluster-map          name: global-config
+
+  configMapRef:              configMapRef:
+    name: global-config        name: lifecycle-config
+
+  configMapRef:              configMapRef:
+    name: lifecycle-config     name: cluster-config
+
+  configMapRef:              configMapRef:
+    name: cluster-config       name: cluster-map
+
+@@ spec.template.spec.containers.icm.resources.requests @@
+# apps/v1/Deployment/cae-infra/icm
+! - one map entry removed:
+- cpu: 200m
+! + one map entry added:
++   memory: 1Gi
+
+@@ spec.template.spec.containers.kn-dm-controller.image @@
+# apps/v1/Deployment/cae-infra/kn-dm-controller
+! ± value change
+- containers.cisco.com/eps_mcmp/felix-kn-dm-controller:1.0.23
++ containers.cisco.com/eps_mcmp/felix-kn-dm-controller:1.0.20
+
+@@ spec.template.spec.containers.kn-dm-validator.image @@
+# apps/v1/Deployment/cae-infra/kn-dm-validator
+! ± value change
+- containers.cisco.com/eps_mcmp/felix-kn-dm-validator:1.0.28
++ containers.cisco.com/eps_mcmp/felix-kn-dm-validator:1.0.25
+
+@@ spec.template.spec.containers.kn-dm-validator.ports.0 @@
+# apps/v1/Deployment/cae-infra/kn-dm-validator
+! - one map entry removed:
+- protocol: TCP
+
+@@ spec.template.spec.volumes @@
+# apps/v1/Deployment/cae-infra/kn-dm-validator
+! ⇆ order changed
+- config-volume, certs-conf
++ certs-conf, config-volume
+
+@@ spec.template.spec.containers.kn-svc-controller.image @@
+# apps/v1/Deployment/cae-infra/kn-svc-controller
+! ± value change
+- containers.cisco.com/eps_mcmp/felix-kn-svc-controller:1.0.25
++ containers.cisco.com/eps_mcmp/felix-kn-svc-controller:1.0.22
+
+@@ spec.template.spec.containers.kn-svc-validator.image @@
+# apps/v1/Deployment/cae-infra/kn-svc-validator
+! ± value change
+- containers.cisco.com/eps_mcmp/felix-kn-svc-validator:1.0.26
++ containers.cisco.com/eps_mcmp/felix-kn-svc-validator:1.0.23
+
+@@ spec.template.spec.containers.kn-svc-validator.ports.0 @@
+# apps/v1/Deployment/cae-infra/kn-svc-validator
+! - one map entry removed:
+- protocol: TCP
+
+@@ spec.template.spec.volumes @@
+# apps/v1/Deployment/cae-infra/kn-svc-validator
+! ⇆ order changed
+- config-volume, certs-conf
++ certs-conf, config-volume
+
+@@ spec.template.spec.containers.network-policy-validator @@
+# apps/v1/Deployment/cae-infra/network-policy-validator
+! - one map entry removed:
+- env:
+- - name: NAME
+-   value: network-policy-validator
+
+@@ spec.template.spec.containers.network-policy-validator.ports.0 @@
+# apps/v1/Deployment/cae-infra/network-policy-validator
+! - one map entry removed:
+- protocol: TCP
+
+@@ spec.template.spec.volumes @@
+# apps/v1/Deployment/cae-infra/network-policy-validator
+! ⇆ order changed
+- config-volume, certs-conf
++ certs-conf, config-volume
+
+@@ spec.template.spec.containers.notification-controller @@
+# apps/v1/Deployment/cae-infra/notification-controller
+! - one map entry removed:
+- resources:
+-   limits:
+-     memory: 3G
+-   requests:
+-     cpu: 200m
+
+@@ spec.template.spec.containers.notification-controller.envFrom @@
+# apps/v1/Deployment/cae-infra/notification-controller
+! ⇆ order changed
+  configMapRef:              configMapRef:
+    name: stats-monitor        name: global-config
+
+  configMapRef:              configMapRef:
+    name: global-config        name: lifecycle-config
+
+  configMapRef:              configMapRef:
+    name: lifecycle-config     name: cluster-config
+
+  configMapRef:              configMapRef:
+    name: cluster-config       name: stats-monitor
+
+@@ spec.template.spec.containers.notification-controller.image @@
+# apps/v1/Deployment/cae-infra/notification-controller
+! ± value change
+- containers.cisco.com/eps_mcmp/cats-notification:1.0.300
++ containers.cisco.com/eps_mcmp/cats-notification:1.0.287
+
+@@ spec.template.spec.containers.ppi.envFrom @@
+# apps/v1/Deployment/cae-infra/ppi
+! ⇆ order changed
+  configMapRef:              configMapRef:
+    name: cluster-map          name: global-config
+
+  configMapRef:              configMapRef:
+    name: global-config        name: lifecycle-config
+
+  configMapRef:              configMapRef:
+    name: lifecycle-config     name: cluster-config
+
+  configMapRef:              configMapRef:
+    name: cluster-config       name: cluster-map
+
+@@ spec.template.spec.containers.ppi.resources.requests @@
+# apps/v1/Deployment/cae-infra/ppi
+! - one map entry removed:
+- cpu: 200m
+! + one map entry added:
++   memory: 1Gi
+
+@@ spec.template.spec.containers.ppi.volumeMounts @@
+# apps/v1/Deployment/cae-infra/ppi
+! ⇆ order changed
+- config-volume, ldap-certs
++ ldap-certs, config-volume
+
+@@ spec.template.spec.volumes @@
+# apps/v1/Deployment/cae-infra/ppi
+! ⇆ order changed
+- config-volume, ldap-certs
++ ldap-certs, config-volume
+
+@@ spec.template.spec.volumes.ldap-certs.secret @@
+# apps/v1/Deployment/cae-infra/ppi
+! + one map entry added:
++   defaultMode: 420
+
+@@ spec.template.spec.containers.project-controller.envFrom @@
+# apps/v1/Deployment/cae-infra/project-controller
+! ⇆ order changed
+  configMapRef:              configMapRef:
+    name: cluster-map          name: global-config
+
+  configMapRef:              configMapRef:
+    name: global-config        name: lifecycle-config
+
+  configMapRef:              configMapRef:
+    name: lifecycle-config     name: cluster-config
+
+  configMapRef:              configMapRef:
+    name: cluster-config       name: cluster-map
+
+@@ spec.template.spec.containers.project-validator.ports.0 @@
+# apps/v1/Deployment/cae-infra/project-validator
+! - one map entry removed:
+- protocol: TCP
+
+@@ spec.template.spec.containers.project-validator.resources.limits.memory @@
+# apps/v1/Deployment/cae-infra/project-validator
+! ± value change
+- 1G
++ 4G
+
+@@ spec.template.spec.containers.project-validator.volumeMounts @@
+# apps/v1/Deployment/cae-infra/project-validator
+! ⇆ order changed
+- certs-conf, config-volume, ldap-certs
++ ldap-certs, certs-conf, config-volume
+
+@@ spec.template.spec.volumes @@
+# apps/v1/Deployment/cae-infra/project-validator
+! ⇆ order changed
+- config-volume, certs-conf, ldap-certs
++ ldap-certs, certs-conf, config-volume
+
+@@ spec.template.spec.volumes.ldap-certs.secret @@
+# apps/v1/Deployment/cae-infra/project-validator
+! + one map entry added:
++   defaultMode: 420
+
+@@ spec.template.spec.containers.route-controller.envFrom @@
+# apps/v1/Deployment/cae-infra/route-controller
+! ⇆ order changed
+  configMapRef:                        configMapRef:
+    name: felix-ignore-events-config     name: global-config
+
+  configMapRef:                        configMapRef:
+    name: global-config                  name: lifecycle-config
+
+  configMapRef:                        configMapRef:
+    name: lifecycle-config               name: cluster-config
+
+  configMapRef:                        configMapRef:
+    name: cluster-config                 name: felix-ignore-events-config
+
+@@ spec.template.spec.containers.route-controller.image @@
+# apps/v1/Deployment/cae-infra/route-controller
+! ± value change
+- containers.cisco.com/eps_mcmp/felix-route-controller:1.0.239
++ containers.cisco.com/eps_mcmp/felix-route-controller:1.0.235
+
+@@ spec.template.spec.containers.route-validator.image @@
+# apps/v1/Deployment/cae-infra/route-validator
+! ± value change
+- containers.cisco.com/eps_mcmp/felix-route-validator:1.0.153
++ containers.cisco.com/eps_mcmp/felix-route-validator:1.0.151
+
+@@ spec.template.spec.containers.route-validator.ports.0 @@
+# apps/v1/Deployment/cae-infra/route-validator
+! - one map entry removed:
+- protocol: TCP
+
+@@ spec.template.spec.volumes @@
+# apps/v1/Deployment/cae-infra/route-validator
+! ⇆ order changed
+- config-volume, certs-conf
++ certs-conf, config-volume
+
+@@ spec.template.spec.containers.routestate-controller.image @@
+# apps/v1/Deployment/cae-infra/routestate-controller
+! ± value change
+- containers.cisco.com/eps_mcmp/felix-routestate-controller:1.0.115
++ containers.cisco.com/eps_mcmp/felix-routestate-controller:1.0.111
+
+@@ spec.template.spec.containers.routestate-validator.ports.0 @@
+# apps/v1/Deployment/cae-infra/routestate-validator
+! - one map entry removed:
+- protocol: TCP
+
+@@ spec.template.spec.volumes @@
+# apps/v1/Deployment/cae-infra/routestate-validator
+! ⇆ order changed
+- config-volume, certs-conf
++ certs-conf, config-volume
+
+@@ spec.template.spec.containers.sdaas.resources.requests @@
+# apps/v1/Deployment/cae-infra/sdaas
+! - one map entry removed:
+- cpu: 200m
+! + one map entry added:
++   memory: 2Gi
+
+@@ spec.template.spec.containers.sdaas.volumeMounts @@
+# apps/v1/Deployment/cae-infra/sdaas
+! ⇆ order changed
+- config-volume, ldap-certs
++ ldap-certs, config-volume
+
+@@ spec.template.spec.volumes @@
+# apps/v1/Deployment/cae-infra/sdaas
+! ⇆ order changed
+- config-volume, ldap-certs
++ ldap-certs, config-volume
+
+@@ spec.template.spec.volumes.ldap-certs.secret @@
+# apps/v1/Deployment/cae-infra/sdaas
+! + one map entry added:
++   defaultMode: 420
+
+@@ spec.template.spec.containers.sso-auth-config-watcher.envFrom @@
+# apps/v1/Deployment/cae-infra/sso-auth-config-watcher
+! ⇆ order changed
+  configMapRef:                 configMapRef:
+    name: metrics-data-config     name: global-config
+
+  configMapRef:                 configMapRef:
+    name: global-config           name: lifecycle-config
+
+  configMapRef:                 configMapRef:
+    name: lifecycle-config        name: cluster-config
+
+  configMapRef:                 configMapRef:
+    name: cluster-config          name: metrics-data-config
+
+@@ spec.jobTemplate.spec.template.spec.containers.cae-metrics @@
+# batch/v1/CronJob/cae-infra/cae-metrics
+! + one map entry added:
++   command:
++   - /app/cae-metrics
+
+@@ spec.jobTemplate.spec.template.spec.containers.cae-metrics.env @@
+# batch/v1/CronJob/cae-infra/cae-metrics
+! + one list entry added:
++   - name: MONITORING_SECRET_NAME
++     value: "grafana-datasources,grafana-datasources-v2"
+
+@@ spec.jobTemplate.spec.template.spec.containers.cae-metrics.envFrom @@
+# batch/v1/CronJob/cae-infra/cae-metrics
+! ⇆ order changed
+  configMapRef:              configMapRef:
+    name: cluster-map          name: global-config
+
+  configMapRef:              configMapRef:
+    name: global-config        name: lifecycle-config
+
+  configMapRef:              configMapRef:
+    name: lifecycle-config     name: cluster-config
+
+  configMapRef:              configMapRef:
+    name: cluster-config       name: cluster-map
+
+@@ spec.jobTemplate.spec.template.spec.containers.cae-metrics.volumeMounts @@
+# batch/v1/CronJob/cae-infra/cae-metrics
+! ⇆ order changed
+- config-volume, metrics-certs
++ metrics-certs, config-volume
+
+@@ spec.jobTemplate.spec.template.spec.volumes @@
+# batch/v1/CronJob/cae-infra/cae-metrics
+! ⇆ order changed
+- config-volume, metrics-certs
++ metrics-certs, config-volume
+
+@@ spec @@
+# batch/v1/CronJob/cae-infra/cert-renewal
+! - one map entry removed:
+- startingDeadlineSeconds: 30
+
+@@ spec.jobTemplate.spec.template.spec.containers.cert-renewal.image @@
+# batch/v1/CronJob/cae-infra/cert-renewal
+! ± value change
+- containers.cisco.com/eps_mcmp/felix-cert-renewal:1.0.88
++ containers.cisco.com/eps_mcmp/felix-cert-renewal:1.0.83
+
+@@ spec @@
+# batch/v1/CronJob/cae-infra/felix-common
+! - one map entry removed:
+- startingDeadlineSeconds: 30
+
+@@ spec.jobTemplate.spec.template.metadata @@
+# batch/v1/CronJob/cae-infra/felix-common
+! + one map entry added:
++   name: felix-common
+
+@@ spec.jobTemplate.spec.template.metadata.labels @@
+# batch/v1/CronJob/cae-infra/felix-common
+! - one map entry removed:
+- app: felix-common
+
+@@ spec.jobTemplate.spec.template.spec.restartPolicy @@
+# batch/v1/CronJob/cae-infra/felix-common
+! ± value change
+- OnFailure
++ Never
+
+@@ spec @@
+# batch/v1/CronJob/cae-infra/felix-data
+! - one map entry removed:
+- startingDeadlineSeconds: 30
+
+@@ spec.jobTemplate.spec.template.spec.containers.felix-data.env @@
+# batch/v1/CronJob/cae-infra/felix-data
+! ⇆ order changed
+  NAME            NAME
+  CONNECT_TO_DB   CONNECT_TO_DB
+  NS_SSL_VERIFY   ESP_PASSWORD
+  ESP_PASSWORD    SAML_PASSWORD
+  SAML_PASSWORD   DB_PASSWORD
+  DB_PASSWORD     NS_LOGIN
+  NS_LOGIN        NS_PASSWORD
+  NS_PASSWORD     NS_SSL_VERIFY
+
+@@ spec.jobTemplate.spec.template.spec.containers.felix-data.envFrom @@
+# batch/v1/CronJob/cae-infra/felix-data
+! ⇆ order changed
+  configMapRef:                 configMapRef:
+    name: cluster-map             name: global-config
+
+  configMapRef:                 configMapRef:
+    name: metrics-data-config     name: lifecycle-config
+
+  configMapRef:                 configMapRef:
+    name: global-config           name: cluster-config
+
+  configMapRef:                 configMapRef:
+    name: lifecycle-config        name: cluster-map
+
+  configMapRef:                 configMapRef:
+    name: cluster-config          name: metrics-data-config
+
+@@ spec.jobTemplate.spec.template.spec.containers.felix-data.volumeMounts @@
+# batch/v1/CronJob/cae-infra/felix-data
+! - one list entry removed:
+- - name: config-volume
+-   mountPath: /etc/config
+
+@@ spec.jobTemplate.spec.template.spec.volumes @@
+# batch/v1/CronJob/cae-infra/felix-data
+! - one list entry removed:
+- - name: config-volume
+-   configMap:
+-     name: lifecycle-config
+-     items:
+-     - key: LOG_LEVEL
+-       path: level
+
+@@ spec @@
+# batch/v1/CronJob/cae-infra/felix-data-prt
+! - one map entry removed:
+- startingDeadlineSeconds: 30
+
+@@ spec.jobTemplate.spec.template.spec.containers.felix-data-prt.env @@
+# batch/v1/CronJob/cae-infra/felix-data-prt
+! ⇆ order changed
+  NAME                        NAME
+  CONNECT_TO_DB               RUN_FOR_PROTECTED_CLUSTER
+  RUN_FOR_PROTECTED_CLUSTER   CONNECT_TO_DB
+  NS_SSL_VERIFY               ESP_PASSWORD
+  ESP_PASSWORD                SAML_PASSWORD
+  SAML_PASSWORD               DB_PASSWORD
+  DB_PASSWORD                 NS_LOGIN
+  NS_LOGIN                    NS_PASSWORD
+  NS_PASSWORD                 NS_SSL_VERIFY
+
+@@ spec.jobTemplate.spec.template.spec.containers.felix-data-prt.envFrom @@
+# batch/v1/CronJob/cae-infra/felix-data-prt
+! ⇆ order changed
+  configMapRef:                 configMapRef:
+    name: cluster-map             name: global-config
+
+  configMapRef:                 configMapRef:
+    name: metrics-data-config     name: lifecycle-config
+
+  configMapRef:                 configMapRef:
+    name: global-config           name: cluster-config
+
+  configMapRef:                 configMapRef:
+    name: lifecycle-config        name: cluster-map
+
+  configMapRef:                 configMapRef:
+    name: cluster-config          name: metrics-data-config
+
+@@ spec.jobTemplate.spec.template.spec.containers.felix-data-prt.volumeMounts @@
+# batch/v1/CronJob/cae-infra/felix-data-prt
+! - one list entry removed:
+- - name: config-volume
+-   mountPath: /etc/config
+
+@@ spec.jobTemplate.spec.template.spec.volumes @@
+# batch/v1/CronJob/cae-infra/felix-data-prt
+! - one list entry removed:
+- - name: config-volume
+-   configMap:
+-     name: lifecycle-config
+-     items:
+-     - key: LOG_LEVEL
+-       path: level
+
+@@ spec @@
+# batch/v1/CronJob/cae-infra/inactive-cec-cleanup
+! - one map entry removed:
+- startingDeadlineSeconds: 30
+
+@@ spec.jobTemplate.spec.template.metadata @@
+# batch/v1/CronJob/cae-infra/inactive-cec-cleanup
+! + one map entry added:
++   name: inactive-cec-cleanup
+
+@@ spec.jobTemplate.spec.template.metadata.labels @@
+# batch/v1/CronJob/cae-infra/inactive-cec-cleanup
+! - one map entry removed:
+- app: inactive-cec-cleanup
+
+@@ spec.jobTemplate.spec.template.spec.containers.inactive-cec-cleanup.volumeMounts @@
+# batch/v1/CronJob/cae-infra/inactive-cec-cleanup
+! ⇆ order changed
+- config-volume, ldap-certs
++ ldap-certs, config-volume
+
+@@ spec.jobTemplate.spec.template.spec.restartPolicy @@
+# batch/v1/CronJob/cae-infra/inactive-cec-cleanup
+! ± value change
+- OnFailure
++ Never
+
+@@ spec @@
+# batch/v1/CronJob/cae-infra/node-cert-renewal
+! - one map entry removed:
+- startingDeadlineSeconds: 30
+
+@@ spec.jobTemplate.spec.template.spec.containers.node-cert-renewal.image @@
+# batch/v1/CronJob/cae-infra/node-cert-renewal
+! ± value change
+- containers.cisco.com/eps_mcmp/felix-cert-renewal:1.0.88
++ containers.cisco.com/eps_mcmp/felix-cert-renewal:1.0.83
+
+@@ metadata.labels @@
+# batch/v1/CronJob/cae-infra/routers-cert-renewal-cron
+! - one map entry removed:
+- app: routers-cert-renewal-cron
+
+@@ spec @@
+# batch/v1/CronJob/cae-infra/routers-cert-renewal-cron
+! - one map entry removed:
+- startingDeadlineSeconds: 30
+
+@@ spec.jobTemplate.spec.template.metadata.labels @@
+# batch/v1/CronJob/cae-infra/routers-cert-renewal-cron
+! - one map entry removed:
+- app: routers-cert-renewal-cron
+
+@@ spec.jobTemplate.spec.template.spec @@
+# batch/v1/CronJob/cae-infra/routers-cert-renewal-cron
+! - one map entry removed:
+- volumes:
+- - name: config-volume
+-   configMap:
+-     name: lifecycle-config
+-     items:
+-     - key: LOG_LEVEL
+-       path: level
+
+@@ spec.jobTemplate.spec.template.spec.containers.routers-cert-renewal-cron @@
+# batch/v1/CronJob/cae-infra/routers-cert-renewal-cron
+! - one map entry removed:
+- volumeMounts:
+- - name: config-volume
+-   mountPath: /etc/config
+
+@@ spec.jobTemplate.spec.template.spec.containers.routers-cert-renewal-cron.envFrom @@
+# batch/v1/CronJob/cae-infra/routers-cert-renewal-cron
+! ⇆ order changed
+  configMapRef:              configMapRef:
+    name: global-config        name: global-config
+
+  configMapRef:              configMapRef:
+    name: lifecycle-config     name: cluster-config
+
+  configMapRef:              configMapRef:
+    name: cluster-config       name: lifecycle-config
+
+@@ spec.jobTemplate.spec.template.spec.containers.routers-cert-renewal-cron.image @@
+# batch/v1/CronJob/cae-infra/routers-cert-renewal-cron
+! ± value change
+- containers.cisco.com/eps_mcmp/cae-infra-certs-renewal:1.0.53
++ containers.cisco.com/eps_mcmp/cae-infra-certs-renewal:1.0.49
+
+@@ spec @@
+# batch/v1/CronJob/cae-infra/sso-migrate
+! - one map entry removed:
+- startingDeadlineSeconds: 30
+
+@@ spec.jobTemplate.spec.template.spec @@
+# batch/v1/CronJob/cae-infra/sso-migrate
+! - one map entry removed:
+- volumes:
+- - name: config-volume
+-   configMap:
+-     name: lifecycle-config
+-     items:
+-     - key: LOG_LEVEL
+-       path: level
+
+@@ spec.jobTemplate.spec.template.spec.containers.sso-migrate @@
+# batch/v1/CronJob/cae-infra/sso-migrate
+! - one map entry removed:
+- volumeMounts:
+- - name: config-volume
+-   mountPath: /etc/config
+
+@@ spec.jobTemplate.spec.template.spec.containers.sso-migrate.envFrom @@
+# batch/v1/CronJob/cae-infra/sso-migrate
+! ⇆ order changed
+  configMapRef:                 configMapRef:
+    name: migrate-config          name: global-config
+
+  configMapRef:                 configMapRef:
+    name: metrics-data-config     name: lifecycle-config
+
+  configMapRef:                 configMapRef:
+    name: global-config           name: cluster-config
+
+  configMapRef:                 configMapRef:
+    name: lifecycle-config        name: migrate-config
+
+  configMapRef:                 configMapRef:
+    name: cluster-config          name: metrics-data-config
+
+@@ metadata @@
+# bitnami.com/v1alpha1/SealedSecret/cae-infra/cae-felix-conjur-creds
+! - one map entry removed:
+- creationTimestamp: null
+
+@@ spec.template @@
+# bitnami.com/v1alpha1/SealedSecret/cae-infra/cae-felix-conjur-creds
+! - one map entry removed:
+- data: null
+
+@@ spec.template.metadata @@
+# bitnami.com/v1alpha1/SealedSecret/cae-infra/cae-felix-conjur-creds
+! - one map entry removed:
+- creationTimestamp: null
+
+@@ spec.refreshInterval @@
+# external-secrets.io/v1beta1/ExternalSecret/cae-infra/cae-metrics-secret
+! ± value change
+- 5m0s
++ 10m0s
+
+@@ spec.refreshInterval @@
+# external-secrets.io/v1beta1/ExternalSecret/cae-infra/global-secret
+! ± value change
+- 5m0s
++ 10m0s
+
+@@ spec.dataFrom.0.extract.key @@
+# external-secrets.io/v1beta1/ExternalSecret/cae-infra/image-pull-creds
+! ± value change
+- it/felix/image-pull/common/image-pull-creds
++ it/felix/image-pull/prod/image-pull-creds
+
+@@ spec.refreshInterval @@
+# external-secrets.io/v1beta1/ExternalSecret/cae-infra/image-pull-creds
+! ± value change
+- 5m0s
++ 10m0s
+
+@@ spec.refreshInterval @@
+# external-secrets.io/v1beta1/ExternalSecret/cae-infra/ldap-secrets
+! ± value change
+- 5m0s
++ 10m0s
+
+@@ spec.refreshInterval @@
+# external-secrets.io/v1beta1/ExternalSecret/cae-infra/lifecycle-secret
+! ± value change
+- 5m0s
++ 10m0s
+
+@@ spec.refreshInterval @@
+# external-secrets.io/v1beta1/ExternalSecret/cae-infra/migrate-secret
+! ± value change
+- 5m0s
++ 10m0s
+
+@@ metadata.labels @@
+# route.openshift.io/v1/Route/cae-infra/icm
+! - two map entries removed:
+- group: felix
+- variant: prd
+
